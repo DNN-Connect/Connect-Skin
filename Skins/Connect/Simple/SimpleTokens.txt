@@ -1,0 +1,17 @@
+<ul id="dnn_pnav">
+[*>NODE]
+</ul>
+[>NODE]
+	<li>
+	[?ENABLED]
+		<a href="[=URL]" target="[=TARGET]">[=TEXT]</a>
+	[?ELSE]
+		<span>[=TEXT]</span>
+	[/?]
+	[?NODE]
+	    <ul>
+	    [*>NODE]
+	    </ul>
+	[/?]
+	</li>
+[/>]
