@@ -331,7 +331,7 @@ a.dnnSecondaryAction {
 	list-style: none;
 }
 .sf-menu li, li.userName {
-	position: relative; z-index: 1;
+	position: relative; z-index: 99;
 }
 .sf-menu ul, li.userName ul {
 	position: absolute;
