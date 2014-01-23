@@ -169,13 +169,49 @@ table.dnnLeaderboard2 a.dnnSocialLink:hover {background: #FF8E38;}
 /* big white */     .color0     {background-color: #fff;}
 /* big orange */    .color1     {background-color: #FF8E38;}
 /* yellow */        .color2     {background-color: #38FF8E;}
-/* light brown */          .color3     {background-color: #BD5200;}
+/* light brown */   .color3     {background-color: #BD5200;}
 /* pink */          .color4     {background-color: #FF38A9;}
 /* facebook */      .color6     {background-color: #34609D;}
 /* light green */   .color5     {background-color: #FF3845;}
 /* light blue/vt */ .color7     {background-color: #a3b2d8;}
 /* lemon */         .color9     {background-color: #91D712;}
 /* Twitter */       .color8     {background-color: #0093C3;} 
+
+/* overrides for links in certain tiles */
+.color1 a,
+.color3 a,
+.color4 a,
+.color5 a,
+.color6 a,
+.color8 a,
+.color9 a
+{color:#fff}
+
+.color3 a:hover, .color3 a:focus, .color3 a:active, 
+.color4 a:hover, .color4 a:focus, .color4 a:active, 
+.color5 a:hover, .color5 a:focus, .color5 a:active,
+.color6 a:hover, .color6 a:focus, .color6 a:active, 
+.color8 a:hover, .color8 a:focus, .color8 a:active, 
+.color9 a:hover, .color9 a:focus, .color9 a:active 
+{color:#ccc;}
+
+.color2 a,
+
+.color7 a
+{color:#333;}
+
+.color1 a:hover, .color1 a:focus, .color1 a:active, 
+.color2 a:hover, .color2 a:focus, .color2 a:active, 
+.color7 a:hover, .color7 a:focus, .color7 a:active,
+.color9 a:hover, .color9 a:focus, .color9 a:active 
+{color:#777;}
+
+/* override for main copy color */
+.color3 td, .color3 p, .color3 .Normal, .color3 .NormalDisabled, .color3 .NormalBold 
+{color: #333;}
+.color6 td, .color6 p, .color3 .Normal, .color6 .NormalDisabled, .color6 .NormalBold,
+.color8 td, .color8 p, .color8 .Normal, .color8 .NormalDisabled, .color8 .NormalBold 
+{color: #ddd;}
 
 /* registration form homepage */
 .connect_registerform           { padding: 0 55px 30px 55px;}
