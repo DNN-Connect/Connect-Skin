@@ -24,7 +24,7 @@ body                                                            { background: #e
 .connect-toolbar[data-useragent*='MSIE 10.0']                                                { width: 1206px; margin: 0 0 20px 2px;background: #47292b; height: 56px}
 /* navigation bar */
 .connect_nav                                                    { width: 695px; float:left;}
-
+.connect_nav .m_nav                                             {display:none;}
 /* logo */
 .connect_logo                                                   { width: 36px; height: 36px; overflow: hidden; float:left;margin: 12px;}
 
@@ -561,3 +561,41 @@ span.label                                          { display: block; color: #ff
 .connectdir_searchbar h3    {color: #fff;margin-bottom: 10px}
 .connectdir_searchbar input[type="text"] {margin: 0; width: 500px;padding: 9px;background-color: #fff;border: 1px solid #ccc; float:left;}
 .connectdir_searchformbutton    {float:right;} 
+
+
+@media only screen and (min-width: 200px) and (max-width: 680px) 
+{
+    .skinWidth,.connect-toolbar{width:auto;margin:0;}
+    .topBar{position:relative;}
+    .connect-toolbar{height:100px;margin: 0 0 20px 0px;}
+    .connect_logo{margin: 12px 12px 5px 12px;position:relative;z-index:2;}
+    .connect_search{height:24px;margin:16px 0 11px 0;width:auto;position:relative;z-index:2;}
+    .connect_search span.searchInputContainer input{width:120px;height:25px;background-size:100%;font-size:15px;}
+    .searchInputContainer a.dnnSearchBoxClearText{margin:4px 0 !important;}
+    a.SearchButton{background-size:100%;width: 26px;height: 24px;background-position:0;}
+    
+    .connect_usertoolbar{float:none;padding: 0 12px;clear:both;position:relative;z-index:2;}
+    
+    .connect_nav{width: auto;position: absolute;right: 0;top: 16px;width: 50%;z-index: 1;}
+    .connect_nav .m_nav{display:block;background:url(images/m_menubg.png) no-repeat;width:50px;height:39px;float:right;margin-right:12px;}
+    .connect_nav .m_nav:hover{background-color:#000;border-radius:5px;}
+    .connect_nav ul.sf-menu{display:none;background: #47292b;margin-top: 56px;width: 100%;clear: both;}
+    .connect_nav .sf-menu li{float:none;width:auto;}
+    .connect_nav .sf-menu ul{top:0;}
+    .connect_nav .sf-menu ul li{padding-left:25px;}
+    .connect_nav .sf-menu li:hover > ul, 
+    .connect_nav .sf-menu li.sfHover > ul, 
+    .connect_nav li.userName:hover > ul{display:none !important;}
+    .connect_nav .sf-menu li.selected > ul, 
+    .connect_nav .sf-menu li.parent > ul,
+    .connect_nav .sf-menu li.parent:hover > ul, 
+    .connect_nav .sf-menu li.selected:hover > ul{display:block !important;position:relative;}
+    
+    
+    
+    .tile,.tile_900_900,.tile_900_600,.tile_600_600,.tile_300_300,.tile_600_300,.tile_300,.tile_content{ width:100%;}
+    
+    
+    .connect_intro{padding:20px;}
+    .connect_events{padding: 8%;width: auto;}
+}

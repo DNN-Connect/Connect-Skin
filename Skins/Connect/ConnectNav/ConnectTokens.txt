@@ -2,7 +2,7 @@
 [*>NODE]
 </ul>
 [>NODE]
-	<li>
+	<li class="item[?SELECTED] selected[/?][?BREADCRUMB] parent[/?]">
 	[?ENABLED]
 		<a href="[=URL]" target="[=TARGET]">[=TEXT]</a>
 	[?ELSE]

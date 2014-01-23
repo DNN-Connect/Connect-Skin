@@ -19,6 +19,9 @@
 <%@ Register TagPrefix="dnn" TagName="TOAST" Src="~/Admin/Skins/Toast.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="CONTROLPANEL" Src="~/Admin/Skins/controlpanel.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
+<%@ Register TagPrefix="dnn" TagName="Meta" Src="~/Admin/Skins/Meta.ascx" %>
+<dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<dnn:Meta ID="Meta2" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
@@ -81,6 +84,7 @@
         <div class="connect_logo"><dnn:LOGO ID="dnnLogo" runat="server" /></div>
         <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" Placeholder="" /></div>
         <div class="connect_nav">
+			<div class="m_nav"></div>
             <dnn:MENU ID="MENU1" MenuStyle="ConnectNav" runat="server"></dnn:MENU>
         </div>
         <div class="connect_usertoolbar clearfix">
@@ -106,3 +110,4 @@
 
 	</div><!--/skinWidth-->
 </div><!--/contentWrap-->
+<dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="skin.js" PathNameAlias="SkinPath" />
