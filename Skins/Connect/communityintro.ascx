@@ -19,7 +19,9 @@
 <%@ Register TagPrefix="dnn" TagName="TOAST" Src="~/Admin/Skins/Toast.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="CONTROLPANEL" Src="~/Admin/Skins/controlpanel.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
-<script type="text/javascript" src="/Portals/_Default/Skins/Connect/js/purl.js"></script>
+<%@ Register TagPrefix="dnn" TagName="Meta" Src="~/Admin/Skins/Meta.ascx" %>
+<dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<dnn:Meta ID="Meta2" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
@@ -47,45 +49,20 @@
 <link rel="stylesheet" href="/Portals/_default/Skins/Connect/fonts/novecentowide/stylesheet.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript">
-
     $(document).ready(function () {
-
-        $('.searchInputContainer > input').focusin(function () {
-            input = $(this);
-            input.toggleClass('active');
-        });
-
-        $('.searchInputContainer > input').focusout(function () {
-            input = $(this);
-            input.toggleClass('active');
-        });
-
-        $('.userName > a').text('My Account');
 
         $('.external-sociallink-twitter').attr('target', '_blank');
 
-        var params = $.url().param('SearchValues');
-
-        if (params) {
-            var link = $('a[rel="' + params + '"]');
-            if (link) {
-                link.addClass('active');
-            }
-        }
-
-        $('.connectdir_searchbutton > input').addClass('dnnPrimaryAction');
-        $('.connectdir_searchformbutton > input').addClass('dnnPrimaryAction');
-
     });
-
 </script>
 
 <div class="topBar skinWidth">
 
     <div class="connect-toolbar clearfix">
         <div class="connect_logo"><dnn:LOGO ID="dnnLogo" runat="server" /></div>
-        <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" Placeholder="" /></div>
+        <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" /></div>
         <div class="connect_nav">
+            <div class="m_nav"></div>
             <dnn:MENU ID="MENU1" MenuStyle="ConnectNav" runat="server"></dnn:MENU>
         </div>
         <div class="connect_usertoolbar clearfix">
@@ -98,7 +75,6 @@
 
 <div class="contentWrap">
 	<div class="skinWidth">
-
     
         <div class="tiles clearfix">
             
@@ -115,13 +91,10 @@
                 <div id="RightPane" runat="server" class="tile tile_400_600 left color0 paddedpane"></div>
 
 				<div id="ContentPane" runat="server" class="tile tile_content color0"></div>
-
             </div>
-
         </div>
-
-		
 
 	</div><!--/skinWidth-->
 </div><!--/contentWrap-->
-
+<dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="js/purl.js" PathNameAlias="SkinPath" />
+<dnn:DnnJsInclude ID="DnnJsInclude2" runat="server" FilePath="skin.js" PathNameAlias="SkinPath" />

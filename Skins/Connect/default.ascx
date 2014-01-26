@@ -23,7 +23,6 @@
 <dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 <dnn:Meta ID="Meta2" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
-
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100italicc" rel="stylesheet">
@@ -37,45 +36,12 @@
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:900italic" rel="stylesheet">
 <link rel="stylesheet" href="/Portals/_default/Skins/Connect/fonts/novecentowide/stylesheet.css" type="text/css" charset="utf-8" />
-<script type="text/javascript" src="/Portals/_Default/Skins/Connect/js/purl.js"></script>
-
-<script type="text/javascript">
-
-    $(document).ready(function () {
-
-        $('.searchInputContainer > input').focusin(function () {
-            input = $(this);
-            input.toggleClass('active');
-        });
-
-        $('.searchInputContainer > input').focusout(function () {
-            input = $(this);
-            input.toggleClass('active');
-        });
-
-        $('.userName > a').text('My Account');
-
-        var params = $.url().param('SearchValues');
-
-        if (params) {
-            var link = $('a[rel="' + params + '"]');
-            if (link) {
-                link.addClass('active');
-            }
-        }
-
-        $('.connectdir_searchbutton > input').addClass('dnnPrimaryAction');
-        $('.connectdir_searchformbutton > input').addClass('dnnPrimaryAction');
-
-    });
-
-</script>
 
 <div class="topBar skinWidth">
 
     <div class="connect-toolbar clearfix">
         <div class="connect_logo"><dnn:LOGO ID="dnnLogo" runat="server" /></div>
-        <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" Placeholder="" /></div>
+        <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" /></div>
         <div class="connect_nav">
 			<div class="m_nav"></div>
             <dnn:MENU ID="MENU1" MenuStyle="ConnectNav" runat="server"></dnn:MENU>
@@ -90,7 +56,6 @@
 
 <div class="contentWrap">
 	<div class="skinWidth">
-
     
         <div class="tiles clearfix">
             
@@ -107,8 +72,7 @@
             </div>
         </div>
 
-		
-
 	</div><!--/skinWidth-->
 </div><!--/contentWrap-->
-<dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="skin.js" PathNameAlias="SkinPath" />
+<dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="js/purl.js" PathNameAlias="SkinPath" />
+<dnn:DnnJsInclude ID="DnnJsInclude2" runat="server" FilePath="skin.js" PathNameAlias="SkinPath" />

@@ -38,7 +38,6 @@
 <link rel="stylesheet" href="/Portals/_default/Skins/Connect/fonts/novecentowide/stylesheet.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript">
-
     $(document).ready(function () {
 
         $("a.login").click(function () {
@@ -61,28 +60,14 @@
             $(".connect_register").slideUp('fast');
             $(".connect_intro").show('fast');
         });
-
-        $('.searchInputContainer > input').focusin(function () {
-            input = $(this);
-            input.toggleClass('active');
-        });
-
-        $('.searchInputContainer > input').focusout(function () {
-            input = $(this);
-            input.toggleClass('active');
-        });
-
-        $('.userName > a').text('My Account');
-
     });
-
 </script>
 
 <div class="topBar skinWidth">
 
     <div class="connect-toolbar clearfix">
         <div class="connect_logo"><dnn:LOGO ID="dnnLogo" runat="server" /></div>
-        <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" Placeholder="" /></div>
+        <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" /></div>
         <div class="connect_nav">
 			<div class="m_nav"></div>
             <dnn:MENU ID="MENU1" MenuStyle="ConnectNav" runat="server"></dnn:MENU>
@@ -110,4 +95,5 @@
 
 	</div><!--/skinWidth-->
 </div><!--/contentWrap-->
-<dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="skin.js" PathNameAlias="SkinPath" />
+<dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="js/purl.js" PathNameAlias="SkinPath" />
+<dnn:DnnJsInclude ID="DnnJsInclude2" runat="server" FilePath="skin.js" PathNameAlias="SkinPath" />

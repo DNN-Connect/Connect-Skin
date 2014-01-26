@@ -29,7 +29,7 @@ body                                                            { background: #e
 .connect_logo                                                   { width: 36px; height: 36px; overflow: hidden; float:left;margin: 12px;}
 
 /* searchbox */
-.connect_search                                                 { float:left; width: 216px;height: 36px;border: 2px solid #47292b; border-left: none; background: #47292b;margin: 10px 0 10px 0; overflow: hidden;}
+.connect_search                                                 { float:right; width: 216px;height: 36px;border: 2px solid #47292b; border-left: none; background: #47292b;margin: 10px 0 10px 0; overflow: hidden;}
 
 .connect_search span.searchInputContainer                       { display: block;padding: 0px; float:left; background: #47292b;}
 .connect_search span.searchInputContainer input                 { background: #472929 url(images/bg_search.png)0px 0px no-repeat; border: none;height: 41px; width: 172px; padding: 0px 5px 2px 10px; line-height: 20px; font-size: 20px; float:left; border-bottom: 0px solid #fff;}
