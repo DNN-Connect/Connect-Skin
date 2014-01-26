@@ -20,7 +20,7 @@
 <%@ Register TagPrefix="dnn" TagName="CONTROLPANEL" Src="~/Admin/Skins/controlpanel.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 <%@ Register TagPrefix="dnn" TagName="Meta" Src="~/Admin/Skins/Meta.ascx" %>
-<dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <dnn:Meta ID="Meta2" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -60,20 +60,19 @@
 
     <div class="connect-toolbar clearfix">
         <div class="connect_logo"><dnn:LOGO ID="dnnLogo" runat="server" /></div>
-        <div class="connect_search"><dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" EnableTheming="true" Submit="Search" CssClass="SearchButton" /></div>
-        <div class="connect_nav">
-            <div class="m_nav"></div>
-            <dnn:MENU ID="MENU1" MenuStyle="ConnectNav" runat="server"></dnn:MENU>
-        </div>
         <div class="connect_usertoolbar clearfix">
             <dnn:USERANDLOGIN id="userLogin" runat="Server" /><div class="clearfix"></div>
+        </div>
+        <div class="connect_nav">
+			<div class="m_nav"></div>
+            <dnn:MENU ID="MENU1" MenuStyle="ConnectNav" runat="server"></dnn:MENU>
         </div>
     </div>
 
 	<div class="dnnClear"></div>
 </div>
 
-<div class="contentWrap">
+<div class="contentWrap <%=PortalSettings.ActiveTab.Breadcrumbs(PortalSettings.ActiveTab.Breadcrumbs.Count-1).TabName.ToLower().Replace(" ","_") %>">
 	<div class="skinWidth">
     
         <div class="tiles clearfix">

@@ -1,5 +1,5 @@
 ﻿.skinWidth {width: 1212px;}
-.content				{width: 912px;}
+.content				{width: 908px;margin-right:2px}
 .tile_content           { width: 100%; margin: 0 0 0 0px; background: #ddd; padding: 0 0 30px 0; min-height: 240px;}
 .tile_content50           { width: 410px; margin: 0 0 0 2px; background: #ddd; padding: 0 40px 30px 0; min-height: 240px; float:left;}
 .dnnFilterSet, .community_intro   {background: #38A9FF; margin: 0;}
@@ -218,7 +218,7 @@ a.icnTranslations:hover     { color: #333;}
 a.icnMembers				{ background: #d68a3a url(images/metro/icnMembers.png) 15px 5px no-repeat;}
 a.icnMembers:hover			{ color: #333;}
 .af-tiles {width: 100%; overflow: hidden;}
-.tile-af	{ float:left; width: 424px; background: #c46437 url(images/Metro/icnDiscussions.png) 0px 10px no-repeat; margin: 0px 2px 2px 0; height: 203px; padding: 25px 15px 25px 15px;}
+.tile-af	{ float:left; width: 422px; background: #c46437 url(images/Metro/icnDiscussions.png) 0px 10px no-repeat; margin: 0px 2px 2px 0; height: 203px; padding: 25px 15px 25px 15px;}
 
 .ct-forumname	{display: block; margin: 20px 0 0 120px;}
 .ct-forumname a { color: #fefefe; font-size: 20px; font-weight: bold; text-decoration: none;}
