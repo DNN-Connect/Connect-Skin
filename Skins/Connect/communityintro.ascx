@@ -78,9 +78,9 @@
         <div class="tiles clearfix">
             
             <div class="clearfix">                
-				<div id="Tile1" runat="server" class="tile tile_604_302 left color0"></div>
-				<div id="Tile2" runat="server" class="tile tile_300_300 left color0 nomargin"></div>                                        
-				<div id="Tile3" runat="server" class="tile tile_300_300 left color0 nomargin"></div> 
+				<div id="Tile1" runat="server" class="tile tile_606_300 left color0"></div>
+				<div id="Tile2" runat="server" class="tile tile_300_300 left color0"></div>                                        
+				<div id="Tile3" runat="server" class="tile tile_300_300 left color0 tile_end"></div> 
 			</div>
 			
 			<div class="clearfix communityintro">

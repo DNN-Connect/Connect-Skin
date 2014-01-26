@@ -20,8 +20,8 @@ body                                                            { background: #e
 .skinWidth                                                      { width: 1210px; margin: 20px auto;}
 
 /* toolbar at the top */
-.connect-toolbar                                                { width: 1206px; margin: 0 0 0 2px;background: #47292b; height: 60px;}
-.connect-toolbar[data-useragent*='MSIE 10.0']                   { width: 1206px; margin: 0 0 0 2px;background: #47292b; height: 56px}
+.connect-toolbar                                                { width: 1210px; margin: 0;background: #47292b; height: 60px;}
+.connect-toolbar[data-useragent*='MSIE 10.0']                   { width: 1210px; margin: 0;background: #47292b; height: 56px}
 /* navigation bar */
 .connect_nav                                                    { width: 695px; float:right;}
 
@@ -149,17 +149,19 @@ table.dnnLeaderboard2 a.dnnSocialLink:hover {background: #FF8E38;}
 .tile                   { min-height: 300px;}
 .tile_900_900           { width: 902px; min-height: 904px; margin: 0 0 0 2px;}
 .tile_900_600           { width: 902px; min-height: 602px; margin: 0 0 0 2px;}
-.tile_600_600           { width: 602px; height: 602px; margin: 0 0 2px 2px;}
-.tile_300_300           { width: 300px; height: 300px; margin: 0 0 2px 2px;}
-.tile_600_300           { width: 600px; height: 300px; margin: 0 0 0 2px;}
-.tile_604_302           { width: 604px; height: 302px; margin: 0 0 0 2px;}
-.tile_300               { width: 300px; margin: 0 0 2px 0px;}
+.tile_600_600           { width: 606px; height: 602px; margin: 0 2px 2px 0;}
+.tile_300_300           { width: 300px; height: 300px; margin: 0 2px 2px 0;}
+.tile_302_300           { width: 302px; height: 300px; margin: 0 2px 2px 0;}
+.tile_600_300           { width: 602px; height: 300px; margin: 0 2px 2px 0;}
+.tile_606_300           { width: 606px; height: 300px; margin: 0 2px 2px 0;}
+.tile_300               { width: 300px; margin: 0 0 2px 0;}
 .tile_400_600			{ width: 360px; margin: 2px 6px 0 13px; height: 600px; overflow: hidden; padding: 10px;}
 .tile_content           { width: 864px; margin: 0 0 0 2px; background: #ddd; padding: 30px 20px 30px 20px; min-height: 240px;}
 .tile_content           { float:left;}
 .tile_side              { float:right;}
 .tile.DNNEmptyPane      { display: none;height:0px;width:0px;line-height:0;margin:0;padding:0;}
 
+.tile_end {margin-right:0 !important;}
 
 /* overrides panes */
 .admin .tile_content{width:100%;padding:30px 0;}
@@ -216,6 +218,11 @@ ul#ConnectRegisterFormTabs      { margin-bottom: 0;}
 .Head {
     font-size: 24px;
 }
+
+div.connect_communitylinks a {float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+div.connect_communitylinks a.B {float:left;display:block; height: 30px; width:150px; padding: 120px 0 0 0; margin: 0 0 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+
+
 /* Primary Action */
 .dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction {
     background: #38A9FF;
@@ -550,19 +557,26 @@ span.label                                          { display: block; color: #ff
 .connectdir_search  {padding: 30px;}
 .connectdir_search span {display: block; padding: 10px 0 5px 0;}
 .connectdir_search table span {display: inline; padding:0;}
-.connectdir_searchinput input   {width: 200px !important;}
-.connectdir_searchinput select   {width: 200px !important;}
-.connectdir_searchbutton            {padding: 20px 0 20px 0;}
+.connectdir_searchinput input   {}
+.connectdir_searchinput select  {}
+.connectdir_searchbutton        {padding: 20px 0 20px 0;}
    
 .connectdir_searchbar    {background: #38A9FF; margin: 0; padding: 20px 20px 40px 20px;}
 .connectdir_searchbar h3    {color: #fff;margin-bottom: 10px}
 .connectdir_searchbar input[type="text"] {margin: 0; width: 500px;padding: 9px;background-color: #fff;border: 1px solid #ccc; float:left;}
-.connectdir_searchformbutton    {float:right;}
-
 
 #mdMemberList > li {
     width: 270px !important;
 }
+
+
+/* groups */
+.createGroup {
+float: right;
+margin-top: 0;
+margin-right: 0;
+}
+
 
 @media only screen and (min-width: 200px) and (max-width: 680px) 
 {
