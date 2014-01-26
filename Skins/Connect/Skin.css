@@ -43,7 +43,7 @@ a.SearchButton:hover                                            { background-col
 .connect_usertoolbar                                            { width:217px; float:right;}
 .connect_usertoolbar ul                                         { margin: 12px 0 0 0; padding:0;}
 .connect_usertoolbar ul li                                      { list-style-type: none; float:left;background: #000; margin: 0 3px 0 0; border: 1px solid #333;}
-.connect_usertoolbar li.userName                                { width: 140px;display: block;}
+.connect_usertoolbar li.userName                                { width: 170px;display: block;}
 li.userRegister a                                               { line-height: 35px; color: #fff; font-size: 14px; text-decoration: none; padding: 8px 20px 8px 32px; background-image: url(images/user.png); background-position: 5px center; background-repeat: no-repeat;}
 li.userLogin a                                                  { line-height: 35px; color: #fff; font-size: 14px; text-decoration: none; padding: 8px 20px 8px 32px; background-image: url(images/padlock.png); background-position: 5px center; background-repeat: no-repeat;}
 li.userProfile a                                                { line-height: 35px; color: #fff; font-size: 14px; text-decoration: none; padding: 0; }
@@ -54,7 +54,7 @@ li.userName a                                                   { line-height: 3
 .connect_usertoolbar ul li.userName, 
 .connect_usertoolbar ul li.userProfile                          { margin-right: 0;}
 .connect_usertoolbar ul li.userName                             { border-right: none;}
-.connect_usertoolbar li.userName li                             { width: 140px; border: none;}
+.connect_usertoolbar li.userName li                             { width: 170px; border: none;}
 .connect_usertoolbar li.userName li a                           { background-image: none; padding-left: 10px; border: none; display: block; padding: 1px 20px 1px 34px; background-color: #BD5200;}
 .connect_usertoolbar li.userName li a:hover                     { background-color: #472929;}
 .connect_usertoolbar li.userName li.userNotifications a         { padding-left: 23px;}
@@ -160,6 +160,10 @@ table.dnnLeaderboard2 a.dnnSocialLink:hover {background: #FF8E38;}
 .tile_side              { float:right;}
 .tile.DNNEmptyPane      { display: none;height:0px;width:0px;line-height:0;margin:0;padding:0;}
 
+
+/* overrides panes */
+.admin .tile_content{width:100%;padding:30px 0;}
+
 /*home page tiles */
 .home .tile             { float:left;}
 
@@ -198,14 +202,24 @@ ul#ConnectRegisterFormTabs      { margin-bottom: 0;}
 
 
 /********************************/
+/* containers                   */
+/********************************/
+.head_title
+{
+    border-bottom:solid 1px #0D569E;
+}
+
+
+/********************************/
 /* default.css overrides        */
 /********************************/
-
+.Head {
+    font-size: 24px;
+}
 /* Primary Action */
-
 .dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction {
-    border:none !important;
     background: #38A9FF;
+    border:none !important;
     color: #fff;
     border-radius:0;
     -moz-border-radius:0;
@@ -235,46 +249,36 @@ ul#ConnectRegisterFormTabs      { margin-bottom: 0;}
     }
     
 /* Secondary Action */
-.dnnSecondaryAction,
-a.dnnSecondaryAction {
-    background: #f5f5f5; /* Old browsers */
-    background: -moz-linear-gradient(top, #888 0%, #999 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#888), color-stop(100%,#999)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #888 0%,#999 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #888 0%,#999 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #888 0%,#999 100%); /* IE10+ */
-    background: linear-gradient(top, #888 0%,#999 100%); /* W3C */
-    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
-    text-shadow: 0px 1px 0px #888;
-    color: #eee;
+.dnnSecondaryAction, a.dnnSecondaryAction {
+    background: #aaa; 
+    border:none !important;
+    color: #fff;
+    border-radius:0;
+    -moz-border-radius:0;
+    text-shadow: none;
+    font-weight:normal;
 }
 
-    .dnnSecondaryAction:hover,
-    a.dnnSecondaryAction:hover{
-        background: #fefefe; /* Old browsers */
-        background: -moz-linear-gradient(top, #777 0%, #888 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#777), color-stop(100%,#888)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #777 0%,#888 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, #777 0%,#888 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, #777 0%,#888 100%); /* IE10+ */
-        background: linear-gradient(top, #777 0%,#888 100%); /* W3C */
-        color: #eee;
+    .dnnSecondaryAction:hover, a.dnnSecondaryAction:hover{
+        border:none;
+        background: #888; 
+        color: #fff;
     }
 
-    .dnnSecondaryAction:active,
-    a.dnnSecondaryAction:active {
-        border-color: #999;
-        background: #c6c6c6; /* Old browsers */
-        background: -moz-linear-gradient(top, #666 0%, #777 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666), color-stop(100%,#777)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #666 0%,#777 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, #666 0%,#777 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, #666 0%,#777 100%); /* IE10+ */
-        background: linear-gradient(top, #666 0%,#777 100%); /* W3C */
-        -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
-        box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+    .dnnSecondaryAction:active, a.dnnSecondaryAction:active {
+        border:none;
+        background: #888; 
+        color: #fff;
     }   
+
+    .dnnSecondaryAction[disabled], .dnnSecondaryAction[disabled]:hover, .dnnSecondaryAction[disabled]:active {
+        background: #ccc !important;
+        border: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        color: #aaa !important;
+        text-shadow: none;
+    }
 
 /*-------------------------------------*/
 /* FORM STYLES */
@@ -516,15 +520,14 @@ span.label                                          { display: block; color: #ff
 #connectEditContainerProfile select                 { width: 45%;}
 
 /* dnn console module */
-.console                                            { width: 100%;height: inherit;background-color: transparent;-moz-box-shadow: 0 0 0 #bbb;-webkit-box-shadow: 0 0 0 #bbb;box-shadow: 0 0 0 #bbb;padding: 0;}
-.console .console-none                              { margin: 0;padding: 0; height: 40px;}
-.console .console-none h3                           { border-left: none ;margin: 0;padding: 0 0 0 60px;font-size: 16px;color: #fff; line-height: 40px; height: inherit; border-top: none;}
-.console .console-none h3:first-child               { border-top: none;}
-.console div                                        { width: auto;display: block;float: none;}
+.sidebar .console                                            { width: 100%;height: inherit;background-color: transparent;-moz-box-shadow: 0 0 0 #bbb;-webkit-box-shadow: 0 0 0 #bbb;box-shadow: 0 0 0 #bbb;padding: 0;}
+.sidebar .console .console-none                              { margin: 0;padding: 0; height: 40px;}
+.sidebar .console .console-none h3                           { border-left: none ;margin: 0;padding: 0 0 0 60px;font-size: 16px;color: #fff; line-height: 40px; height: inherit; border-top: none;}
+.sidebar .console .console-none h3:first-child               { border-top: none;}
+.sidebar .console div                                        { width: auto;display: block;float: none;}
+.sidebar .console .console-mouseon                           { background-color: #BD5200;}
+.sidebar .console .active h3                                 { border-left: none; color: #333; background: url(images/marker.png) 20px 8px no-repeat;}
 
-
-.console .console-mouseon                           { background-color: #BD5200;}
-.console .active h3                                 { border-left: none; color: #333; background: url(images/marker.png) 20px 8px no-repeat;}
 
 .connectdir_item    {padding: 20px; background: #eee; margin: 0 0 20px 0; border: 1px solid #ddd;}
 .connectdir_logo    {float:left; margin: 0 30px 0 0; width: 250px;}
@@ -554,8 +557,12 @@ span.label                                          { display: block; color: #ff
 .connectdir_searchbar    {background: #38A9FF; margin: 0; padding: 20px 20px 40px 20px;}
 .connectdir_searchbar h3    {color: #fff;margin-bottom: 10px}
 .connectdir_searchbar input[type="text"] {margin: 0; width: 500px;padding: 9px;background-color: #fff;border: 1px solid #ccc; float:left;}
-.connectdir_searchformbutton    {float:right;} 
+.connectdir_searchformbutton    {float:right;}
 
+
+#mdMemberList > li {
+    width: 270px !important;
+}
 
 @media only screen and (min-width: 200px) and (max-width: 680px) 
 {
