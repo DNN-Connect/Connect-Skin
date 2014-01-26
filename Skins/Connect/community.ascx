@@ -21,6 +21,15 @@
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 <script type="text/javascript" src="/Portals/_Default/Skins/Connect/js/purl.js"></script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1&appId=1430154350554964";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100italicc" rel="stylesheet">
@@ -65,6 +74,10 @@
         $('.connectdir_searchbutton > input').addClass('dnnPrimaryAction');
         $('.connectdir_searchformbutton > input').addClass('dnnPrimaryAction');
 
+		$('.searchWrapper').each(function() {
+		  $(this).before($('<h1>').text("Find a member... "));
+		});
+
     });
 
 </script>
@@ -93,14 +106,18 @@
             
             <div class="content left clearfix">
                 <div id="ContentPane" runat="server" class="tile tile_content color0"></div>
+				<div id="ContentLeftPane" runat="server" class="tile tile_content50 color0"></div>
+				<div id="ContentRightPane" runat="server" class="tile tile_content50 color0"></div>
             </div>            
             
             <div class="sidebar right clearfix">
-                <div id="Tile1" runat="server" class="tile tile_300 color1 clearfix"></div>
+                <div id="Tile0" runat="server" class="tile tile_300 color0 clearfix"></div>
+				<div id="Tile1" runat="server" class="tile tile_300 color1 clearfix"></div>
                 <div id="Tile2" runat="server" class="tile tile_300 color2 clearfix"></div>
                 <div id="Tile3" runat="server" class="tile tile_300 color5 clearfix"></div>
                 <div id="Tile4" runat="server" class="tile tile_300 color6 clearfix"></div>
                 <div id="Tile5" runat="server" class="tile tile_300 color4 clearfix"></div>
+				<div id="Tile6" runat="server" class="tile tile_300 color1 clearfix"></div>
             </div>
         </div>
 
@@ -108,3 +125,5 @@
 
 	</div><!--/skinWidth-->
 </div><!--/contentWrap-->
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
