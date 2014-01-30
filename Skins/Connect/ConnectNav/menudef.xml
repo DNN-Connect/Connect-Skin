@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
     <template>ConnectTokens.txt</template>
+    <stylesheets>
+      <stylesheet>ConnectNav.css</stylesheet>
+    </stylesheets>
 </manifest>

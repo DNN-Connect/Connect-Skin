@@ -99,51 +99,12 @@ a.connect_faqlink:hover         { color: #333;}
 a.connect_idealink              { background-image: url(images/search_huge.png); background-position: center center; background-repeat: no-repeat; display:block; height: 80px; width:300px; padding: 220px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
 a.connect_idealink:hover        { color: #333;}
 
-/* large tile home page tile content */
-.connect_intro                  { padding: 80px;}
-.connect_intro h3               { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 150px; line-height:1; color: #fff; text-indent: -9px; word-spacing: -30px;}
-.connect_intro h4               { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 30px; line-height:1.3; color: #fff; margin: 0 0 20px; width: 80%;}
-.connect_intro p                { font-size: 16px; font-weight: 300; color: #fff; line-height: 1.3;}
-.connect_intro a                { font-size: 16px; color: #eee; }
-.connect_intro p.connect_user   { padding: 30px 0 0 0;}
 
-/* opensource statement */
-blockquote.opensource           { padding: 10px 0 10px 8px;margin: 20px;background: url(images/block1.png) 1px 1px no-repeat;text-indent: 40px;border: none;}
-blockquote.opensource span      { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: bottom right;line-height: 35px;font-size: 20px;font-style: italic;font-weight: normal;font-family: Georgia; color: #fff;}
-blockquote.ack                  { padding: 25px 0 0px 20px;margin: 0px;background: url(images/block1.png) 20px 10px no-repeat;text-indent: 5px;border: none;}   
-blockquote.ack span      { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: 220px 165px;line-height: 200px;font-size: 100px;font-style: normal;font-weight: normal;font-family: 'novecento_widedemibold', Arial, sans-serif; color: #fff;}
-/* facebook tile content */
-.facebook-like                  { -moz-box-sizing: border-box;background: url("images/logo_fb.png") no-repeat scroll center center #34609D;color: #FFFFFF;padding: 240px 40px 40px;text-align: center;}
-/* twitter tile content */
-.twitter-follow                 { -moz-box-sizing: border-box;background: url("images/logo_tw.png") no-repeat scroll center center #0093C3;color: #FFFFFF;padding: 240px 40px 40px;text-align: center;}
 
-/* leaderboard tile content */
-.leader-contents table.dnnLeaderboard2 tr td:first-child {padding: 0;}
-.leader-contents table.dnnLeaderboard2 tr td:first-child + td {padding: 0;}
-.leader-contents table.dnnLeaderboard2 tr td {padding-top: 12px !important;}
-.connect_leaderboard { padding: 0 20px 0 20px;}
-.connect_leaderboard h3 {margin: 0; padding:10px 0 0 0; font-family: novecento_widedemibold; font-size: 16px; color: #fefefe;letter-spacing: 1.5px; }
-.connect_leaderboard .leader-contents table.dnnLeaderboard2 .dnnLeaderboard-avator {padding: 1px; width: 35px; height: 35px; background: #eee; border: 1px solid #333; overflow: hidden;}
-.connect_leaderboard .leader-contents table.dnnLeaderboard2 .dnnLeaderboard-avator em {height: 35px; width: 35px; display: block;}
-.connect_leaderboard .leader-contents table.dnnLeaderboard2 .dnnLeaderboard-avator span{ height: 35px; width: 35px; display: block;}
-.connect_leaderboard .leader-contents table.dnnLeaderboard2 .dnnLeaderboard-avator img { display: block; width: auto;}
-table.dnnLeaderboard2 a.dnnSocialLink {color: #fff; text-decoration: none; font-size: 14px; display: block; line-height: 37px; padding: 0 0 0 10px;}
-table.dnnLeaderboard2 a.dnnSocialLink:hover {background: #FF8E38;}
+
 .connect_readmore {float: left; margin: 10px 0px 0 0;}
 
-/* events tile content */
-.connect_events     { padding: 20px  0 20px 295px; background: url(images/bg_events.png) 40px center no-repeat; width: 560px; height: 260px;}
-.connect_events h4  { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 16px; letter-spacing: 1.5px; margin: 0px 0 5px 27px; color: #fefefe;}
-.connect_events h3  { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 24px; margin: 20px 0 10px 25px; color: #333;}
-.connect_date       { display: block; background: url(images/globe.png) 24px center no-repeat; padding: 10px 0 10px 67px; font-size: 20px; color: #444;}
-.connect_subtitle   { display: block; background: url(images/marker.png) 24px center no-repeat; padding: 10px 0 10px 67px; font-size: 20px; color: #444;}
-.connect_subscribe  { margin: 30px 0px 0 27px;}
 
-/* platform tile content */
-.connect_dnnplatform        { padding: 20px;}
-.connect_dnnplatform img    { width: 260px; float:left; margin: 10px 20px 20px 0;}
-.connect_dnnplatform p      { font-size: 14px;}
-.connect_downloads          { margin: 20px 0 0 0;}
 
 /* tiles setup */
 .tile                   { min-height: 300px;}
@@ -187,17 +148,7 @@ table.dnnLeaderboard2 a.dnnSocialLink:hover {background: #FF8E38;}
 /* dark violet */   .color8     {background-color: #640f6c;} 
 /* light grey */    .color10    {background-color: #dfdfdf;}
 
-/* registration form homepage */
-.connect_registerform           { padding: 0 55px 30px 55px;}
-.connect_register ul.dnnActions,
-.connect_login ul.dnnActions    { margin-left: 30px;}
-.connect_register,
-.connect_login                  { margin: 0px; padding: 50px 0 30px 0; border-left: 1px solid #ccc; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; background: #fff;}
-ul#ConnectRegisterFormTabs      { margin-bottom: 0;}
-.connect_register h3            { color: #fff;font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 30px; line-height:1.3; color: #fff; margin: 30px 0 30px 0;}
 
-.connect_registernote           { padding: 20px 0 30px 0; margin: 0 auto; width: 70%;}
-.connect_registernote span      { font-weight: bold;}
 
 /* default content header */
 .connect-content-head           {background: #38A9FF; margin: 0; padding: 30px 20px 30px 20px;}
@@ -329,178 +280,9 @@ div.connect_communitylinks a.B {float:left;display:block; height: 30px; width:15
 
 /* menu */
    
-/*** ESSENTIAL STYLES ***/
-.sf-menu, .sf-menu * {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.sf-menu li, li.userName {
-	position: relative; z-index:99;
-}
-.sf-menu ul, li.userName ul {
-	position: absolute;
-	display: none;
-	top: 100%;
-	left: 0;
-	z-index: 99;
-}
-.sf-menu > li, li.userName > li {
-	float: left;
-}
-.sf-menu li:hover > ul,
-.sf-menu li.sfHover > ul,
-li.userName:hover > ul {
-	display: block;
-}
 
-.sf-menu a {
-	display: block;
-	position: relative;
-}
-.sf-menu ul ul {
-	top: 0;
-	left: 100%;
-}
-
-
-/*** DEMO SKIN ***/
-.sf-menu {
-	float: left;
-	margin-top: 10px;
-}
-.sf-menu ul {
-	min-width: 12em; /* allow long menu items to determine submenu width */
-	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
-}
-.sf-menu a, .sf-menu a:link, .sf-menu a:active, .sf-menu a:visited {
-	padding: 7px 0px 7px 25px;
-	text-decoration: none;
-	zoom: 1; /* IE7 */
-	color: #fff;
-	font-size: 15px;
-	font-weight: bold;
-	font-family: arial, Sans-Serif;
-}
-.sf-menu a:hover {}
-.sf-menu li{
-	white-space: nowrap; /* no need for Supersubs plugin */
-	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
-	-webkit-transition: background .2s;
-	transition: background .2s;
-	width: 135px;
-	margin: 2px;
-	padding: 2px 0 2px 0;
-}
-.sf-menu ul li {
-	background: #BD5200;
-	margin: 0;
-}
-.sf-menu ul {
-top: 36px;
-}
-li.userName ul {top:22px;}
-.sf-menu ul ul li {
-	background: #9AAEDB;
-}
-.sf-menu li:hover,
-.sf-menu li.sfHover,
-li.userName:hover 
-{
-    background: #BD5200;
-	/* only transition out, not in */
-	-webkit-transition: none;
-	transition: none;
-}
-
-.sf-menu li:hover a, li.userName:hover a {color: #472929;}
-.sf-menu li:hover li a, li.userName:hover li a {color: #fff;}
-.sf-menu li li:hover,
-.sf-menu li li.sfHover {
-	background: #472929;
-	/* only transition out, not in */
-	-webkit-transition: none;
-	transition: none;
-}
-
-/*** arrows (for all except IE7) **/
-.sf-arrows .sf-with-ul {
-	padding-right: 2.5em;
-	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
-}
-/* styling for both css and generated arrows */
-.sf-arrows .sf-with-ul:after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: 1em;
-	margin-top: -3px;
-	height: 0;
-	width: 0;
-	/* order of following 3 rules important for fallbacks to work */
-	border: 5px solid transparent;
-	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
-	border-top-color: rgba(255,255,255,.5);
-}
-.sf-arrows > li > .sf-with-ul:focus:after,
-.sf-arrows > li:hover > .sf-with-ul:after,
-.sf-arrows > .sfHover > .sf-with-ul:after {
-	border-top-color: white; /* IE8 fallback colour */
-}
-/* styling for right-facing arrows */
-.sf-arrows ul .sf-with-ul:after {
-	margin-top: -5px;
-	margin-right: -3px;
-	border-color: transparent;
-	border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
-	border-left-color: rgba(255,255,255,.5);
-}
-.sf-arrows ul li > .sf-with-ul:focus:after,
-.sf-arrows ul li:hover > .sf-with-ul:after,
-.sf-arrows ul .sfHover > .sf-with-ul:after {
-	border-left-color: white;
-}
    
-									
-/*social connect links */
-
-.social-share-container                                 { margin: 0;} 
-ul.socialConnect                                        { display: block;margin: 0}
-ul.socialConnect li                                     { list-style-type: none; display: block; float: left; padding: 0; }
-ul.socialConnect li a                                   { width: 150px; height: 100px; display: block;}
-ul.socialConnect li a.socialConnect-twitter  		    { background: #00abe3 url(images/share_twitter_large.png) 0px 0px no-repeat; }
-ul.socialConnect li a.socialConnect-facebook  		    { background: #004088 url(images/share_facebook_large.png) 0px 0px no-repeat; }
-ul.socialConnect li a.socialConnect-linkedin            { background: #01669c url(images/share_linkedin_large.png) 0px 0px no-repeat; }
-ul.socialConnect li a.socialConnect-googleplus          { background: #f14724 url(images/share_google_large.png) 0px 0px no-repeat; }
-
-ul.socialConnect li a.socialConnect-twitter:hover,
-ul.socialConnect li a.socialConnect-facebook:hover,
-ul.socialConnect li a.socialConnect-linkedin:hover,
-ul.socialConnect li a.socialConnect-googleplus:hover    { background-position: 0 -100px;}
-
-/* kickstart specific */
-.connect_config                                                 { width: 350px;}
-.connect_config .riSingle .riTextBox[type="text"]               { width: 30px !important;}
-.connect_config .fundinginput .riSingle .riTextBox[type="text"] { width: 150px !important;}
-.connect_incentives                                             { margin-left: 30px; width: 400px;}
-.connect_projectConfig                                          { background: #fff; padding: 20px; margin-top: 30px;}
-.connect_projectConfig p,
-.connect_projectroles p                                         { margin: 15px 0 10px 0;}
-.connect_projectConfig .dnnLabel                                { text-align: left !important;}
-.connect_projectConfig .dnnFormItem                             { margin-top:10px !important;}
-.connect_projectConfig .dnnForm .RadInput_Default               { margin-top: 6px;}
-
-.connect_projectroles, .connect_projectmeter, .connect_projectoptions, .connect_projectmembers             { padding: 20px;}
-.connect_projectoptions             { padding: 20px;}
-.connect_memberlistsection          { padding: 0 0 20px 0;}
-.connect_projectoptions p           { margin: 10px 0 20px 0;}
-.connect_projectoptions ul          { list-style-type: none; margin: 0; padding: 0; }
-.connect_projectoptions ul li       { list-style-type: none; margin: 0; padding: 0px 0 5px 20px; background: url(images/lstIcon.png) left center no-repeat; }
-
-div.funding-needed                  { margin: 20px 0 10px 0;}
-div.funding-reached                 { margin: 20px 0 10px 0;text-align: right;}
-
-
+								
 
 /* Profile editing */
 /*Photo */
@@ -516,11 +298,6 @@ div.funding-reached                 { margin: 20px 0 10px 0;text-align: right;}
 span.label                                          { display: block; color: #fff; font-size: 14px; line-height: 35px;}
 #showEditPassword                                   { background: url(images/lock_large.png) -30px -30px no-repeat; font-size: 40px; color: #fff; text-decoration: none; vertical-align:bottom; padding: 210px 30px 50px 30px; display: block;}
 #connectEditContainerPassword .dnnFormItem input    { width: 90%;}
-
-/* social links */
-#connectEditContainerOnTheWeb                       { padding: 20px 10px 20px 20px;}
-#connectEditContainerOnTheWeb .dnnFormItem input    { width: 90%;}
-#showEditOnTheWeb                                   { background: url(images/ontheweb_large.png) 0px 0px no-repeat; font-size: 40px; color: #fff; text-decoration: none; vertical-align:bottom; padding: 210px 30px 50px 30px; display: block;}
 
 /* common profile */
 #connectEditContainerProfile p                      { font-weight: bold; padding: 12px 40px 50px 20px;}

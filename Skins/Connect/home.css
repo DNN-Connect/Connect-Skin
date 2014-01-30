@@ -5,3 +5,35 @@
 .home-af-container a:hover  {color: #000;}
 .home-af-container p {padding: 5px 0 5px 0; color: #444;; margin: 0;}
 .home-af-container p.date {color: #999;}
+
+/* large tile home page tile content */
+.connect_intro                  { padding: 80px;}
+.connect_intro h3               { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 150px; line-height:1; color: #fff; text-indent: -9px; word-spacing: -30px;}
+.connect_intro h4               { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 30px; line-height:1.3; color: #fff; margin: 0 0 20px; width: 80%;}
+.connect_intro p                { font-size: 16px; font-weight: 300; color: #fff; line-height: 1.3;}
+.connect_intro a                { font-size: 16px; color: #eee; }
+.connect_intro p.connect_user   { padding: 30px 0 0 0;}
+
+/* opensource statement */
+blockquote.opensource           { padding: 10px 0 10px 8px;margin: 20px;background: url(images/block1.png) 1px 1px no-repeat;text-indent: 40px;border: none;}
+blockquote.opensource span      { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: bottom right;line-height: 35px;font-size: 20px;font-style: italic;font-weight: normal;font-family: Georgia; color: #fff;}
+blockquote.ack                  { padding: 25px 0 0px 20px;margin: 0px;background: url(images/block1.png) 20px 10px no-repeat;text-indent: 5px;border: none;}   
+blockquote.ack span      { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: 220px 165px;line-height: 200px;font-size: 100px;font-style: normal;font-weight: normal;font-family: 'novecento_widedemibold', Arial, sans-serif; color: #fff;}
+/* facebook tile content */
+.facebook-like                  { -moz-box-sizing: border-box;background: url("images/logo_fb.png") no-repeat scroll center center #34609D;color: #FFFFFF;padding: 240px 40px 40px;text-align: center;}
+/* twitter tile content */
+.twitter-follow                 { -moz-box-sizing: border-box;background: url("images/logo_tw.png") no-repeat scroll center center #0093C3;color: #FFFFFF;padding: 240px 40px 40px;text-align: center;}
+
+/* events tile content */
+.connect_events     { padding: 20px  0 20px 295px; background: url(images/bg_events.png) 40px center no-repeat; width: 560px; height: 260px;}
+.connect_events h4  { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 16px; letter-spacing: 1.5px; margin: 0px 0 5px 27px; color: #fefefe;}
+.connect_events h3  { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 24px; margin: 20px 0 10px 25px; color: #333;}
+.connect_date       { display: block; background: url(images/globe.png) 24px center no-repeat; padding: 10px 0 10px 67px; font-size: 20px; color: #444;}
+.connect_subtitle   { display: block; background: url(images/marker.png) 24px center no-repeat; padding: 10px 0 10px 67px; font-size: 20px; color: #444;}
+.connect_subscribe  { margin: 30px 0px 0 27px;}
+
+/* platform tile content */
+.connect_dnnplatform        { padding: 20px;}
+.connect_dnnplatform img    { width: 260px; float:left; margin: 10px 20px 20px 0;}
+.connect_dnnplatform p      { font-size: 14px;}
+.connect_downloads          { margin: 20px 0 0 0;}
