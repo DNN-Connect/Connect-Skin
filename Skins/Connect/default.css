@@ -1,334 +1,113 @@
-﻿.skinWidth {width: 1212px;}
-.content				{width: 908px;margin-right:2px}
-.tile_content           { width: 100%; margin: 0 0 0 0px; background: #ddd; padding: 0 0 30px 0; min-height: 240px;}
-.tile_content50           { width: 410px; margin: 0 0 0 2px; background: #ddd; padding: 0 40px 30px 0; min-height: 240px; float:left;}
-.dnnFilterSet, .community_intro   {background: #38A9FF; margin: 0;}
-.dnnTableFilter {margin: 0;}
-.dnnFilterSet h3    {color: #fff;}
-.dnnFilterSet .moduleSearch a {cursor: pointer; cursor: hand; color: #fff;} 
-.GroupViewTop   {background: #38A9FF; margin: 0 2px 0 0; padding: 20px 20px 40px 20px;}
-.GroupViewTop a {color: #fff;}
-.community_intro    {padding: 35px; margin-bottom: 6px; height: 230px;}
-.community_intro p  {font-size: 18px; color: #fff; line-height: 26px; margin: 0 0 30px 0;}
-.community_intro a  {font-size: 18px; color: #eee; text-decoration: underline;}
-.community_intro a:hover    {color: #333;}
-.community_intro p.ack {float:left; display: block; text-indent: -99999px; background: url(images/ack.png) -15px -70px no-repeat; height: 150px; width: 300px;padding:0; margin:0 0 10px 0;}
-/* Social Module Overrides */
-
-.journalitem p {
-    margin: 5px 0;
-}
-
-       
-
-a.icnDiscussions			{ background-image: url(images/icndiscussions.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnDiscussions:hover		{ color: #333;}
-
-a.icnEvents					{ background-image: url(images/icnevents.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnEvents:hover			{ color: #333;}
-
-a.icnGroups					{ background-image: url(images/icngroups.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnGroups:hover			{ color: #333;}
-
-a.icnBlogs					{ background-image: url(images/icnblogs.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnBlogs:hover			{ color: #333;}
-
-a.icnAnswers                { background-image: url(images/icnanswers.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.lnkAnswers:hover          { color: #333;}
-
-a.icnKickstart              { background-image: url(images/icnBulb.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnKickstart:hover        { color: #333;}
+﻿.content				                            { width: 908px; }
+.tile_content                                       { width: 100%; margin: 0; padding: 0; min-height: 240px; }
+.tile_content50                                     { width: 410px; margin: 0 0 0 2px; padding: 0 40px 30px 0; min-height: 240px; float:left; } 
 
 
 
-a.icnDiscussions			{ background: #c74000 url(images/metro/icnDiscussions.png) 15px 5px no-repeat;}
-a.icnDiscussions:hover		{ color: #333;}
+/* Colored Bar at the top of most pages (text and/ or search) */
+.Connect-ModuleSearchBar, .mdSearch,               
+.connect-content-head                               { height: 150px; margin: 0 2px 0 0; padding: 0;}
+.searchWrapper                                      { float:left; }
+.Connect-SearchBarInput, .searchWrapper             { margin: 0 0 0 40px; }
+.Connect-SearchBarInput input[type="text"], 
+.searchWrapper input[type="text"]                   { background-color: #FFFFFF; border: 1px solid #CCCCCC;float: left;margin: 0;padding: 9px;width:80%;}
+.Connect-SearchBarHeading h1, .mdSearchBar h1,
+.connect-content-head h1                            { padding: 20px 0 20px 40px; }
+.Connect-SearchBarHeading input[type="submit"]      { padding:10px 20px 11px 35px;} /*used on directory page*/
+.Connect-SearchBarHeading input[type="submit"],
+.Connect-SearchBarInput a.dnnPrimaryAction,
+.mdSearchBar  a.dnnPrimaryAction                    { border: none; box-shadow: none; text-shadow: 0 -1px 0 #a53805; border-radius: 0px; padding: 10px 6px 11px 25px; margin-left: 10px; }
 
-a.icnEvents					{ background: #ffc500 url(images/metro/icnEvents.png) 15px 5px no-repeat;}
-a.icnEvents:hover			{ color: #333;}
+.dnnMemberDirectory .mdSearch                       { margin: 0 2px 2px 0; border-bottom: 0px solid #DDDDDD;padding: 0;position: relative;z-index: 1;}
 
-a.icnGroups					{ background: #00a8ec url(images/metro/icnGroups.png) 15px 5px no-repeat;}
-a.icnGroups:hover			{ color: #333;}
+/* Journal Module */
 
-a.icnBlogs					{ background: #008d44 url(images/metro/icnBlogs.png) 15px 5px no-repeat;}
-a.icnBlogs:hover			{ color: #333;}
+.journalitem p                                      { margin: 5px 0; }
 
-a.icnAnswers                { background: #98c739 url(images/metro/icnAnswers.png) 15px 5px no-repeat;}
-a.icnAnswers:hover          { color: #333;}
+/* Memberlist Module */
 
-a.icnKickstart              { background: #68217a url(images/metro/icnKickstart.png) 15px 5px no-repeat;}
-a.icnKickstart:hover        { color: #333;}
-
-a.icnTranslations           { background: #ff0084 url(images/metro/icnTranslations.png) 15px 5px no-repeat;}
-a.icnTranslations:hover     { color: #333;}
-
-a.icnMembers				{ background: #d68a3a url(images/metro/icnMembers.png) 15px 5px no-repeat;}
-a.icnMembers:hover			{ color: #333;}
-.af-tiles {width: 100%; overflow: hidden;}
-.tile-af	{ float:left; width: 422px; background: #c46437 url(images/Metro/icnDiscussions.png) 0px 10px no-repeat; margin: 0px 2px 2px 0; height: 203px; padding: 25px 15px 25px 15px;}
-
-.ct-forumname	{display: block; margin: 20px 0 0 120px;}
-.ct-forumname a { color: #fefefe; font-size: 20px; font-weight: bold; text-decoration: none;}
-p.af-description {margin: 10px 0 0 120px; color: #fff;}
-.tile-af ul {margin: 10px 0 0 120px; padding: 0;}
-.tile-af ul li {list-style-type:none; color: #fff; background: url(images/metro/icnStats.png) 0px 0px no-repeat; padding: 0 0 0 20px;}
-.af-lastpost {margin: 30px 0 0 10px; background: url(images/metro/icnInfo.png) 0px 0px no-repeat; padding: 0 0 0 30px; color: #555;}
-.af-lastpost a {color: #fff; text-decoration: underline;}
-
-.aftoolbarpanel {
-    background-color: #D68A3A;
-    border: 0px;
-    margin: 2px 0 2px 0;
-	padding: 10px;
-	width: auto;
-}
-.aftoolbarpanel ul.af-list-flat li a, .aftoolbarpanel ul.af-list-flat li a:link, .aftoolbarpanel ul.af-list-flat li a:visited, .aftoolbarpanel ul.af-list-flat li a:active, .aftoolbarpanel ul.af-list-flat li a:hover {
-    color: #fff;
-    padding-left: 2px;
-    padding-right: 2px;
-	text-decoration: none;
-}
-.aftb-search .aftb-search-link span {
-    color: #fff;
-    cursor: pointer;
-}
-
-.afcontainer	{}
-.af-topic .af-head-top	{padding: 20px 0 0 0;}
-.af-title		{float:left; width: 70%; padding: 30px 0 20px 0px;}
-.af-topic .af-title		{float:left; width: 100%; padding: 10px 0 0px 0px;}
-.af-pager-top	{float:right; width: 20%; padding: 40px 20px 0 0; font-size: 18px; text-align:right;}
-.af-title, .af-title a		{font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 36px; line-height:1.3; color: #c74000 ; text-decoration: none;}
-.af-tools-top	{ padding: 10px 0 30px 0;}
-.af-postlink	{float:left; width: 30%; padding: 0 0 0 0px;}
-.af-markread	{float:right; width: 60%; text-align:right; padding: 10px 20px 10px 0;}
-.af-markread .afnormal {
-    color: #333;
-    font-family: Arial,Verdana;
-    font-size: 14px;
-}
-.amtbwrapper a.dnnPrimaryAction, .af-postlink a.dnnPrimaryAction, .af-lefttool a.dnnPrimaryAction {
-    background: #c74000 url(images/Metro/icnPost.png) 5px 12px no-repeat;
-    border: none;
-    box-shadow: none;
-    color: #EFEFEF;
-    text-shadow: 0 -1px 0 #a53805;
-	border-radius: 0px;
-	padding: 10px 10px 11px 35px;
-	margin-left: 0px;
-}
-.af-lefttool a.dnnPrimaryAction:hover, .af-postlink a.dnnPrimaryAction:hover {text-decoration: none; color: #333;}
-
-.af-posticon {float:left; width: 5%;}
-.af-topicarea {float:left; width: 45%;}
-.af-topicstatusarea {float:left; width: 25%;}
-.af-topicadminarea {float:left; width: 25%;}
-.af-topiclink {padding: 0 0 10px 0;}
-.af-topiclink a {font-size: 16px;}
-.af-topicdetails, .af-topicdetails-lastpost {font-size: 13px; color: #555;}
-.af-topicdetails a, .af-topicdetails-lastpost a {font-size: 13px; color: #000; text-decoration: none;}
-.afpagermini, .afpagermini a {font-size: 13px; color: #555 !important; text-decoration: none !important;}
-.afpagermini img {margin: -2px 5px 0 5px;}
+.DnnModule #mdMemberList                            { display: inline-block;padding: 0;position: relative;z-index: 1;margin:0; }
+#mdMemberList > li                                  { width: 195px;height: 90px;margin: 0 2px 2px 0;padding: 15px 15px 45px;border: 0px solid #CBCBCB;border-radius: 0px;box-shadow: none;float: left;list-style: none outside none;position: relative;transition: background 0.15s ease-in-out 0s;z-index: 1; }
+#mdMemberList > li:hover                            { box-shadow: none; z-index: 2; }
+.mdMemberDetails .mdMemberImg                       { background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #DDDDDD;border-radius: 0px;display: block;float: left;height: auto;margin: 0 15px 15px 0;min-width: 50px;padding: 1px; }
+.mdMemberDetails .mdHoverActions                    { border-top: 1px solid #fefefe;bottom: 0;clear: both;font-size: 11px;height: 32px;left: 0;position: absolute;text-shadow: 0 1px 0 #FFFFFF;width: 100%;}
+.DnnModule .mdMemberDetails ul, .mdMemberDetails li { color: #fff;list-style: none outside none;margin: 0;padding: 0; }
+.mdMemberDetails .mdHoverActions li a               { display: block;font-size: 11px;min-height: 12px;min-width: 35px;padding: 8px 7px; }
+.mdMemberDetails .mdHoverActions li a.ComposeMessage {padding: 10px 7px; }
+.mdMemberDetails .mdHoverActions li p               { margin: 0; padding: 8px; }
+.mdMemberDetails .mdHoverActions p span             { text-shadow: none; color: #ccc; }
 
 
-ul.af-topiclist {margin:0 0 0 0px; padding: 0;}
-ul.af-topiclist li	{margin: 0 20px 20px 0; padding: 15px; background: #fff; border: 1px solid #dedede;}
-
-td.afgrouprow {
-    background-color: #c74000;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: bold;
-}
+/* Override for Profile page (used to contact / friend a member there */
+.ConnectMemberActions #mdMemberList > li            { width: 270px; padding: 35px 15px 35px 15px;margin: 0 0px 0px 0;height: 230px; border: 0px solid #CBCBCB;border-radius: 0px;box-shadow: none;float: none;list-style: none outside none;position: relative;transition: background 0.15s ease-in-out 0s; z-index: 1; }
+.ConnectMemberActions li li                         { list-style-type: none; padding: 2px 0 0 26px;}
+.ConnectMemberActions li li a, 
+.ConnectMemberActions li li a span                  { color: #fff; font-size: 16px !important; text-decoration: none; line-height: 30px; font-family: 'novecento_widedemibold',Arial,sans-serif; }
+.ConnectMemberActions li li a:hover, 
+.ConnectMemberActions li li a:hover span		    { color: #333; }
 
 
+/* Translation Module */
+div.specificLocale	                                { padding: 10px; }
+.ModDNNEuropeModulesLocalizationEditorC             { margin: 0 2px 0 0; }
+div.genericLocale                                   { border-bottom: 0px dotted #666666;display: block;font-size: large;font-weight: 700; margin: 40px 0 5px;padding-bottom: 4px;width: 100%; }
+
+/* Blog Module */
+#dnn_ctr440_Blog_ctlManagement_pnlManagement        { padding: 15px 0 15px 0;}
 
 
-.af-lefttool {float:left; width: 70%;}
-.af-righttool {float:right; width: 25%; text-align: right; padding-right: 20px;}
-.af-rating-status	{float:left;}
-.af-sort {
-    float: right;
-    margin-top: 10px;
-}
-.af-righttool table.afpager {
-    background-color: #c74000;
-    border: 1px solid #ffffff;
-    margin: -1px 0 0 0;
-    padding-top: 0;
-	float:right;
-	
-}
-.af-righttool table.afpager td {padding: 12px;color: #fff; font-size: 12px; font-family: verdana; white-space: nowrap;}
-td.af_currentpage {background-color: #98C739;color: #fff; font-size: 12px; font-family: verdana;}
-td.af_pagernumber {background-color: #00A8EC;}
-td.af_pagernumber a {color: #fff; font-size: 12px; text-decoration: none; font-family: verdana;}
+/* Forum Module */
 
-.af-crumb {clear:both; margin-top: 0px;}
-.af-quickreply, #afgrid {margin: 0 20px 0 0;}
-#groupQR {padding-top: 20px;}
-#afgrid .afeditor	{width: 100%; margin-top: 20px;}
-.af-search-bar, .af-search-results {margin-right: 20px;}
-#afcontainer .af-search-bar {background-color: #00A8EC;}
-
-.dnnMemberDirectory .mdSearch {
-    border-bottom: 0px solid #DDDDDD;
-    margin-bottom: 2px;
-    padding: 0;
-    position: relative;
-    z-index: 1;
-}
-
-.Connect-ModuleSearchBar, .mdSearch {
-    background: none repeat scroll 0 0 #38A9FF;
-    height: 150px;
-}
-.searchWrapper {float:left;}
-.Connect-SearchBarHeading  h1, .mdSearchBar h1 {
-    color: #FFFFFF;
-    padding: 20px 0 20px 40px;
-    font-family: 'novecento_widedemibold',Arial,sans-serif;
-    font-size: 30px;
-    line-height: 1.3;
-}
-.Connect-SearchBarInput, .searchWrapper {margin: 0 0 0 40px;}
-.Connect-SearchBarInput input[type="text"], .searchWrapper input[type="text"] {
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    float: left;
-    margin: 0;
-    padding: 9px;
-    width: 500px;
-}
-.connectdir_searchformbutton input[type="submit"],
-.Connect-SearchBarInput a.dnnPrimaryAction {
-    background: #c74000 url(images/Metro/icnSearchSmall.png) 10px 9px no-repeat;
-    border: none;
-    box-shadow: none;
-    color: #EFEFEF;
-    text-shadow: 0 -1px 0 #a53805;
-	border-radius: 0px;
-	padding: 10px 6px 11px 25px;
-	margin-left: 10px;
-}
-.connectdir_searchformbutton input[type="submit"]{
-    padding:10px 20px 11px 35px
-    }
-
-.mdSearchBar  a.dnnPrimaryAction {
-    background: #c74000 url(images/Metro/icnSearchSmall.png) 10px 9px no-repeat;
-    border: none;
-    box-shadow: none;
-    color: #EFEFEF;
-    text-shadow: 0 -1px 0 #a53805;
-	border-radius: 0px;
-	padding: 10px 6px 11px 25px;
-	margin-left: 10px;
-}
-.Connect-SearchBarInput a.dnnPrimaryAction:hover {color: #333;}
-
-
-.DnnModule #mdMemberList {
-    display: inline-block;
-    padding: 0;
-    position: relative;
-    z-index: 1;
-	margin:0;
-}
-
-#mdMemberList > li {
-    background: none repeat scroll 0 0 #D68A3A;
-    border: 0px solid #CBCBCB;
-    border-radius: 0px;
-    box-shadow: none;
-    float: left;
-    height: 90px;
-    list-style: none outside none;
-    margin: 0 2px 2px 0;
-    padding: 15px 15px 45px;
-    position: relative;
-    transition: background 0.15s ease-in-out 0s;
-    width: 272px;
-    z-index: 1;
-}
-/* Override for Profile page */
-.ConnectMemberActions #mdMemberList > li {
-    background: none repeat scroll 0 0 transparent;
-    border: 0px solid #CBCBCB;
-    border-radius: 0px;
-    box-shadow: none;
-    float: none;
-    height: 230px;
-    list-style: none outside none;
-    margin: 0 0px 0px 0;
-    padding: 35px 15px 35px 15px;
-    position: relative;
-    transition: background 0.15s ease-in-out 0s;
-    width: 270px;
-    z-index: 1;
-}
-.ConnectMemberActions li li {list-style-type: none; padding: 2px 0 0 26px;}
-.ConnectMemberActions li li a, .ConnectMemberActions li li a span {color: #fff; font-size: 16px !important; text-decoration: none; line-height: 30px; font-family: 'novecento_widedemibold',Arial,sans-serif;}
-.ConnectMemberActions li li a:hover, .ConnectMemberActions li li a:hover span		{color: #333;}
-#mdMemberList > li:hover {
-    background: none repeat scroll 0 0 #a15607;
-    box-shadow: none;
-    z-index: 2;
-}
-#mdMemberList .mdMemberTitle {color: #fff; text-decoration: none;}
-#mdMemberList p {color: #000;}
-.mdMemberDetails .mdMemberImg {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #DDDDDD;
-    border-radius: 0px;
-    display: block;
-    float: left;
-    height: auto;
-    margin: 0 15px 15px 0;
-    min-width: 50px;
-    padding: 1px;
-}
-.mdMemberDetails .mdHoverActions {
-    background: none #a15607;
-    border-top: 1px solid #fefefe;
-    bottom: 0;
-    clear: both;
-    font-size: 11px;
-    height: 32px;
-    left: 0;
-    position: absolute;
-    text-shadow: 0 1px 0 #FFFFFF;
-    width: 100%;
-}
-.DnnModule .mdMemberDetails ul, .mdMemberDetails li {
-    color: #fff;
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-}
-.mdHoverActions a{ color: #fff; text-shadow: none; text-decoration:none;}
-.mdHoverActions a:hover	{color: #555;}
-.mdMemberDetails .mdHoverActions li a{
-    display: block;
-    font-size: 11px;
-    min-height: 12px;
-    min-width: 35px;
-	padding: 8px 7px;
-}
-.mdMemberDetails .mdHoverActions li a.ComposeMessage {padding: 10px 7px;}
-.mdMemberDetails .mdHoverActions li p {margin: 0; padding: 8px;}
-.mdMemberDetails .mdHoverActions p span {text-shadow: none; color: #ccc;}
-/* Trasnlation module */
-div.specificLocale	{background: #FF0084; padding: 10px;}
-.ModDNNEuropeModulesLocalizationEditorC {margin: 0 2px 0 0;}
-div.genericLocale {
-    border-bottom: 0px dotted #666666;
-    display: block;
-    font-size: large;
-    font-weight: 700;
-    margin: 40px 0 5px;
-    padding-bottom: 4px;
-    width: 100%;
-}
-
-#dnn_ctr440_Blog_ctlManagement_pnlManagement { padding: 15px 0 15px 0;}
+.afcontainer	                                    { }
+.af-tiles                                           { width: 100%; overflow: hidden; }
+.tile-af	                                        { float:left; width: 422px; margin: 0px 2px 2px 0; height: 203px; padding: 25px 15px 25px 15px;}
+.ct-forumname	                                    { display: block; margin: 20px 0 0 120px; }
+.ct-forumname a                                     { color: #fefefe; font-size: 20px; font-weight: bold; text-decoration: none; }
+.af-description                                     { margin: 10px 0 0 120px; color: #fff; }
+.tile-af ul                                         { margin: 10px 0 0 120px; padding: 0; }
+.tile-af ul li                                      { list-style-type:none; color: #fff; background: url(images/metro/icnStats.png) 0px 0px no-repeat; padding: 0 0 0 20px; }
+.af-lastpost                                        { margin: 30px 0 0 10px; background: url(images/metro/icnInfo.png) 0px 0px no-repeat; padding: 0 0 0 30px; color: #555; }
+.af-lastpost a                                      { color: #fff; text-decoration: underline; }
+.aftoolbarpanel                                     { border: 0px;margin: 2px 2px 2px 0;padding: 10px;width: auto; }
+.aftoolbarpanel ul.af-list-flat li a, 
+.aftoolbarpanel ul.af-list-flat li a:link, 
+.aftoolbarpanel ul.af-list-flat li a:visited, 
+.aftoolbarpanel ul.af-list-flat li a:active, 
+.aftoolbarpanel ul.af-list-flat li a:hover          { color: #fff;padding-left: 2px;padding-right: 2px;text-decoration: none; }
+.aftb-search .aftb-search-link span                 { color: #fff;cursor: pointer; }
+.af-topic .af-head-top	                            { padding: 20px 0 0 0;}
+.af-title		                                    { float:left; width: 70%; padding: 30px 0 20px 0px;}
+.af-topic .af-title		                            { float:left; width: 100%; padding: 10px 0 0px 0px;}
+.af-pager-top	                                    { float:right; width: 20%; padding: 40px 20px 0 0; font-size: 18px; text-align:right;}
+.af-title, .af-title a		                        { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 36px; line-height:1.3; color: #c74000 ; text-decoration: none; }
+.af-tools-top	                                    { padding: 10px 0 30px 0;}
+.af-postlink	                                    { float:left; width: 30%; padding: 0 0 0 0px;}
+.af-markread	                                    { float:right; width: 60%; text-align:right; padding: 10px 20px 10px 0;}
+.af-markread .afnormal                              { color: #333; font-family: Arial,Verdana; font-size: 14px; }
+.af-posticon                                        { float:left; width: 5%; }
+.af-topicarea                                       { float:left; width: 45%; }
+.af-topicstatusarea                                 { float:left; width: 25%; }
+.af-topicadminarea                                  { float:left; width: 25%; }
+.af-topiclink                                       { padding: 0 0 10px 0; }
+.af-topiclink a                                     { font-size: 16px; }
+.af-topicdetails, .af-topicdetails-lastpost         { font-size: 13px; color: #555; }
+.af-topicdetails a, .af-topicdetails-lastpost a     { font-size: 13px; color: #000; text-decoration: none; }
+.afpagermini, .afpagermini a                        { font-size: 13px; color: #555 !important; text-decoration: none !important; }
+.afpagermini img                                    { margin: -2px 5px 0 5px; }
+ul.af-topiclist                                     { margin:0 0 0 0px; padding: 0; }
+ul.af-topiclist li	                                { margin: 0 20px 20px 0; padding: 15px; border: 1px solid #dedede; }
+td.afgrouprow                                       { color: #FFFFFF;font-size: 12px; font-weight: bold; }
+.af-lefttool                                        { float:left; width: 70%; }
+.af-righttool                                       { float:right; width: 25%; text-align: right; padding-right: 20px; }
+.af-rating-status	                                { float:left; }
+.af-sort                                            { float: right;margin-top: 10px; }
+.af-righttool table.afpager                         { background-color: #c74000;border: 1px solid #ffffff;margin: -1px 0 0 0;padding-top: 0;float:right; }
+.af-righttool table.afpager td                      { padding: 12px;color: #fff; font-size: 12px; font-family: verdana; white-space: nowrap; }
+td.af_currentpage                                   { background-color: #98C739;color: #fff; font-size: 12px; font-family: verdana; }
+td.af_pagernumber                                   { background-color: #00A8EC; }
+td.af_pagernumber a                                 { color: #fff; font-size: 12px; text-decoration: none; font-family: verdana; }
+.af-crumb                                           { clear:both; margin-top: 0px; }
+.af-quickreply, #afgrid                             { margin: 0 20px 0 0; }
+#groupQR                                            { padding-top: 20px; }
+#afgrid .afeditor	                                { width: 100%; margin-top: 20px; }
+.af-search-bar, .af-search-results                  { margin-right: 20px; }

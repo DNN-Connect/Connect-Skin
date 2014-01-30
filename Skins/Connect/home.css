@@ -32,8 +32,3 @@ blockquote.ack span      { display: block;background-image: url(images/block2.pn
 .connect_subtitle   { display: block; background: url(images/marker.png) 24px center no-repeat; padding: 10px 0 10px 67px; font-size: 20px; color: #444;}
 .connect_subscribe  { margin: 30px 0px 0 27px;}
 
-/* platform tile content */
-.connect_dnnplatform        { padding: 20px;}
-.connect_dnnplatform img    { width: 260px; float:left; margin: 10px 20px 20px 0;}
-.connect_dnnplatform p      { font-size: 14px;}
-.connect_downloads          { margin: 20px 0 0 0;}

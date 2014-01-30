@@ -12,16 +12,16 @@ h2                      { font-family: 'novecento_widedemibold', Arial, sans-ser
 h3, .dnnFilterSet h3    { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 30px; line-height:1.3; color: #333;}
 h4                      { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 20px; line-height:1.3; color: #333;}
 strong, .strong         { font-weight: bold;}
-p                       { margin: 20px 0 25px;}
+p                       { margin: 0; padding: 0 0 25px 0:}
 .splash h1              { margin: 57px 30px 60px 55px; width: 80%;}
 * a, a {cursor: pointer !important; cursor: hand !important; }
 /* basic setup */
 body                                                            { background: #eee;}
-.skinWidth                                                      { width: 1210px; margin: 20px auto;}
+.skinWidth                                                      { width: 1208px; margin: 20px auto;}
 
 /* toolbar at the top */
-.connect-toolbar                                                { width: 1210px; margin: 0;background: #47292b; height: 60px;}
-.connect-toolbar[data-useragent*='MSIE 10.0']                   { width: 1210px; margin: 0;background: #47292b; height: 56px}
+.connect-toolbar                                                { width: 100%; margin: 0;background: #47292b; height: 60px;}
+.connect-toolbar[data-useragent*='MSIE 10.0']                   { width: 100%; margin: 0;background: #47292b; height: 56px}
 /* navigation bar */
 .connect_nav                                                    { width: 695px; float:right;}
 
@@ -117,12 +117,14 @@ a.connect_idealink:hover        { color: #333;}
 .tile_606_300           { width: 606px; height: 300px; margin: 0 2px 2px 0;}
 .tile_300               { width: 300px; margin: 0 0 2px 0;}
 .tile_400_600			{ width: 360px; margin: 2px 6px 0 13px; height: 600px; overflow: hidden; padding: 10px;}
-.tile_content           { width: 864px; margin: 0 0 0 2px; background: #ddd; padding: 30px 20px 30px 20px; min-height: 240px;}
+.tile_bar               { width: 100%; margin: 0; padding: 0; min-height: initial;}
+.tile_content           { width: 100%; margin: 0; padding: 0; min-height: 240px; }
+
 .tile_content           { float:left;}
 .tile_side              { float:right;}
 .tile.DNNEmptyPane      { display: none;height:0px;width:0px;line-height:0;margin:0;padding:0;}
-
 .tile_end {margin-right:0 !important;}
+.margin2                 {margin: 2px 2px 0 0; border: 1px solid #fff;}
 
 /* overrides panes */
 .admin .tile_content{width:100%;padding:30px 0;}
@@ -134,24 +136,112 @@ a.connect_idealink:hover        { color: #333;}
 .contentPane            { padding: 40px 0 0 0; margin: 20px 0 0 0;}
 
 /***********************/
-/* tile colors         */
+/* color setup         */
 /***********************/
-/* big white */     .color0     {background-color: #fff;}
-/* warm yellow */   .color1     {background-color: #f2a115;}
-/* green */			.color2     {background-color: #5fb30f;}
-/* orange */		.color3     {background-color: #ff5f07;}
-/* violet */		.color4     {background-color: #a43ae3;}
-/* facebook */      .color6     {background-color: #486887;}
-/* red */			.color5     {background-color: #f62f2f;}
-/* light blu */		.color7     {background-color: #38A9FF;}
-/* lemon */         .color9     {background-color: #97c024;}
-/* dark violet */   .color8     {background-color: #640f6c;} 
-/* light grey */    .color10    {background-color: #dfdfdf;}
+
+/* WHITE */         .color0, .white     { background-color: #FFFFFF; }
+/* PURPLE */        .color1, .purple    { background-color: #FF0097; }
+/* MAGENTA */		.color2, .magenta   { background-color: #A200FF; }
+/* TEAL */		    .color3, .teal      { background-color: #00ABA9; }
+/* LIME */		    .color4, .lime      { background-color: #8CBF26; }
+/* BROWN */         .color6, .brown     { background-color: #A05000; }
+/* PINK */			.color5, .pink      { background-color: #E671B8; }
+/* ORANGE */		.color7, .orange    { background-color: #F09609; }
+
+/* RED */           .color8, .red       { background-color: #E51400; } 
+/* GREEN */         .color10, .green    { background-color: #339933; }
 
 
+/* BLUE */          
+.color9, .blue, .Connect-ModuleSearchBar, 
+.mdSearch, .connect-content-head                { background-color: #1BA1E2; }
+
+.Connect-SearchBarHeading input[type="submit"],
+.Connect-SearchBarInput a.dnnPrimaryAction,
+.mdSearchBar a.dnnPrimaryAction                     { background: #c74000 url(images/Metro/icnSearchSmall.png) 10px 9px no-repeat;color: #EFEFEF; }
+.Connect-SearchBarInput a.dnnPrimaryAction:hover    { color: #333; }
+
+/* BROWN? */
+#mdMemberList > li                                  { background: none repeat scroll 0 0 #D68A3A; }
+#mdMemberList > li:hover                            { background: none repeat scroll 0 0 #a15607; }
+.mdMemberDetails .mdHoverActions                    { background: none #a15607; }
+
+/* Translation module */
+div.specificLocale	                                { background: #FF0084; }
+
+/* Forum */
+.tile-af	                                        { float:left; width: 422px; background: #c46437 url(images/Metro/icnDiscussions.png) 0px 10px no-repeat; }
+.aftoolbarpanel                                     { background-color: #D68A3A; }
+ul.af-topiclist li	                                { margin: 0 20px 20px 0; padding: 15px; background: #fff; border: 1px solid #dedede; }
+td.afgrouprow                                       { background-color: #c74000;color: #FFFFFF;font-size: 12px; font-weight: bold; }
+#afcontainer .af-search-bar                         { background-color: #00A8EC; }
+
+/* Font Colors */
+.Connect-SearchBarHeading  h1, .mdSearchBar h1  { color: #FFFFFF; }
+#mdMemberList .mdMemberTitle { color: #fff; text-decoration: none; }
+#mdMemberList p {color: #000;}
+.mdHoverActions a                                   { color: #fff; text-shadow: none; text-decoration:none; }
+.mdHoverActions a:hover	                            { color: #555; }
+.mdMemberDetails .mdHoverActions                    { background: none #a15607;}
+
+
+/* Font Styles */
+.Connect-SearchBarHeading  h1, .mdSearchBar h1,
+.connect-content-head h1 {
+    font-family: 'novecento_widedemibold',Arial,sans-serif;
+    font-size: 30px;
+    line-height: 1.3;
+}
 
 /* default content header */
-.connect-content-head           {background: #38A9FF; margin: 0; padding: 30px 20px 30px 20px;}
+
+
+
+div.connect_communitylinks a {float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+div.connect_communitylinks a.B {float:left;display:block; height: 30px; width:150px; padding: 120px 0 0 0; margin: 0 0 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}       
+
+a.icnDiscussions			{ background-image: url(images/icndiscussions.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+a.icnDiscussions:hover		{ color: #333;}
+
+a.icnEvents					{ background-image: url(images/icnevents.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+a.icnEvents:hover			{ color: #333;}
+
+a.icnGroups					{ background-image: url(images/icngroups.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+a.icnGroups:hover			{ color: #333;}
+
+a.icnBlogs					{ background-image: url(images/icnblogs.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+a.icnBlogs:hover			{ color: #333;}
+
+a.icnAnswers                { background-image: url(images/icnanswers.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+a.lnkAnswers:hover          { color: #333;}
+
+a.icnKickstart              { background-image: url(images/icnBulb.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+a.icnKickstart:hover        { color: #333;}
+
+a.icnDiscussions			{ background: #c74000 url(images/metro/icnDiscussions.png) 15px 5px no-repeat;}
+a.icnDiscussions:hover		{ color: #333;}
+
+a.icnEvents					{ background: #ffc500 url(images/metro/icnEvents.png) 15px 5px no-repeat;}
+a.icnEvents:hover			{ color: #333;}
+
+a.icnGroups					{ background: #00a8ec url(images/metro/icnGroups.png) 15px 5px no-repeat;}
+a.icnGroups:hover			{ color: #333;}
+
+a.icnBlogs					{ background: #008d44 url(images/metro/icnBlogs.png) 15px 5px no-repeat;}
+a.icnBlogs:hover			{ color: #333;}
+
+a.icnAnswers                { background: #98c739 url(images/metro/icnAnswers.png) 15px 5px no-repeat;}
+a.icnAnswers:hover          { color: #333;}
+
+a.icnKickstart              { background: #68217a url(images/metro/icnKickstart.png) 15px 5px no-repeat;}
+a.icnKickstart:hover        { color: #333;}
+
+a.icnTranslations           { background: #ff0084 url(images/metro/icnTranslations.png) 15px 5px no-repeat;}
+a.icnTranslations:hover     { color: #333;}
+
+a.icnMembers				{ background: #d68a3a url(images/metro/icnMembers.png) 15px 5px no-repeat;}
+a.icnMembers:hover			{ color: #333;}
+
 
 
 /********************************/
@@ -170,8 +260,7 @@ a.connect_idealink:hover        { color: #333;}
     font-size: 24px;
 }
 
-div.connect_communitylinks a {float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-div.connect_communitylinks a.B {float:left;display:block; height: 30px; width:150px; padding: 120px 0 0 0; margin: 0 0 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
+
 
 
 /* Primary Action */
@@ -237,6 +326,22 @@ div.connect_communitylinks a.B {float:left;display:block; height: 30px; width:15
         color: #aaa !important;
         text-shadow: none;
     }
+
+
+
+
+
+.amtbwrapper a.dnnPrimaryAction, .af-postlink a.dnnPrimaryAction, .af-lefttool a.dnnPrimaryAction {
+    background: #c74000 url(images/Metro/icnPost.png) 5px 12px no-repeat;
+    border: none;
+    box-shadow: none;
+    color: #EFEFEF;
+    text-shadow: 0 -1px 0 #a53805;
+	border-radius: 0px;
+	padding: 10px 10px 11px 35px;
+	margin-left: 0px;
+}
+.af-lefttool a.dnnPrimaryAction:hover, .af-postlink a.dnnPrimaryAction:hover {text-decoration: none; color: #333;}
 
 /*-------------------------------------*/
 /* FORM STYLES */
@@ -342,9 +447,6 @@ span.label                                          { display: block; color: #ff
 .connectdir_searchbar h3    {color: #fff;margin-bottom: 10px}
 .connectdir_searchbar input[type="text"] {margin: 0; width: 500px;padding: 9px;background-color: #fff;border: 1px solid #ccc; float:left;}
 
-#mdMemberList > li {
-    width: 270px !important;
-}
 
 
 /* groups */
@@ -388,3 +490,10 @@ margin-right: 0;
     .connect_intro{padding:20px;}
     .connect_events{padding: 8%;width: auto;}
 }
+
+
+/* platform tile content */
+.connect_dnnplatform        { padding: 20px;}
+.connect_dnnplatform img    { width: 260px; float:left; margin: 10px 20px 20px 0;}
+.connect_dnnplatform p      { font-size: 14px;}
+.connect_downloads          { margin: 20px 0 0 0;}
