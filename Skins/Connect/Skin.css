@@ -18,7 +18,7 @@ h4                      { font-family: 'novecento_widedemibold', Arial, sans-ser
 .white h4               { padding: 20px 0 30px 0;}
 strong, .strong         { font-weight: bold;}
 p                       { margin: 0; padding: 0 0 25px 0;}
-.splash h1              { margin: 57px 30px 60px 55px; width: 80%;}
+
 * a, a                  { cursor: pointer !important; cursor: hand !important; }
 /* basic setup */
 
@@ -354,6 +354,9 @@ a.icnBlogs					                        { background: #339933 url(images/metro/ic
 .dnnSecondaryAction:active, a.dnnSecondaryAction:active { font-size: 16px; border:none;background: #888; color: #fff;}
 .dnnSecondaryAction[disabled], .dnnSecondaryAction[disabled]:hover, .dnnSecondaryAction[disabled]:active { font-size: 16px; background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;color: #aaa !important;text-shadow: none;}
 
+ul.dnnAdminTabNav li a {
+    line-height: 1em;
+}
 
 /*-------------------------------------*/
 /* FORM STYLES */
@@ -393,7 +396,11 @@ a.icnBlogs					                        { background: #339933 url(images/metro/ic
 
 
 
-
+/* opensource statement */
+blockquote.opensource           { padding: 10px 0 10px 8px;margin: 20px;background: url(images/block1.png) 1px 1px no-repeat;text-indent: 40px;border: none;}
+blockquote.opensource span      { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: bottom right;line-height: 35px;font-size: 20px;font-style: italic;font-weight: normal;font-family: Georgia; color: #fff;}
+blockquote.ack                  { padding: 25px 0 0px 20px;margin: 0px;background: url(images/block1.png) 20px 10px no-repeat;text-indent: 5px;border: none;}   
+blockquote.ack span             { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: 220px 165px;line-height: 200px;font-size: 100px;font-style: normal;font-weight: normal;font-family: 'novecento_widedemibold', Arial, sans-serif; color: #fff;}
 
   a.lnkGroups {
     background-image: url("images/groups.png");
@@ -423,7 +430,6 @@ a.icnBlogs					                        { background: #339933 url(images/metro/ic
 
 
 
-
 @media only screen and (min-width: 200px) and (max-width: 680px) 
 {
     .skinWidth,.connect-toolbar{width:auto;margin:0;}
@@ -444,6 +450,7 @@ a.icnBlogs					                        { background: #339933 url(images/metro/ic
     .connect_nav .sf-menu li{float:none;width:auto;}
     .connect_nav .sf-menu ul{top:0;}
     .connect_nav .sf-menu ul li{padding-left:25px;}
+    
     .connect_nav .sf-menu li:hover > ul, 
     .connect_nav .sf-menu li.sfHover > ul, 
     .connect_nav li.userName:hover > ul{display:none !important;}
@@ -456,7 +463,63 @@ a.icnBlogs					                        { background: #339933 url(images/metro/ic
     
     .connect_intro{padding:20px;}
     .connect_events{padding: 8%;width: auto;}
+    .connect_nav .m_nav{width: 70px;height: 58px;background-size: 100%;}
 }
-
-
+@media only screen and (min-width: 680px) and (max-width: 768px) 
+{
+    .skinWidth,.connect-toolbar{width:auto;margin:0;}
+    .topBar{position:relative;}
+    .connect-toolbar{height:100px;margin: 0 0 20px 0px;}
+    .connect_logo{margin: 12px 12px 5px 12px;position:relative;z-index:2;}
+    .connect_search{height:24px;margin:16px 0 11px 0;width:auto;position:relative;z-index:2;}
+    .connect_search span.searchInputContainer input{width:120px;height:25px;background-size:100%;font-size:15px;}
+    .searchInputContainer a.dnnSearchBoxClearText{margin:4px 0 !important;}
+    a.SearchButton{background-size:100%;width: 26px;height: 24px;background-position:0;}
+    
+    .connect_usertoolbar{float:none;padding: 0 12px;clear:both;position:relative;z-index:2;width:300px;}
+    
+    .connect_nav{width: auto;position: absolute;right: 0;top: 16px;width: 50%;z-index: 1;}
+    .connect_nav .m_nav{display:block;background:url(images/m_menubg.png) no-repeat;width:50px;height:39px;float:right;margin-right:12px;}
+    .connect_nav .m_nav:hover{background-color:#000;border-radius:5px;}
+    .connect_nav ul.sf-menu{display:none;background: #47292b;margin-top: 56px;width: 100%;clear: both;}
+    .connect_nav .sf-menu li{float:none;width:auto;}
+    .connect_nav .sf-menu ul{top:0;}
+    .connect_nav .sf-menu ul li{padding-left:25px;}
+    .connect_nav .sf-menu li:hover > ul, 
+    .connect_nav .sf-menu li.sfHover > ul, 
+    .connect_nav li.userName:hover > ul{display:none !important;}
+    .connect_nav .sf-menu li.selected > ul, 
+    .connect_nav .sf-menu li.parent > ul,
+    .connect_nav .sf-menu li.parent:hover > ul, 
+    .connect_nav .sf-menu li.selected:hover > ul{display:block !important;position:relative;}
+    
+    .tile,.tile_900_900,.tile_900_600,.tile_600_600,.tile_600_300,.tile_300,.tile_content{ width:100%;}
+    .tile_300_300, .tile_302_300 {float:left;width:50%;margin:0;}
+    .tile_300_300.tile_end, .tile_302_300.tile_end{float:right;}
+    
+    .connect_intro{padding:20px;}
+    .connect_events{padding: 8%;width: auto;}
+    .connect_nav .m_nav{width: 70px;height: 58px;background-size: 100%;}
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) 
+{
+    body{zoom:62% !important;}
+    .connect_events{width:auto;}
+}
+@media only screen and (min-width: 900px) and (max-width: 950px) 
+{
+    body{zoom:73% !important;}
+    .connect_events{width:auto;}
+    .sf-menu li{width:130px;}
+    .connect_usertoolbar{width:240px;}
+}
+@media only screen and (min-width: 950px) and (max-width: 1220px) 
+{
+    body{zoom:84% !important;}
+      
+    .connect_events{width:auto;}
+    .sf-menu li{width:130px; padding: 0; margin: 0;}
+    .connect_usertoolbar{width:320px;}
+    .Connect_GroupIntro p { font-size: 16px; line-height: 1.2em; padding: 10px 0 0px 30px!important;}
+}
 

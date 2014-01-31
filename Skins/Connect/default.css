@@ -59,8 +59,6 @@ div.specificLocale	                                { padding: 10px; }
 .ModDNNEuropeModulesLocalizationEditorC             { margin: 0 2px 0 0; }
 div.genericLocale                                   { border-bottom: 0px dotted #666666;display: block;font-size: large;font-weight: 700; margin: 40px 0 5px;padding-bottom: 4px;width: 100%; }
 
-/* Blog Module */
-#dnn_ctr440_Blog_ctlManagement_pnlManagement        { padding: 15px 0 15px 0;}
 
 .postcontentholder li a {
     font-size: 16px;
@@ -73,10 +71,10 @@ ul.af-topiclist li	                                { margin: 0 20px 20px 0; padd
 td.afgrouprow                                       { font-size: 12px; font-weight: bold; }
 .afcontainer	                                    { }
 .af-tiles                                           { width: 100%; overflow: hidden; }
-.tile-af	                                        { float:left; width: 422px; margin: 0px 2px 2px 0; height: 203px; padding: 25px 15px 25px 15px;}
+.tile-af	                                        { float:left; width: 422px; margin: 0px 2px 2px 0; height: 203px; padding: 21px 15px 21px 15px;}
 .ct-forumname	                                    { display: block; margin: 20px 0 0 120px; }
 .ct-forumname a                                     { font-size: 20px; font-weight: bold; text-decoration: none; }
-.af-description                                     { margin: 10px 0 0 120px; }
+.af-description                                     { margin: 10px 0 0 120px; padding:0;}
 .tile-af ul                                         { margin: 10px 0 0 120px; padding: 0; }
 .tile-af ul li                                      { list-style-type:none; padding: 0 0 0 20px; }
 .af-lastpost                                        { margin: 30px 0 0 10px; background: url(images/metro/icnInfo.png) 0px 0px no-repeat; padding: 0 0 0 30px; color: #555; }
@@ -155,7 +153,7 @@ td.af_pagernumber a                                 { color: #fff; font-size: 12
 .groups .dnnForm.dnnGroupDirectory              { margin: 0; padding: 0; width: auto; }
 .groups .dgdGroupQuickInfoWrap,
 .groups .Connect_GroupIntro                     { margin: 2px 2px 0 0; height: 150px; padding: 0; border: none; }
-.groups .Connect_GroupIntro  p                  { float:left; padding: 30px 0 20px 40px; margin:0; width: 60% }
+.groups .Connect_GroupIntro  p                  { float:left; padding: 25px 0 17px 40px; margin:0; width: 60% }
 .groups .Connect_GroupIntro  div                { float: right; margin: 30px 30px 0 0; }
 .groups a.CreateGroup                           { display: none;}
 .groups .dgdAvatar                              { margin: 20px 3% 0 3%; border-radius: 0px; }
