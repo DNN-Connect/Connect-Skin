@@ -1,56 +1,29 @@
-﻿.content				{width: 904px;}
-.tile_content           { width: 904px; margin: 0 0 0 2px; background: #ddd; padding: 0 0 30px 0; min-height: 240px;}
-.tile_content50           { width: 410px; margin: 0 0 0 2px; background: #ddd; padding: 0 40px 30px 0; min-height: 240px; float:left;}
-.dnnFilterSet, .community_intro   {background: #38A9FF; margin: 0;}
-.dnnTableFilter {margin: 0;}
-.dnnFilterSet h3    {color: #fff;}
-.dnnFilterSet .moduleSearch a {cursor: pointer; cursor: hand; color: #fff;} 
-.GroupViewTop   {background: #38A9FF; margin: 0; padding: 20px 20px 40px 20px;}
-.GroupViewTop a {color: #fff;}
-.community_intro    {padding: 35px; margin-bottom: 6px; height: 232px;}
-.community_intro p  {font-size: 18px; color: #fff; line-height: 26px; margin: 0 0 30px 0;}
-.community_intro a  {font-size: 18px; color: #eee; text-decoration: underline;}
-.community_intro a:hover    {color: #333;}
-.community_intro p.ack {float:left; display: block; text-indent: -99999px; background: url(images/ack.png) -15px -60px no-repeat; height: 210px; width: 300px;padding:0; margin:0 0 10px 0;}
-/* Social Module Overrides */
+﻿.tile_606_300           { width: 604px; height: 300px; margin: 0 2px 2px 0;}
 
-.journalitem p {
-    margin: 5px 0;
+.connect-content-head    {padding: 35px; margin-bottom: 6px; height: 232px;}
+.connect-content-head p  {font-size: 18px; color: #fff; line-height: 26px; margin: 0 0 30px 0;}
+.connect-content-head a  {font-size: 18px; color: #eee; text-decoration: underline;}
+.connect-content-head a:hover    {color: #333;}
+.connect-content-head p.ack {float:left; display: block; text-indent: -99999px; background: url(images/ack.png) -15px -60px no-repeat; height: 210px; width: 300px;padding:0; margin:0 0 10px 0;}
+
+.twittertile { padding: 10px; }
+.tile_900_600 {
+    margin: 2px 0px 0 0;
+    min-height: 602px;
+    width: 906px;
 }
 
-.twittertile	{ padding: 10px;}
-       
+.tile_300_600 {
+    margin: 2px 0 0 2px;
+    width: 300px;
+}
 
-a.icnDiscussions			{ background: #c74000 url(images/metro/icnDiscussions.png) 15px 5px no-repeat;}
-a.icnDiscussions:hover		{ color: #333;}
 
-a.icnEvents					{ background: #ffc500 url(images/metro/icnEvents.png) 15px 5px no-repeat;}
-a.icnEvents:hover			{ color: #333;}
+#journalItems   { padding: 20px 0 0 0; }
+#journalItems .journalitem p                                      { margin: 0px 0; padding: 0 0 10px 0;}
+#journalItems .journalitem i                                    { color: #666;}
 
-a.icnGroups					{ background: #00a8ec url(images/metro/icnGroups.png) 15px 5px no-repeat;}
-a.icnGroups:hover			{ color: #333;}
 
-a.icnBlogs					{ background: #008d44 url(images/metro/icnBlogs.png) 15px 5px no-repeat;}
-a.icnBlogs:hover			{ color: #333;}
-
-a.icnAnswers                { background: #98c739 url(images/metro/icnAnswers.png) 15px 5px no-repeat;}
-a.icnAnswers:hover          { color: #333;}
-
-a.icnKickstart              { background: #68217a url(images/metro/icnKickstart.png) 15px 5px no-repeat;}
-a.icnKickstart:hover        { color: #333;}
-
-a.icnTranslations           { background: #ff0084 url(images/metro/icnTranslations.png) 15px 5px no-repeat;}
-a.icnTranslations:hover     { color: #333;}
-
-a.icnMembers				{ background: #d68a3a url(images/metro/icnMembers.png) 15px 5px no-repeat;}
-a.icnMembers:hover			{ color: #333;}
-
-.communityintro {background: #004878; margin: 2px 0 2px 0; padding: 30px 0px 30px 0px;}
-
-.journalrow div.author img {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 0;
-    padding: 1px;
-    width: 40px;
+.e-entry-title {
+    color: #fff !important;
 }

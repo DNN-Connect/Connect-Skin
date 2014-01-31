@@ -85,11 +85,10 @@
 			
 			<div class="clearfix communityintro">
                         
-                <div id="LeftPane" runat="server" class="tile tile_400_600 left color0 paddedpane"></div>
-                <div id="CenterPane" runat="server" class="tile tile_400_600 left color0 paddedpane"></div>
-                <div id="RightPane" runat="server" class="tile tile_400_600 left color0 paddedpane"></div>
-
-				<div id="ContentPane" runat="server" class="tile tile_content color0"></div>
+                <div id="ContentPane" runat="server" class="tile tile_900_600 left color0"></div>                
+                <div id="RightPane1" runat="server" class="tile tile_300_600 left color3"></div>
+                <div id="RightPane2" runat="server" class="tile tile_300_600 left color9"></div>
+                <div id="RightPane3" runat="server" class="tile tile_300_600 left color2"></div>
             </div>
         </div>
 

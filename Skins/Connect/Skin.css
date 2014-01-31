@@ -4,115 +4,43 @@ p, h1, h2, h3, h4, h5   { margin: 0; padding: 0;}
 
 
 
-html, body, *, 
+html, body, *, .Normal,
 a, a:link, a:active, 
-a:visited, div, p, span { font-family: 'Roboto'; font-size: 15px;}
-h1                      { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 42px; line-height:1.3; color: #fff;}
-h2                      { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 36px; line-height:1.3; color: #333;}
-h3, .dnnFilterSet h3    { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 30px; line-height:1.3; color: #333;}
-h4                      { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 20px; line-height:1.3; color: #333;}
+a:visited, div, p { font-family: 'Muli', sans-serif; font-size: 18px; line-height: 1.5em;}
+
+h1                      { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 36px; line-height:1.3; }
+.white h1               { padding: 20px 0 30px 0;}
+h2                      { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 28px; line-height:1.3; }
+.white h2               { padding: 20px 0 30px 0;}
+h3, .dnnFilterSet h3    { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 20px; line-height:1.3; }
+.white h3               { padding: 20px 0 30px 0;}
+h4                      { font-family: 'novecento_widedemibold', Arial, sans-serif; font-size: 18px; line-height:1.3; letter-spacing: 0.1em}
+.white h4               { padding: 20px 0 30px 0;}
 strong, .strong         { font-weight: bold;}
-p                       { margin: 0; padding: 0 0 25px 0:}
+p                       { margin: 0; padding: 0 0 25px 0;}
 .splash h1              { margin: 57px 30px 60px 55px; width: 80%;}
-* a, a {cursor: pointer !important; cursor: hand !important; }
+* a, a                  { cursor: pointer !important; cursor: hand !important; }
 /* basic setup */
-body                                                            { background: #eee;}
+
 .skinWidth                                                      { width: 1208px; margin: 20px auto;}
 
 /* toolbar at the top */
-.connect-toolbar                                                { width: 100%; margin: 0;background: #47292b; height: 60px;}
-.connect-toolbar[data-useragent*='MSIE 10.0']                   { width: 100%; margin: 0;background: #47292b; height: 56px}
+.connect-toolbar                                                { width: 100%; margin: 0; height: 60px;}
+.connect-toolbar[data-useragent*='MSIE 10.0']                   { width: 100%; margin: 0; height: 56px}
+
 /* navigation bar */
 .connect_nav                                                    { width: 695px; float:right;}
 
 /* logo */
 .connect_logo                                                   { width: 200px; height: 36px; overflow: hidden; float:left;margin: 12px;}
 
-/* searchbox */
-.connect_search                                                 { float:right; width: 216px;height: 36px;border: 2px solid #47292b; border-left: none; background: #47292b;margin: 10px 0 10px 0; overflow: hidden;}
-
-.connect_search span.searchInputContainer                       { display: block;padding: 0px; float:left; background: #47292b;}
-.connect_search span.searchInputContainer input                 { background: #472929 url(images/bg_search.png)0px 0px no-repeat; border: none;height: 41px; width: 172px; padding: 0px 5px 2px 10px; line-height: 20px; font-size: 20px; float:left; border-bottom: 0px solid #fff;}
-.connect_search .searchInputContainer input.active              { background: #472929 url(images/bg_search.png) 0px -36px no-repeat;}
-.connect_search .searchInputContainer input.active[data-useragent*='MSIE 10.0']              { background: #472929 url(images/bg_search.png) 0px 0px no-repeat; height: 45px; margin-top: 0px;}
-a.SearchButton                                                  { text-indent:-999px; display: block; width: 36px; height: 36px; background: url(images/search_large.png) 1px 3px no-repeat; float:left; margin: 0px 0px 0px 5px; overflow: hidden;}
-a.SearchButton:hover                                            { background-color: #00a0e3;}
-
-
-/* Login, Register, Profile Linkbar */
-.connect_usertoolbar                                            { width:217px; float:right;}
-.connect_usertoolbar ul                                         { margin: 12px 0 0 0; padding:0;}
-.connect_usertoolbar ul li                                      { list-style-type: none; float:left;background: #000; margin: 0 3px 0 0; border: 1px solid #333;}
-.connect_usertoolbar li.userName                                { width: 170px;display: block;}
-li.userRegister a                                               { line-height: 35px; color: #fff; font-size: 14px; text-decoration: none; padding: 8px 20px 8px 32px; background-image: url(images/user.png); background-position: 5px center; background-repeat: no-repeat;}
-li.userLogin a                                                  { line-height: 35px; color: #fff; font-size: 14px; text-decoration: none; padding: 8px 20px 8px 32px; background-image: url(images/padlock.png); background-position: 5px center; background-repeat: no-repeat;}
-li.userProfile a                                                { line-height: 35px; color: #fff; font-size: 14px; text-decoration: none; padding: 0; }
-li.userName a                                                   { line-height: 36px; color: #fff; font-size: 14px; text-decoration: none; padding: 7px 20px 7px 34px; background-image: url(images/user.png); background-position: 5px center; background-repeat: no-repeat;}
-.connect_usertoolbar ul li a:hover                              { background-color: #BD5200;}                             
-.connect_usertoolbar ul li .userProfileImg  img                 { padding: 1px; background: #333; border: 1px solid #000;}
-.connect_usertoolbar ul ul                                      { display: none;}
-.connect_usertoolbar ul li.userName, 
-.connect_usertoolbar ul li.userProfile                          { margin-right: 0;}
-.connect_usertoolbar ul li.userName                             { border-right: none;}
-.connect_usertoolbar li.userName li                             { width: 170px; border: none;}
-.connect_usertoolbar li.userName li a                           { background-image: none; padding-left: 10px; border: none; display: block; padding: 1px 20px 1px 34px; background-color: #BD5200;}
-.connect_usertoolbar li.userName li a:hover                     { background-color: #472929;}
-.connect_usertoolbar li.userName li.userNotifications a         { padding-left: 23px;}
-.connect_usertoolbar li.userName li.userNotifications a span    { color: #eac103;}
-
-/* buttons global */
-a.button, a.button:visited, 
-a.button.active                 { line-height: 30px; border: 1px solid #222; background: #444; color: #fff; font-size: 18px; text-decoration: none; padding: 0 20px 0 40px; border-radius: 2px; -moz-border-radius: 1px;}
-a.button:hover                  { background-color: #222;}
-
-/* button alignments */
-a.left                          { float:left;}
-a.leftmargin                    { float:left; margin-left: 30px;}
-a.right                         { float:right;}
-a.rightmargin                   { float:right; margin-right: 30px;}
-.center                         { text-align:center;}
-
-/* special purpose buttons */
-a.login                         { background-image: url(images/padlock.png); background-position: 5px center; background-repeat: no-repeat;}
-a.register                      { background-image: url(images/user.png); background-position: 5px center; background-repeat: no-repeat;}
-a.search                        { background-image: url(images/search.png); background-position: 5px center; background-repeat: no-repeat;}
-a.heart                         { background-image: url(images/heart.png); background-position: 5px center; background-repeat: no-repeat;}
-
-a.lnkDiscussions                { background-image: url(images/discussions.png); background-position: center center; background-repeat: no-repeat; display:block; height: 60px; width:300px; padding: 240px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.lnkDiscussions:hover          { color: #333;}
-
-a.lnkEvents                { background-image: url(images/events.png); background-position: center center; background-repeat: no-repeat; display:block; height: 60px; width:300px; padding: 240px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.lnkEvents:hover          { color: #333;}
-
-a.lnkGroups                { background-image: url(images/groups.png); background-position: center center; background-repeat: no-repeat; display:block; height: 60px; width:300px; padding: 240px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.lnkGroups:hover          { color: #333;}
-
-a.lnkBlogs                { background-image: url(images/blogs.png); background-position: center center; background-repeat: no-repeat; display:block; height: 60px; width:300px; padding: 240px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.lnkBlogs:hover          { color: #333;}
-
-a.lnkAnswers                { background-image: url(images/answers.png); background-position: center center; background-repeat: no-repeat; display:block; height: 60px; width:300px; padding: 240px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.lnkAnswers:hover          { color: #333;}
-
-a.connect_faqlink               { background-image: url(images/bulb_large.png); background-position: center center; background-repeat: no-repeat; display:block; height: 80px; width:300px; padding: 220px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.connect_faqlink:hover         { color: #333;}
-
-a.connect_idealink              { background-image: url(images/search_huge.png); background-position: center center; background-repeat: no-repeat; display:block; height: 80px; width:300px; padding: 220px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.connect_idealink:hover        { color: #333;}
-
-
-
-
-.connect_readmore {float: left; margin: 10px 0px 0 0;}
-
-
-
 /* tiles setup */
 .tile                   { min-height: 300px;}
 .tile_900_900           { width: 902px; min-height: 904px; margin: 0 0 0 2px;}
 .tile_900_600           { width: 902px; min-height: 602px; margin: 0 0 0 2px;}
-.tile_600_600           { width: 606px; height: 602px; margin: 0 2px 2px 0;}
+.tile_600_600           { width: 604px; height: 602px; margin: 0 2px 2px 0;}
 .tile_300_300           { width: 300px; height: 300px; margin: 0 2px 2px 0;}
-.tile_302_300           { width: 302px; height: 300px; margin: 0 2px 2px 0;}
+.tile_301_300           { width: 301px; height: 300px; margin: 0 2px 2px 0;}
 .tile_600_300           { width: 602px; height: 300px; margin: 0 2px 2px 0;}
 .tile_606_300           { width: 606px; height: 300px; margin: 0 2px 2px 0;}
 .tile_300               { width: 300px; margin: 0 0 2px 0;}
@@ -123,66 +51,241 @@ a.connect_idealink:hover        { color: #333;}
 .tile_content           { float:left;}
 .tile_side              { float:right;}
 .tile.DNNEmptyPane      { display: none;height:0px;width:0px;line-height:0;margin:0;padding:0;}
-.tile_end {margin-right:0 !important;}
-.margin2                 {margin: 2px 2px 0 0; border: 1px solid #fff;}
+.tile_end               { margin-right:0 !important;}
+.margin2                { margin: 2px 2px 0 0; border: 1px solid #fff; padding: 30px; }
 
 /* overrides panes */
-.admin .tile_content{width:100%;padding:30px 0;}
+.admin .tile_content    { width:100%;padding:30px 0; }
 
 /*home page tiles */
-.home .tile             { float:left;}
+.home .tile             { float:left; }
 
 /* panes setup */
 .contentPane            { padding: 40px 0 0 0; margin: 20px 0 0 0;}
 
+div.connect_communitylinks a                        { font-family: 'Roboto'; line-height: 0.3em; float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center; }
+div.connect_communitylinks a.B                      { font-family: 'Roboto'; line-height: 0.3em; float:left;display:block; height: 30px; width:150px; padding: 120px 0 0 0; margin: 0 0 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center; }       
+div.connect_communitylinks a:hover,
+div.connect_communitylinks a.B:hover                {color: #333;}
 /***********************/
 /* color setup         */
 /***********************/
 
-/* WHITE */         .color0, .white     { background-color: #FFFFFF; }
-/* PURPLE */        .color1, .purple    { background-color: #FF0097; }
-/* MAGENTA */		.color2, .magenta   { background-color: #A200FF; }
-/* TEAL */		    .color3, .teal      { background-color: #00ABA9; }
-/* LIME */		    .color4, .lime      { background-color: #8CBF26; }
-/* BROWN */         .color6, .brown     { background-color: #A05000; }
-/* PINK */			.color5, .pink      { background-color: #E671B8; }
-/* ORANGE */		.color7, .orange    { background-color: #F09609; }
+body                                                { background: #ddd;}
 
-/* RED */           .color8, .red       { background-color: #E51400; } 
-/* GREEN */         .color10, .green    { background-color: #339933; }
+/* toolbar at the top */
+.connect-toolbar                                    { background: #47292b;}
 
+h1, h2, h3, h4                                      { color: #1BA1E2;}
+p, .Normal, div                                     { color: #333; }
 
+/* Default ***************************************************************************/
 /* BLUE */          
-.color9, .blue, .Connect-ModuleSearchBar, 
-.mdSearch, .connect-content-head                { background-color: #1BA1E2; }
+.color9, .blue, 
+.Connect-ModuleSearchBar, 
+.mdSearch, .connect-content-head                    { background-color: #1BA1E2; }
 
-.Connect-SearchBarHeading input[type="submit"],
+.dnnPrimaryAction, 
+.dnnFormItem input[type="submit"], a.dnnPrimaryAction   { background: #1BA1E2; }
+
+.dnnPrimaryAction:hover, 
+.dnnFormItem input[type="submit"]:hover, 
+a.dnnPrimaryAction:hover,.dnnPrimaryAction:active, 
+.dnnFormItem input[type="submit"]:active,
+a.dnnPrimaryAction:active                           { background: #0D569E;}
+
+.dnnSecondaryAction, a.dnnSecondaryAction           { background: #aaa; }
+.dnnSecondaryAction:hover, 
+a.dnnSecondaryAction:hover,
+.dnnSecondaryAction:active, 
+a.dnnSecondaryAction:active                         { background: #888; }
+
+/**********************************************************************************/
+
+
+
+/* WHITE */         .color0, .white                 { background-color: #FFFFFF; }
+
+
+/* PURPLE */        .color1, .purple                { background-color: #FF0097; }
+
+
+/* Events *************************************************************************/
+/* MAGENTA */		.color2, .magenta               { background-color: #A200FF; } 
+a.icnEvents					                        { background: #A200FF url(images/metro/icnEvents.png) 15px 5px no-repeat;}
+.events .dnnPrimaryAction, 
+.events .dnnFormItem input[type="submit"],
+.events a.dnnPrimaryAction                          { background: #A200FF; }
+.events .Connect-ModuleSearchBar, 
+.events .mdSearch, .events .connect-content-head    { background-color: #A200FF; }
+/**********************************************************************************/
+
+/* Answers ************************************************************************/
+/* TEAL */		    .color3, .teal                  { background-color: #00ABA9; } 
+a.icnAnswers                                        { background: #00ABA9 url(images/metro/icnAnswers.png) 15px 5px no-repeat;}
+.answers .dnnPrimaryAction, 
+.answers .dnnFormItem input[type="submit"],
+.answers a.dnnPrimaryAction                         { background: #00ABA9; }
+.answers .Connect-ModuleSearchBar, 
+.answers .mdSearch, .answers .connect-content-head  { background-color: #00ABA9; }
+.answers .qaNav                                     { background: #fff; }
+.answers .qaNavItems                                { background: #00ABA9;}
+.qaHome, .qaPrivilege, .qaBadges, .qaBadge, 
+.qaBrowse, .dnnqaQuestion, .qaContent, .qaSideList,
+.dnnqaTagList, .qaSubscriptions, .qaAskQuestion     { background: #fff; }
+.answers h2.dnnFormSectionHead,
+.answers h3.dnnFormSectionHead                      { color: #333; }
+.answers h3 a,                                      
+.answers .dnnqaQuestion h1                          { color: #00ABA9; text-decoration: none; }   
+.answers h3 a:hover                                 { color: #333; text-decoration: none; }
+.qaQuestion .answers.multiple,
+.qaAskQuestionLink a, .qaAskQuestionLink a:link, 
+.qaAskQuestionLink a:visited,
+.qaUserScore,.answers .tag-menu,
+.answers a.tag:hover                                { background: #00ABA9; }
+.answers a.tag                                      { background: #E4E4E4; }
+.answers a.tag:hover                                { color: #fff;}
+
+
+/**********************************************************************************/
+
+/* Translations *******************************************************************/
+/* LIME */		    .color4, .lime                  { background-color: #8CBF26; }
+a.icnTranslations                                   { background: #8CBF26 url(images/metro/icnTranslations.png) 15px 5px no-repeat;}
+.translations .dnnPrimaryAction, 
+.translations .dnnFormItem input[type="submit"],
+.translations a.dnnPrimaryAction                    { background: #8CBF26; }
+.translations .Connect-ModuleSearchBar, 
+.translations .mdSearch, 
+.translations .connect-content-head                 { background-color: #8CBF26; }
+.translations div.specificLocale                    { background: #ddd; border: 1px solid #999; }
+.translations div.specificLocale a                  { color: #7fbc05;}
+.translations div.specificLocale a:hover            { color: #333; }
+
+/**********************************************************************************/
+
+
+/* Groups *************************************************************************/
+/* BROWN */         .color6, .brown                 { background-color: #A05000; } 
+a.icnGroups					                        { background: #A05000 url(images/metro/icnGroups.png) 15px 5px no-repeat;}
+.groups .dnnPrimaryAction, 
+.groups .dnnFormItem input[type="submit"],
+.groups a.dnnPrimaryAction                          { background: #A05000; }
+.groups .Connect-ModuleSearchBar, 
+.groups .mdSearch, 
+.groups .connect-content-head                       { background-color: #A05000; }
+
+.groups .dgdGroupQuickInfoWrap,
+.groups .Connect_GroupIntro                         { background: #fff;}
+.groups .dgdGroupQuickInfo h3 a                     { color: #A05000; text-decoration: none; }
+.groups .dgdGroupQuickInfo h3 a:hover               { color: #333; }
+.groups .GroupViewTop,                               
+.GroupViewTop    { background-color: #A05000; }
+.GroupViewTop h1 {color: #fff;}
+.GroupViewTop a {
+        color: #fff;
+    }
+.GroupViewTop .dnnPrimaryAction    { background:#793d01;}
+/**********************************************************************************/
+
+/* Kickstart **********************************************************************/
+/* PINK */			.color5, .pink                  { background-color: #E671B8; }
+a.icnKickstart                                      { background: #E671B8 url(images/metro/icnKickstart.png) 15px 5px no-repeat;}
+.kickstart .dnnPrimaryAction, 
+.kickstart .dnnFormItem input[type="submit"],
+.kickstart a.dnnPrimaryAction                          { background: #E671B8; }
+.kickstart .Connect-ModuleSearchBar, 
+.kickstart .mdSearch, 
+.kickstart .connect-content-head                       { background-color: #E671B8; }
+/**********************************************************************************/
+
+/* Members ************************************************************************/
+/* ORANGE */		.color7, .orange                { background-color: #F09609; }
+a.icnMembers				                        { background: #F09609 url(images/metro/icnMembers.png) 15px 5px no-repeat;}
+.members .dnnPrimaryAction, 
+.members .dnnFormItem input[type="submit"],
+.members a.dnnPrimaryAction                          { background: #F09609; }
+.members .Connect-ModuleSearchBar, 
+.members .mdSearch, 
+.members .connect-content-head                      { background-color: #F09609; }
+.members #mdMemberList > li                         { background: none repeat scroll 0 0 #fff; }
+.members #mdMemberList > li:hover                   { background: none repeat scroll 0 0 #F09609; }
+.members .mdMemberDetails .mdHoverActions           { background: none #eee; }
+.members #mdMemberList > li:hover .mdHoverActions   { background: none repeat scroll 0 0 #F09609; }
+.members #mdMemberList .mdMemberTitle               { color: #d88400; text-decoration: none; }
+.members #mdMemberList > li:hover .mdMemberTitle    { color: #333; text-decoration: none; }
+.members #mdMemberList p                            { color: #444;}
+.members .mdHoverActions a                          { color: #555; text-shadow: none; text-decoration:none; }
+.members .mdHoverActions a:hover	                { color: #fff; }
+
+.my_profile .GroupViewTop { background: #F09609;}
+.ConnectMemberActions #mdMemberList > li                         { background: none transparent; }
+/**********************************************************************************/
+
+/* Forums *************************************************************************/
+/* RED */           .color8, .red                   { background-color: #E51400; } 
+a.icnDiscussions			                        { background: #E51400 url(images/metro/icnDiscussions.png) 15px 5px no-repeat;}
+
+.discussions .dnnPrimaryAction, 
+.discussions .dnnFormItem input[type="submit"],
+.discussions a.dnnPrimaryAction                     { background: #E51400; }
+.discussions .Connect-ModuleSearchBar, 
+.discussions .mdSearch, 
+.discussions .connect-content-head                  { background-color: #E51400; }
+
+.discussions .tile-af	                            { background: #fff url(images/Metro/icnDiscussions_Red.png) 0px 10px no-repeat; }
+.discussions .aftoolbarpanel                        { background-color: #eee; }
+.discussions ul.af-topiclist li	                    { background: #fff; border: 1px solid #dedede; }
+.discussions td.afgrouprow                          { background-color: #E51400;color: #FFFFFF;}
+.discussions #afcontainer .af-search-bar            { background-color: #E51400; }
+.discussions .ct-forumname a                        { color: #E51400;}
+.discussions .af-description                        { color: #333; }
+.discussions .tile-af ul li                         { color: #333; background: url(images/metro/icnStats.png) 0px 0px no-repeat; }
+.discussions .af-lastpost a                         { color: #E51400; }
+.discussions .af-title, .af-title a		            { color: #333; }
+.discussions .af-topiclink a                        { color: #E51400; }
+
+.aftoolbarpanel ul.af-list-flat li a, 
+.aftoolbarpanel ul.af-list-flat li a:link, 
+.aftoolbarpanel ul.af-list-flat li a:visited, 
+.aftoolbarpanel ul.af-list-flat li a:active         { color: #333; }
+.aftoolbarpanel ul.af-list-flat li a:hover          { color: #E51400; }
+.aftb-search .aftb-search-link span                 { color: #333; }
+/**********************************************************************************/
+
+
+/* BLOGS *******************************************************************/
+/* Blog */
+/* GREEN */         .color10, .green                { background-color: #339933; } 
+a.icnBlogs					                        { background: #339933 url(images/metro/icnBlogs.png) 15px 5px no-repeat;}
+.blogs .dnnPrimaryAction, 
+.blogs .dnnFormItem input[type="submit"],
+.blogs a.dnnPrimaryAction                           { background: #339933; }
+.blogs .Connect-ModuleSearchBar, 
+.blogs .mdSearch, .blogs .connect-content-head      { background-color: #339933; }
+.blogs .summary p.postblog a,
+.blogs .summary p.postuser a,                  
+.blogs .contentcontainer a                          { color: #339933; }     
+.blogs .singlepostitem h2 a                         { color: #339933; }
+.blogs .blog-main-content h1,
+.blogs .blog-main-content h2,
+.blogs .blog-main-content h3                        { color: #339933; }
+/**************************************************************************/
+
+.Connect-SearchBarInput input[type="submit"],
 .Connect-SearchBarInput a.dnnPrimaryAction,
-.mdSearchBar a.dnnPrimaryAction                     { background: #c74000 url(images/Metro/icnSearchSmall.png) 10px 9px no-repeat;color: #EFEFEF; }
-.Connect-SearchBarInput a.dnnPrimaryAction:hover    { color: #333; }
+.mdSearchBar a.dnnPrimaryAction                     { background: #eee url(images/Metro/icnSearchSmall_Black.png) 10px 9px no-repeat;color: #444; text-shadow: none; }
+.Connect-SearchBarInput a.dnnPrimaryAction:hover    { color: #000; }
 
-/* BROWN? */
-#mdMemberList > li                                  { background: none repeat scroll 0 0 #D68A3A; }
-#mdMemberList > li:hover                            { background: none repeat scroll 0 0 #a15607; }
-.mdMemberDetails .mdHoverActions                    { background: none #a15607; }
 
-/* Translation module */
-div.specificLocale	                                { background: #FF0084; }
+
 
 /* Forum */
-.tile-af	                                        { float:left; width: 422px; background: #c46437 url(images/Metro/icnDiscussions.png) 0px 10px no-repeat; }
-.aftoolbarpanel                                     { background-color: #D68A3A; }
-ul.af-topiclist li	                                { margin: 0 20px 20px 0; padding: 15px; background: #fff; border: 1px solid #dedede; }
-td.afgrouprow                                       { background-color: #c74000;color: #FFFFFF;font-size: 12px; font-weight: bold; }
-#afcontainer .af-search-bar                         { background-color: #00A8EC; }
+
 
 /* Font Colors */
-.Connect-SearchBarHeading  h1, .mdSearchBar h1  { color: #FFFFFF; }
-#mdMemberList .mdMemberTitle { color: #fff; text-decoration: none; }
-#mdMemberList p {color: #000;}
-.mdHoverActions a                                   { color: #fff; text-shadow: none; text-decoration:none; }
-.mdHoverActions a:hover	                            { color: #555; }
-.mdMemberDetails .mdHoverActions                    { background: none #a15607;}
+.Connect-SearchBarHeading  h1, .mdSearchBar h1, .connect-content-head h1  { color: #FFFFFF; }
+
 
 
 /* Font Styles */
@@ -192,55 +295,25 @@ td.afgrouprow                                       { background-color: #c74000;
     font-size: 30px;
     line-height: 1.3;
 }
+/*  Solutions & About Us page */
+.solutions .connect-content-head h1,
+.about_us .connect-content-head h1  { font-size: 40px; line-height: 2.5;}
 
 /* default content header */
 
 
 
-div.connect_communitylinks a {float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-div.connect_communitylinks a.B {float:left;display:block; height: 30px; width:150px; padding: 120px 0 0 0; margin: 0 0 2px 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}       
 
-a.icnDiscussions			{ background-image: url(images/icndiscussions.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnDiscussions:hover		{ color: #333;}
 
-a.icnEvents					{ background-image: url(images/icnevents.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnEvents:hover			{ color: #333;}
+/* platform tile content */
+.connect_dnnplatform            { padding: 20px;}
+.connect_dnnplatform img        { width: 260px; float:left; margin: 10px 20px 20px 0;}
+.connect_dnnplatform p          { font-size: 14px;}
+.connect_downloads              { margin: 20px 0 0 0;}
 
-a.icnGroups					{ background-image: url(images/icngroups.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnGroups:hover			{ color: #333;}
 
-a.icnBlogs					{ background-image: url(images/icnblogs.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnBlogs:hover			{ color: #333;}
 
-a.icnAnswers                { background-image: url(images/icnanswers.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.lnkAnswers:hover          { color: #333;}
 
-a.icnKickstart              { background-image: url(images/icnBulb.png); background-position: center center; background-repeat: no-repeat; display:block; height: 30px; width:150px; padding: 120px 0 0 0; color: #fff; font-size: 24px; text-decoration: none; text-align: center;}
-a.icnKickstart:hover        { color: #333;}
-
-a.icnDiscussions			{ background: #c74000 url(images/metro/icnDiscussions.png) 15px 5px no-repeat;}
-a.icnDiscussions:hover		{ color: #333;}
-
-a.icnEvents					{ background: #ffc500 url(images/metro/icnEvents.png) 15px 5px no-repeat;}
-a.icnEvents:hover			{ color: #333;}
-
-a.icnGroups					{ background: #00a8ec url(images/metro/icnGroups.png) 15px 5px no-repeat;}
-a.icnGroups:hover			{ color: #333;}
-
-a.icnBlogs					{ background: #008d44 url(images/metro/icnBlogs.png) 15px 5px no-repeat;}
-a.icnBlogs:hover			{ color: #333;}
-
-a.icnAnswers                { background: #98c739 url(images/metro/icnAnswers.png) 15px 5px no-repeat;}
-a.icnAnswers:hover          { color: #333;}
-
-a.icnKickstart              { background: #68217a url(images/metro/icnKickstart.png) 15px 5px no-repeat;}
-a.icnKickstart:hover        { color: #333;}
-
-a.icnTranslations           { background: #ff0084 url(images/metro/icnTranslations.png) 15px 5px no-repeat;}
-a.icnTranslations:hover     { color: #333;}
-
-a.icnMembers				{ background: #d68a3a url(images/metro/icnMembers.png) 15px 5px no-repeat;}
-a.icnMembers:hover			{ color: #333;}
 
 
 
@@ -252,7 +325,6 @@ a.icnMembers:hover			{ color: #333;}
     border-bottom:solid 1px #0D569E;
 }
 
-
 /********************************/
 /* default.css overrides        */
 /********************************/
@@ -260,88 +332,28 @@ a.icnMembers:hover			{ color: #333;}
     font-size: 24px;
 }
 
-
-
-
 /* Primary Action */
-.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction {
-    background: #38A9FF;
-    border:none !important;
-    color: #fff;
-    border-radius:0;
-    -moz-border-radius:0;
-    text-shadow: none;
-    font-weight:normal;
+.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction, .Connect-SearchBarInput input[type="submit"],
+.qaAskQuestionLink a, .qaAskQuestionLink a:link, .qaAskQuestionLink a:visited, 
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only { font-size: 16px; border:none !important; color: #fff;border-radius:0;-moz-border-radius:0; text-shadow: none; font-weight:normal; }
+.dnnPrimaryAction:hover, .dnnFormItem input[type="submit"]:hover, a.dnnPrimaryAction:hover, 
+.dnnPrimaryAction:active, .dnnFormItem input[type="submit"]:active, a.dnnPrimaryAction:active { border:none;color: #fff; }
+.dnnPrimaryAction[disabled], .dnnPrimaryAction[disabled]:hover, .dnnPrimaryAction[disabled]:active {font-size: 16px;background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important; color: #aaa !important; text-shadow: none; }
+
+.Connect-SearchBarInput input[type="submit"] {
+    border: 1px solid #DDDDDD;
+    color: #333333;
+    margin: 0 0 0 10px;
+    padding: 10px 10px 10px 35px;
+    cursor: hand !important;
 }
-
-    .dnnPrimaryAction:hover, .dnnFormItem input[type="submit"]:hover, a.dnnPrimaryAction:hover {
-        border:none;
-        background: #0D569E; 
-        color: #fff;
-    }
-
-    .dnnPrimaryAction:active, .dnnFormItem input[type="submit"]:active, a.dnnPrimaryAction:active {
-        border:none;
-        background: #0D569E; 
-        color: #fff;
-    }
-
-    .dnnPrimaryAction[disabled], .dnnPrimaryAction[disabled]:hover, .dnnPrimaryAction[disabled]:active {
-        background: #ccc !important;
-        border: none !important;
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        color: #aaa !important;
-        text-shadow: none;
-    }
     
 /* Secondary Action */
-.dnnSecondaryAction, a.dnnSecondaryAction {
-    background: #aaa; 
-    border:none !important;
-    color: #fff;
-    border-radius:0;
-    -moz-border-radius:0;
-    text-shadow: none;
-    font-weight:normal;
-}
+.dnnSecondaryAction, a.dnnSecondaryAction { font-size: 16px; background: #aaa; border:none !important;color: #fff;border-radius:0;-moz-border-radius:0;text-shadow: none; font-weight:normal; }
+.dnnSecondaryAction:hover, a.dnnSecondaryAction:hover,
+.dnnSecondaryAction:active, a.dnnSecondaryAction:active { font-size: 16px; border:none;background: #888; color: #fff;}
+.dnnSecondaryAction[disabled], .dnnSecondaryAction[disabled]:hover, .dnnSecondaryAction[disabled]:active { font-size: 16px; background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;color: #aaa !important;text-shadow: none;}
 
-    .dnnSecondaryAction:hover, a.dnnSecondaryAction:hover{
-        border:none;
-        background: #888; 
-        color: #fff;
-    }
-
-    .dnnSecondaryAction:active, a.dnnSecondaryAction:active {
-        border:none;
-        background: #888; 
-        color: #fff;
-    }   
-
-    .dnnSecondaryAction[disabled], .dnnSecondaryAction[disabled]:hover, .dnnSecondaryAction[disabled]:active {
-        background: #ccc !important;
-        border: none !important;
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        color: #aaa !important;
-        text-shadow: none;
-    }
-
-
-
-
-
-.amtbwrapper a.dnnPrimaryAction, .af-postlink a.dnnPrimaryAction, .af-lefttool a.dnnPrimaryAction {
-    background: #c74000 url(images/Metro/icnPost.png) 5px 12px no-repeat;
-    border: none;
-    box-shadow: none;
-    color: #EFEFEF;
-    text-shadow: 0 -1px 0 #a53805;
-	border-radius: 0px;
-	padding: 10px 10px 11px 35px;
-	margin-left: 0px;
-}
-.af-lefttool a.dnnPrimaryAction:hover, .af-postlink a.dnnPrimaryAction:hover {text-decoration: none; color: #333;}
 
 /*-------------------------------------*/
 /* FORM STYLES */
@@ -365,7 +377,6 @@ a.icnMembers:hover			{ color: #333;}
     font-size: 12px;
 }
 
-
 /* Active and Focus States */
 .dnnFormItem input[type="text"]:active, .dnnFormItem input[type="text"]:focus,
 .dnnFormItem input[type="password"]:focus, .dnnFormItem input[type="password"]:active,
@@ -380,81 +391,37 @@ a.icnMembers:hover			{ color: #333;}
     color: #333;
 }
 
-/*account form textarea override */
-.connect_accountform .dnnFormItem textarea {height: 378px !important;}
-
-/* menu */
-   
-
-   
-								
-
-/* Profile editing */
-/*Photo */
-.connect_profile_preview                            { display: block; height: 300px;}
-.connect_profile_preview img                        { width: 300px; height: 300px;}
-.connect_profile_edit                               { display:none;}
-.connect_profiledit.password                        { height: 270px;padding: 30px 0 0 30px;}
-#connectEditContainerPhoto                          { padding: 20px 0 20px 20px; background: #fff;}
-#connectEditContainerPhoto .dnnFileUploadScope      { background: #fff; width: inherit;}
-#connectEditContainerPhoto .dnnLeft                 { clear:both;}
-
-/* password */
-span.label                                          { display: block; color: #fff; font-size: 14px; line-height: 35px;}
-#showEditPassword                                   { background: url(images/lock_large.png) -30px -30px no-repeat; font-size: 40px; color: #fff; text-decoration: none; vertical-align:bottom; padding: 210px 30px 50px 30px; display: block;}
-#connectEditContainerPassword .dnnFormItem input    { width: 90%;}
-
-/* common profile */
-#connectEditContainerProfile p                      { font-weight: bold; padding: 12px 40px 50px 20px;}
-#connectEditContainerProfile select                 { width: 45%;}
-
-/* dnn console module */
-.sidebar .console                                            { width: 100%;height: inherit;background-color: transparent;-moz-box-shadow: 0 0 0 #bbb;-webkit-box-shadow: 0 0 0 #bbb;box-shadow: 0 0 0 #bbb;padding: 0;}
-.sidebar .console .console-none                              { margin: 0;padding: 0; height: 40px;}
-.sidebar .console .console-none h3                           { border-left: none ;margin: 0;padding: 0 0 0 60px;font-size: 16px;color: #fff; line-height: 40px; height: inherit; border-top: none;}
-.sidebar .console .console-none h3:first-child               { border-top: none;}
-.sidebar .console div                                        { width: auto;display: block;float: none;}
-.sidebar .console .console-mouseon                           { background-color: #BD5200;}
-.sidebar .console .active h3                                 { border-left: none; color: #333; background: url(images/marker.png) 20px 8px no-repeat;}
-
-
-.connectdir_item    {padding: 20px; background: #eee; margin: 0 0 20px 0; border: 1px solid #ddd;}
-.connectdir_logo    {float:left; margin: 0 30px 0 0; width: 250px;}
-.connectdir_logo img    {padding: 3px; background: #fefefe; border: 1px solid #ccc;}
-.connectdir_properties  {float:left; width: 500px;}
-.connectdir_properties td { vertical-align: top; padding: 0 20px 0 0;}
-.connectdir_areas ul    { padding: 0; margin: 0;}
-.connectdir_areas ul li { list-style-type: none; padding: 0; margin: 0 10px 0 0; float:left;}
-.connectdir_areasdetail ul  {margin: 30px 0 30px 0;}
-.connectdir_areasdetail ul li   { list-style-type: none; padding: 10px 0 0 30px; background: url(images/grant.gif) left 10px no-repeat;}
-.connectdir_logo table   {margin: 10px 0 20px 0;}
-.connectdir_logo td         {padding: 0 20px 0 0;}
-
-.connectdir_nav {margin: 0; padding:0;}
-.connectdir_nav li  { list-style-type: none;}
-.connectdir_nav li a    {display: block; padding: 0 0 0 30px;font-size: 16px;color: #fff; line-height: 40px; height: inherit; border-top: none; text-decoration: none;}
-.connectdir_nav li a:hover  {background-color: #BD5200;}
-.connectdir_nav li a.active  {background-color: #BD5200; color: #333;}
-
-.connectdir_search  {padding: 30px;}
-.connectdir_search span {display: block; padding: 10px 0 5px 0;}
-.connectdir_search table span {display: inline; padding:0;}
-.connectdir_searchinput input   {}
-.connectdir_searchinput select  {}
-.connectdir_searchbutton        {padding: 20px 0 20px 0;}
-   
-.connectdir_searchbar    {background: #38A9FF; margin: 0; padding: 20px 20px 40px 20px;}
-.connectdir_searchbar h3    {color: #fff;margin-bottom: 10px}
-.connectdir_searchbar input[type="text"] {margin: 0; width: 500px;padding: 9px;background-color: #fff;border: 1px solid #ccc; float:left;}
 
 
 
-/* groups */
-.createGroup {
-float: right;
-margin-top: 0;
-margin-right: 0;
+
+  a.lnkGroups {
+    background-image: url("images/groups.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    font-size: 24px;
+    height: 60px;
+    padding: 240px 0 0;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+} a.lnkGroups:hover { color: #333;}
+
+  a.white {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
 }
+  .center { text-align: center;}
+
+
+
+
 
 
 @media only screen and (min-width: 200px) and (max-width: 680px) 
@@ -492,8 +459,4 @@ margin-right: 0;
 }
 
 
-/* platform tile content */
-.connect_dnnplatform        { padding: 20px;}
-.connect_dnnplatform img    { width: 260px; float:left; margin: 10px 20px 20px 0;}
-.connect_dnnplatform p      { font-size: 14px;}
-.connect_downloads          { margin: 20px 0 0 0;}
+
