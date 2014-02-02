@@ -83,10 +83,10 @@
 	<div class="skinWidth">
 
         <div class="home clearfix">
-            <div id="Tile1" runat="server" class="tile tile_900_900 color1 splash"></div>
-            <div id="Tile2" runat="server" class="tile tile_300_300 color2"></div>
+            <div id="Tile1" runat="server" class="tile tile_900_900 color7 splash"></div>
+            <div id="Tile2" runat="server" class="tile tile_300_300 color4"></div>
             <div id="Tile3" runat="server" class="tile tile_300_300 color5"></div>
-            <div id="Tile4" runat="server" class="tile tile_300_300 color5"></div>
+            <div id="Tile4" runat="server" class="tile tile_300_300 color6"></div>
             <div id="Tile5" runat="server" class="tile tile_1200 color4"></div>
         </div>
 

@@ -34,6 +34,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100italicc" rel="stylesheet">
@@ -80,9 +81,10 @@
         <div class="tiles clearfix">
             
             <div class="content left clearfix">
-                <div id="ContentPane" runat="server" class="tile tile_content color0"></div>
-				<div id="ContentLeftPane" runat="server" class="tile tile_content50 color0"></div>
-				<div id="ContentRightPane" runat="server" class="tile tile_content50 color0"></div>
+                <div id="TopPane" runat="server" class="tile tile_bar" ContainerType="G" ContainerName="Connect" ContainerSrc="Plain.ascx"></div>
+                <div id="ContentPane" runat="server" class="tile tile_content" ContainerType="G" ContainerName="Connect" ContainerSrc="White.ascx"></div>
+				<div id="ContentLeftPane" runat="server" class="tile tile_content50"></div>
+				<div id="ContentRightPane" runat="server" class="tile tile_content50"></div>
             </div>            
             
             <div class="sidebar left clearfix">

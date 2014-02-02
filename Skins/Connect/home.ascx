@@ -86,14 +86,14 @@
 	<div class="skinWidth">
 
         <div class="home clearfix">
-            <div id="Tile1" runat="server" class="tile tile_600_600 color1"></div>
+            <div id="Tile1" runat="server" class="tile tile_600_600 color7"></div>
             <div id="Tile2" runat="server" class="tile tile_300_300 color0"></div>
-            <div id="Tile3" runat="server" class="tile tile_300_300 color9 tile_end"></div>
-            <div id="Tile4" runat="server" class="tile tile_300_300 color7"></div>            
-            <div id="Tile5" runat="server" class="tile tile_300_300 color3 tile_end"></div>
-            <div id="Tile6" runat="server" class="tile tile_302_300 color6"></div>
-            <div id="Tile7" runat="server" class="tile tile_302_300 color9"></div>            
-            <div id="Tile8" runat="server" class="tile tile_600_300 color4 tile_end"></div>
+            <div id="Tile3" runat="server" class="tile tile_300_300 color4 tile_end"></div>
+            <div id="Tile4" runat="server" class="tile tile_300_300 color6"></div>            
+            <div id="Tile5" runat="server" class="tile tile_300_300 color8 tile_end"></div>
+            <div id="Tile6" runat="server" class="tile tile_301_300 color10"></div>
+            <div id="Tile7" runat="server" class="tile tile_301_300 color3"></div>            
+            <div id="Tile8" runat="server" class="tile tile_600_300 color2 tile_end"></div>
         </div>
 
 		<div id="contentPane" class="contentPane" runat="server"></div>
