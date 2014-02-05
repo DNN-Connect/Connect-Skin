@@ -462,12 +462,17 @@ span.label                                          { font-size: 1.6em;  line-he
 
 /* journal */
 .journalitem i                                      { font-size: 1.4em;}
+.journalitem ul.jcmt li p                           { font-size: 0.8em; line-height: 1.6em;}
+.journalitem i                                      { font-size: 1.4em;}
+.journalitem i                                      { font-size: 1.4em;}
 
 .connect-content-head p                             { font-size: 1.6em;}
 
 ul.dnnAdminTabNav li a {
     font-size: 0.8em;
 }
+
+.reToolbar span, .reEditorModes span {font-size: 12px; line-height: normal;}
 
 /******************************************************************************************************/
 /* modules and other overrides */
@@ -502,6 +507,7 @@ ul.dnnAdminTabNav li a {
 .connect-events-meta h3                             { padding: 0 0 0px 0; margin: 0; color: #333; }
 .connect-events-meta h4                             { padding: 0 0 10px 0; margin: 0; color: #333; }
 .connect-events-meta h4 a                           { text-decoration: none;}
+.connect-events-description                         { padding: 30px 0 10px 0; }
 .events .DetailEnrollLeft                           { margin: 10px 0 0 -12px;}
 .events .DetailEnrollLeft img                       { display:none;}     
 .events .DetailEnrollLeft a                         { text-decoration:none;}
