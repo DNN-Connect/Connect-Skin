@@ -1,7 +1,7 @@
 ﻿
 .tile_300_300                   { overflow: hidden !important; }
 
-.home-af-container              { height: 90% !important;padding: 0 10px 10px 0 !important; overflow: hidden !important;}
+.home-af-container              { height: 290px !important;padding: 0 10px 10px 0 !important; overflow: hidden !important;}
 .home-af-container h3           { color: #fff; padding: 15px 0 18px 15px; font-size: 22px; letter-spacing: 0.04em; }
 .home-af-container div          { padding: 0 0 10px 15px; }
 .home-af-container a            { color: #fff; text-decoration: none; font-weight: bold; font-size: 14px;}

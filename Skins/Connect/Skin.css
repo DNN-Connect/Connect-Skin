@@ -1,9 +1,10 @@
 ﻿.clearfix:after             { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
 body, html, *, p, h1, h2, h3, h4, h5       { margin: 0; padding: 0;}
 
-.sticky { position: fixed; margin: 0 auto; top: 0; width: 1208px !important; z-index: 50 !important;}
-.stickyadmin { position: fixed; margin: 0 auto; top: 53px; width: 1208px !important; z-index: 50 !important;}
+.sticky             { position: fixed; margin: 0 auto; top: 0; width: 1208px !important; z-index: 110 !important;}
+.stickyadmin        { position: fixed; margin: 0 auto; top: 53px; width: 1208px !important; z-index: 110 !important;}
 /* basic setup */
+
 
 .skinWidth                                      { width: 1208px; margin: 20px auto;}
 
@@ -258,6 +259,8 @@ a.icnDiscussions			                        { background: #ef2c1a url(images/metr
 td.af_currentpage                                   { background-color: #98C739;color: #fff;}
 td.af_pagernumber                                   { background-color: #00A8EC; }
 .af-righttool table.afpager                         { background-color: #c74000;border: 1px solid #ffffff;}
+.discussions .dnnPrimaryAction:hover                { color: #333; }
+
 /* BLOGS *******************************************************************/
 /* Blog */
 /* GREEN */         .color10, .green                { background-color: #339933; } 
@@ -373,6 +376,21 @@ div.connect_communitylinks a                        { font-size: 1.6em;line-heig
 .ConnectMemberActions li li a span                  { font-size: 1em;  line-height: 1.5em; }
 .mdMemberDetails p                                  { line-height: 0.5em; }
 .pBio span                                          { font-size: 1.6em;}
+
+
+.messages li li   { font-size: 1.4em;}
+.messages li li li   { font-size: 0.7em;}
+.messages li li li a  { font-size: 1em;}
+.DnnModule-Messaging-Notifications .smListings li ul .hoverControls div {
+    display: none;
+    padding-top: 5px;
+    width: 110px;
+}
+.DnnModule-Messaging-Notifications .smListings .ListCol-4 {
+    float: right;
+    max-width: 180px;
+    width: 30%;
+}
 /* Translations */
 div.genericLocale                                   { font-size: 2.5em; }
 .specificLocale a                                   { font-size: 1.6em;}
@@ -404,6 +422,8 @@ td.af_pagernumber a                                 { font-size: 1.6em; }
 .discussions td.afsubrow                            { font-size: 1.2em; }
 .af-actions li                                      { font-size: 1em; }
 .discussions .afnormal                                           { font-size: 1em; color: #333; }
+.discussions .dnnPrimaryAction                      { font-size: 1.34em; }
+.discussions .dnnPrimaryAction:hover                { text-decoration: none; }
 
 .activeForums label                                 { font-size: 1em;}
 /* Links in directory  */
@@ -414,6 +434,7 @@ span.label                                          { font-size: 1.6em;  line-he
 #showEditPassword                                   { font-size: 2em; }
 #connectEditContainerProfile p                      { font-weight: bold;}
 #connectEditContainerProfile select                 { font-size: 1.4em;}
+.ModConnectAccountRegistrationC input[type="text"]  { font-size: 1.6em;}
 
 /* Console Module */
 .sidebar .console .console-none h3                  { font-size: 2em;line-height: 2em;  }
@@ -440,7 +461,8 @@ span.label                                          { font-size: 1.6em;  line-he
 /* Blogs */
 .postcontentholder li a                             { font-size: 0.9em; }
 .postmorelink a.dnnPrimaryAction                    { font-size: 1.6em;}
-
+.blogs .dnnPrimaryAction,
+.blogs .dnnSecondaryAction                            { font-size: 1.6em; }
 /* Events */
 
 .connect-events-meta h2                             { letter-spacing: 0.06em; line-height: 0.9em;}
@@ -472,7 +494,7 @@ ul.dnnAdminTabNav li a {
     font-size: 0.8em;
 }
 
-.reToolbar span, .reEditorModes span {font-size: 12px; line-height: normal;}
+.reToolbar span, .reEditorModes span, .RadTreeView span {font-size: 12px; line-height: normal;}
 
 /******************************************************************************************************/
 /* modules and other overrides */
@@ -747,6 +769,11 @@ span.label                                          { display: block; color: #ff
 .qstats {
     width: 40%;
 }
+.qatlRight {
+    float: right;
+    margin-top: -42px;
+    width: 300px;
+}
 
 /* community section links */
 
@@ -856,6 +883,9 @@ ul.dnnAdminTabNav li a {
     body, .Normal{ font-size: 8px; line-height: 24px; }
     .skinWidth {width: 100%; margin: 0;}
 
+    .sticky             { position: fixed; margin: 0 auto; top: 0; width: auto !important; z-index: 50 !important;}
+    .stickyadmin        { position: fixed; margin: 0 auto; top: 53px; width: auto !important; z-index: 50 !important;}
+
     .content, .sidebar { float: none !important; margin: 0 2px 0 2px !important; width: 99% !important; display: block !important; clear:both !important; min-height:0 !important; border: none !important;}
     .tile, .tile_900_600, .tile_900_600, .tile_600_600, 
     .tile_300_300, .tile_301_300, .tile_600_300, 
@@ -944,6 +974,7 @@ ul.dnnAdminTabNav li a {
     .connect_registernote {margin: 0 20px !important;padding: 0 0 10px !important;width: 100%;}    
     .connect_register, .connect_login {padding: 10px 0 30px !important;}
     li .dnnPrimaryAction, li .dnnSecondaryAction {font-size: 0.8em;}
+    #dnn_Tile2 img {width: 100%;}
 }
 @media only screen and (min-width: 680px) and (max-width: 768px) 
 {
