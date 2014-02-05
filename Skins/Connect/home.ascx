@@ -39,32 +39,6 @@
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:900italic" rel="stylesheet">
 <link rel="stylesheet" href="/Portals/_default/Skins/Connect/fonts/novecentowide/stylesheet.css" type="text/css" charset="utf-8" />
 
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        $("a.login").click(function () {
-            $(".connect_intro").slideUp('fast');
-            $(".connect_login").show('fast');
-        });
-
-        $('.connect_login .dnnSecondaryAction').click(function () {
-            $(".connect_login").slideUp('fast');
-            $(".connect_intro").show('fast');
-        });
-
-        $("a.register").click(function () {
-            $(".connect_intro").slideUp('fast');
-            $(".connect_login").slideUp('fast');
-            $(".connect_register").show('fast');
-        });
-
-        $('.connect_register .dnnSecondaryAction').click(function () {
-            $(".connect_register").slideUp('fast');
-            $(".connect_intro").show('fast');
-        });
-
-    });
-</script>
 
 <div class="topBar skinWidth">
 

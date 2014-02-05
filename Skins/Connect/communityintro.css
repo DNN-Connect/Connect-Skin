@@ -1,7 +1,7 @@
 ﻿.tile_606_300           { width: 604px; height: 300px; margin: 0 2px 2px 0;}
 
 .connect-content-head    {padding: 35px; margin-bottom: 6px; height: 232px;}
-.connect-content-head p  {font-size: 18px; color: #fff; line-height: 26px; margin: 0 0 30px 0;}
+.connect-content-head p  {margin: 0; color: #fff;}
 .connect-content-head a  {font-size: 18px; color: #eee; text-decoration: underline;}
 .connect-content-head a:hover    {color: #333;}
 .connect-content-head p.ack {float:left; display: block; text-indent: -99999px; background: url(images/ack.png) -15px -60px no-repeat; height: 210px; width: 300px;padding:0; margin:0 0 10px 0;}

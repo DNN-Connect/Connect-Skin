@@ -28,4 +28,39 @@ jQuery(document).ready(function() {
         jQuery(".connect_nav ul.sf-menu").toggle();
 
     });
+
+    $('.external-sociallink-twitter').attr('target', '_blank');
+
+    var stickyNavTop = $('.connect-toolbar').offset().top;
+
+    if ($('form').hasClass('showControlBar')) {
+        stickyNavTop -= 53;
+    }
+
+    var stickyNav = function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > stickyNavTop) {
+            if ($('form').hasClass('showControlBar')) {
+                $('.connect-toolbar').addClass('stickyadmin');
+            } else {
+                $('.connect-toolbar').addClass('sticky');
+            }
+
+        }
+        else {
+            if ($('form').hasClass('showControlBar')) {
+                $('.connect-toolbar').removeClass('stickyadmin');
+            } else {
+                $('.connect-toolbar').removeClass('sticky');
+            }
+
+        }
+    };
+
+    stickyNav();
+
+    $(window).scroll(function () {
+        stickyNav();
+    });
+
 });

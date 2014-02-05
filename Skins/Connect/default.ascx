@@ -51,13 +51,6 @@
 <dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 <dnn:Meta ID="Meta2" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        $('.external-sociallink-twitter').attr('target', '_blank');
-
-    });
-</script>
 
 <div class="topBar skinWidth">
 

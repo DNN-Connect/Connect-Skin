@@ -48,13 +48,6 @@
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:900italic" rel="stylesheet">
 <link rel="stylesheet" href="/Portals/_default/Skins/Connect/fonts/novecentowide/stylesheet.css" type="text/css" charset="utf-8" />
 
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        $('.external-sociallink-twitter').attr('target', '_blank');
-
-    });
-</script>
 
 <div class="topBar skinWidth">
 

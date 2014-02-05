@@ -1,8 +1,7 @@
 ﻿
 .tile_300_300                   { overflow: hidden !important; }
 
-.home-af-container-outer        { height: 100% !important; width:100% !important; overflow:hidden !important;}
-.home-af-container              { height: 99% !important; width:100% !important; overflow:auto !important; padding: 0 30px 0 0 !important;}
+.home-af-container              { height: 90% !important;padding: 0 10px 10px 0 !important; overflow: hidden !important;}
 .home-af-container h3           { color: #fff; padding: 15px 0 18px 15px; font-size: 22px; letter-spacing: 0.04em; }
 .home-af-container div          { padding: 0 0 10px 15px; }
 .home-af-container a            { color: #fff; text-decoration: none; font-weight: bold; font-size: 14px;}
@@ -46,22 +45,6 @@ a.register                      { background-image: url(images/user.png); backgr
 a.search                        { background-image: url(images/search.png); background-position: 5px center; background-repeat: no-repeat;}
 a.heart                         { background-image: url(images/heart.png); background-position: 5px center; background-repeat: no-repeat;}
 
-
-@media only screen and (min-width: 950px) and (max-width: 1220px) 
-{
-    body{zoom:83% !important;}    
-    #dnn_Tile6 {width: 303px;}
-    .home-af-container h3           { font-size: 14px;}
-    .home-af-container p, 
-    .home-af-container a            { font-size: 12px; }
-    .connect_intro h3               {font-size: 100px;}
-    .connect_intro h4               { font-size: 24px;}
-    blockquote.opensource span      { font-size: 18px;line-height: 30px; }
-    /* events tile content */
-    .connect_events                 { padding: 20px  0 20px 50%; }
-    .connect_events h4              { font-size: 14px;}
-    .connect_events h3              { font-size: 20px;}
-}
 
 
 
