@@ -1,6 +1,8 @@
 ﻿.clearfix:after             { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
 body, html, *, p, h1, h2, h3, h4, h5       { margin: 0; padding: 0;}
 
+html                { overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
+
 .sticky             { position: fixed; margin: 0 auto; top: 0; width: 1208px !important; z-index: 110 !important;}
 .stickyadmin        { position: fixed; margin: 0 auto; top: 53px; width: 1208px !important; z-index: 110 !important;}
 /* basic setup */
@@ -434,7 +436,10 @@ span.label                                          { font-size: 1.6em;  line-he
 #showEditPassword                                   { font-size: 2em; }
 #connectEditContainerProfile p                      { font-weight: bold;}
 #connectEditContainerProfile select                 { font-size: 1.4em;}
-.ModConnectAccountRegistrationC input[type="text"]  { font-size: 1.6em;}
+.ModConnectAccountRegistrationC input[type="text"],
+.ModConnectAccountRegistrationC input[type="password"],
+.ModConnectAccountUpdateC input[type="text"],
+.ModConnectAccountUpdateC input[type="password"]    { font-size: 1.6em;}
 
 /* Console Module */
 .sidebar .console .console-none h3                  { font-size: 2em;line-height: 2em;  }
@@ -575,6 +580,13 @@ ul.dnnAdminTabNav li a {
 .ConnectMemberActions li li a:hover, 
 .ConnectMemberActions li li a:hover span		    { color: #333; }
 
+.pContact ul	                                    { margin: 30px 0 30px 0;}
+.pContact ul li                                     { margin: 5px 0 5px 0; padding; 0;}
+.pContact li                                        { list-style-type: none;}
+.pContact li strong                                 { display: block; width: 100px; float:left;}
+.pBio                                               { margin: 40px 0 0 0;}
+.pBio h3, .pContact h3, .pAddress h3                { color: #444; font-size: 20px; letter-spacing: 0.01em;}
+
 
 /* Translation Module */
 div.specificLocale	                                { padding: 10px; }
@@ -693,22 +705,34 @@ td.af_pagernumber a                                 { color: #fff; text-decorati
 .connect_profile_preview                            { display: block; height: 300px;}
 .connect_profile_preview img                        { width: 300px; height: 300px;}
 .connect_profile_edit                               { display:none;}
-.connect_profiledit.password                        { height: 270px;padding: 30px 0 0 30px;}
+.connect_profiledit.password                        { height: 270px;padding: 15px 0 50px 30px !important;}
 #connectEditContainerPhoto                          { padding: 20px 0 20px 20px; }
 #connectEditContainerPhoto .dnnFileUploadScope      { width: inherit;}
 #connectEditContainerPhoto .dnnLeft                 { clear:both;}
 
+#connectEditContainerProfile .dnnFormItem select.ctlProfileVisibility {
+    width: 15% !important;
+    margin-left: 10px;
+}
+
+#connectEditContainerProfile .dnnFormItem input[type="text"], .dnnFormItem input[type="password"], .dnnFormItem input[type="email"], .dnnFormItem input[type="tel"], .dnnFormItem select, .dnnFormItem textarea {
+    max-width: 300px;
+    width: 33%;
+}
+#connectEditContainerProfile .dnnFormItem select {padding: 8px;}
+.visLessMargin {margin-left: -4px;}
 /* password */
 span.label                                          { display: block; color: #fff;}
-#showEditPassword                                   { background: url(images/lock_large.png) -30px -30px no-repeat; color: #fff; text-decoration: none; vertical-align:bottom; padding: 210px 30px 50px 30px; display: block;}
-#connectEditContainerPassword .dnnFormItem input    { width: 1em;}
+#showEditPassword                                   { background: url(images/lock_large.png) -30px 0px no-repeat; color: #fff; text-decoration: none; vertical-align:bottom; padding: 240px 70px 50px 70px; display: block;}
+#connectEditContainerPassword .dnnFormItem input    { width: 70%;}
+#connectEditContainerPassword span.label            {line-height: 1.6em;}
 
 /* common profile */
 #connectEditContainerProfile p                      { padding: 12px 40px 50px 20px;}
 #connectEditContainerProfile select                 { width: 45%;}
 #connectEditContainerProfile select.ctlProfileVisibility                                { width: 10%; padding: 8px;}
 /* dnn console module */
-.sidebar .console                                   { width: 100%;height: inherit;-moz-box-shadow: 0 0 0 #bbb;-webkit-box-shadow: 0 0 0 #bbb;box-shadow: 0 0 0 #bbb;padding: 20px 0 0 0;}
+.sidebar .console                                   { width: 100%;height: inherit;-moz-box-shadow: 0 0 0 #bbb;-webkit-box-shadow: 0 0 0 #bbb;box-shadow: 0 0 0 #bbb;padding: 10px 0 10px 0;}
 .sidebar .console .console-none                     { margin: 0;padding: 0; height: 40px;}
 .sidebar .console .console-none h3                  { border-left: none ;margin: 0;padding: 0 0 0 60px;color: #fff; height: inherit; border-top: none;}
 .sidebar .console .console-none h3:first-child      { border-top: none;}
@@ -883,8 +907,8 @@ ul.dnnAdminTabNav li a {
     body, .Normal{ font-size: 8px; line-height: 24px; }
     .skinWidth {width: 100%; margin: 0;}
 
-    .sticky             { position: fixed; margin: 0 auto; top: 0; width: auto !important; z-index: 50 !important;}
-    .stickyadmin        { position: fixed; margin: 0 auto; top: 53px; width: auto !important; z-index: 50 !important;}
+    .sticky             { position: fixed; margin: 0 auto; top: 0; width: 100% !important; z-index: 50 !important;}
+    .stickyadmin        { position: fixed; margin: 0 auto; top: 53px; width: 100% !important; z-index: 50 !important;}
 
     .content, .sidebar { float: none !important; margin: 0 2px 0 2px !important; width: 99% !important; display: block !important; clear:both !important; min-height:0 !important; border: none !important;}
     .tile, .tile_900_600, .tile_900_600, .tile_600_600, 
