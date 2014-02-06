@@ -869,6 +869,17 @@ a.white                                         {background: none repeat scroll 
 .center                                         { text-align: center;}
 
 .connect-content-head p                         { margin: 0; padding:0;}
+
+
+/* footer*/
+
+.footer                                         { background: #47292B; padding: 30px 0 30px 0; }
+.footer .col-f                                  { width: 30%; margin: 0 30px 0 0;float:left; }
+.footer .col-f.first                            { margin: 0 30px 0 30px; }
+.footer p, .footer li                           { color: #fff; }
+.footer li                                      { list-style-type: none; margin: 10px 0 0 0; padding: 0;}
+.footer ul                                      { padding: 0; margin: 10px 0 10px 0;}
+
 /********************************/
 /* containers                   */
 /********************************/
