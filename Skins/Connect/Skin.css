@@ -42,8 +42,8 @@ html                { overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
 .content				                        { width: 908px; }
 
 /* overrides panes */
-.admin .tile_content                            { width:100%;padding:30px 0; }
-
+.admin .content                            { width:95%;padding:0; }
+.admin .tile_content                               {padding: 30px;}
 /*home page tiles */
 .home .tile                                     { float:left; }
 
@@ -84,7 +84,8 @@ p, .Normal, div                                     { color: #333; }
 
 .Connect-SearchBarInput input[type="text"], 
 .searchWrapper input[type="text"]                   { background-color: #FFFFFF; border: 1px solid #CCCCCC; }
-
+.dnnAdminTabNav a span                              { color: #fff; }
+.connect_usertoolbar .userMessages                  { color: #fff; }
 /* Default ***************************************************************************/
 /* BLUE */ 
          
@@ -151,17 +152,20 @@ a.icnAnswers                                        { background: #00ABA9 url(im
 .qaBrowse, .dnnqaQuestion, .qaContent, .qaSideList,
 .dnnqaTagList, .qaSubscriptions, .qaAskQuestion     { background: #fff; }
 .answers h2.dnnFormSectionHead,
-.answers h3.dnnFormSectionHead                      { color: #333; }
+.answers h3.dnnFormSectionHead,
+.answers .qaSideList h3                             { color: #333; }
 .answers h3 a,                                      
-.answers .dnnqaQuestion h1                          { color: #00ABA9; text-decoration: none; }   
-.answers h3 a:hover                                 { color: #333; text-decoration: none; }
+.answers .dnnqaQuestion h1,
+.answers .plActions a                          { color: #00ABA9; text-decoration: none; }   
+.answers h3 a:hover,
+.answers .plActions a:hover                                 { color: #333; text-decoration: none; }
 .qaQuestion .answers.multiple,
 .qaAskQuestionLink a, .qaAskQuestionLink a:link, 
 .qaAskQuestionLink a:visited,
 .qaUserScore,.answers .tag-menu,
-.answers a.tag:hover                                { background: #00ABA9; }
-.answers a.tag                                      { background: #E4E4E4; }
-.answers a.tag:hover                                { color: #fff;}
+.answers a.tag:hover                                { background: #00ABA9 !important; color: #333;}
+.answers a.tag                                      { background: #01dad7 !important; color: #fff !important; }
+
 
 
 /* Translations *******************************************************************/
@@ -343,7 +347,7 @@ a.dnnSecondaryAction:active,
 .dnnSecondaryAction[disabled]:active                  { font-size: 1em; }
 li .dnnPrimaryAction,
 li .dnnSecondaryAction                                { font-size: 1em; }
-
+.ModDotNetNukeModulesCoreMessagingC .dnnPrimaryAction   { font-size: 1.6em;}
 .Head {
     font-size: 2.25em;
 }
@@ -380,7 +384,7 @@ div.connect_communitylinks a                        { font-size: 1.6em;line-heig
 .pBio span                                          { font-size: 1.6em;}
 
 
-.messages li li   { font-size: 1.4em;}
+.messages li li   { font-size: 1.15em;}
 .messages li li li   { font-size: 0.7em;}
 .messages li li li a  { font-size: 1em;}
 .DnnModule-Messaging-Notifications .smListings li ul .hoverControls div {
@@ -447,21 +451,29 @@ span.label                                          { font-size: 1.6em;  line-he
 /* Q&A */
 .qaNavItems li  {font-size: 1em;}
 .qaNavItems li a                                    { font-size: 1.6em;}
-.qaqBody p                                          { font-size: 1.2em;}    
+.qaqBody p                                          { font-size: 1.6em;}    
 .answers .tag-menu                                  { line-height: 1.4em; font-weight: normal;}
 .answers .qstats  span                    { font-size: 1em; }
 .answers .qaQuestion span.count                     { font-size: 1.6em !important; }
 .answers .dnnqaQuestion h1                          { font-size: 2.25em; } 
-.answers a.tag                                      { font-size: 1em; }
+.answers a.tag                                      { font-size: 0.9em !important; }
+.qaTag span.qaTagCounts                                        { font-size: 1em;}
+.qaTag span.qaTagStats                                        { font-size: 1em;}
 .qaTag span                                        { font-size: 1.4em;}
+
+.qaTag .tm-sub-links                                 { font-size: 0.8em !important;}
+.qaTag .tm-links a                                  { font-size: 0.5em !important;}
+.qaTag .tm-links .tm-links a                                  { font-size: 0.3em !important;}
+.answers .tm-sub-info{ font-size: 1em;}
 .answers h2.dnnFormSectionHead,
 .answers h3                                         { font-size: 2.25em; }
 .qaSortActions  {}
-.qaSortActions  li a                                { font-size: 1.4em;}
+.qaSortActions li a                                { font-size: 1.2em;}
  .answers .qaQuestion a,
 .qaAskQuestionLink a, 
 .qaAskQuestionLink a:link, 
 .qaAskQuestionLink a:visited                        { font-size: 1.6em; } 
+.answers input[type="text"]                       { font-size: 1.6em !important;}
 
 /* Blogs */
 .postcontentholder li a                             { font-size: 0.9em; }
@@ -504,6 +516,18 @@ ul.dnnAdminTabNav li a {
 /******************************************************************************************************/
 /* modules and other overrides */
 /******************************************************************************************************/
+
+
+.connect_usertoolbar span.userMessages {
+    background: none repeat scroll 0 0 #1BA1E2;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: roboto;
+    height: 28px;
+    margin: 2px 1px 0 0;
+    padding: 5px 15px 0 8px;
+    width: 10px;
+}
 
 /* Colored Bar at the top of most pages (text and/ or search) */
 .Connect-ModuleSearchBar, .mdSearch,               
@@ -740,7 +764,7 @@ span.label                                          { display: block; color: #ff
 .sidebar .console .active h3                        { border-left: none; color: #333; background: url(images/marker.png) 20px 8px no-repeat;}
 
 /* Q&A */
-.answers .tag-menu                                  { border-bottom: 1px solid #00ABA9;border-radius: 0px;border-right: 1px solid #00ABA9;color: #F1F1F1;display: block;max-width: 30em;overflow: hidden;padding: 0.8em 1em;position: absolute;text-align: left;text-shadow: none;width: 275px;z-index: 25; }
+.answers .tag-menu                                  { border-bottom: 1px solid #00ABA9;border-radius: 0px;border-right: 1px solid #00ABA9;color: #F1F1F1;display: block;max-width: 400px;overflow: hidden;padding: 0.8em 1em;position: absolute;text-align: left;text-shadow: none;width: 400px;z-index: 25; margin-top:5px;}
 .answers .qaQuestion .answers.multiple              { border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;color: #FFFFFF;text-shadow: none; }
 .answers .qaHome:after,
 .answers .dnnqaTagList:after,
@@ -759,8 +783,8 @@ span.label                                          { display: block; color: #ff
 .answers .dnnqaTagList, 
 .answers .qaSubscriptions, 
 .answers .qaAskQuestion                             { padding: 30px; width: auto !important;}
-.answers .qaContent                                 { width: 65%;}
-.answers .qaSideList                                { width: 30%;}
+.answers .qaContent                                 { width: 100%;}
+.answers .qaSideList                                { width: 97%; background: #eee; padding: 20px;}
 .answers .qaQuestion .votes span, 
 .answers .qaQuestion .answers span, 
 .answers .qaQuestion .views span                    { display: block;padding: 0 0px;text-align: center; }
@@ -778,6 +802,25 @@ span.label                                          { display: block; color: #ff
 .answers .qaNavItems                                { border-radius: 0px; margin: 0;}
 .answers .qaAskQuestionLink                         { margin: 30px 25px 0 0;}
 .answers div.qaQuestion                             { margin: 0 0 40px 0; }
+
+.answers .qaTagResults ul.qaTags li {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    display: block;
+    float: left;
+    height: 125px;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    padding: 25px 0 20px 25px;
+    width: 225px;
+}
+.answers .qaTagFilter,
+.dnnqaTagList .qaSortActions,
+.qaContent .qaSortActions{ display: none; }
+
+.answers .RadEditor,                                    
+.answers .dnnTextPanelView                          { width: 700px !important;}
+.answers .percentRight                              { clear:both; float:left; padding-left: 7px; padding-top: 5px; font-size: 0.8em;}
 .qaQuestion .votes, .qaQuestion .answers, .qaQuestion .views {
     background: none repeat scroll 0 0 #EEEEEE;
     border-bottom: 1px solid #DADADA;
