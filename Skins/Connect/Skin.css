@@ -451,7 +451,11 @@ span.label                                          { font-size: 1.6em;  line-he
 /* Q&A */
 .qaNavItems li  {font-size: 1em;}
 .qaNavItems li a                                    { font-size: 1.6em;}
-.qaqBody p                                          { font-size: 1.6em;}    
+.qaqBody{ font-size: 1.6em;} 
+.qaqBody p                                          { font-size: 1.1em;}    
+.qaqBody li { font-size: 1.1em;} 
+.qaComments li p    { font-size: 1.2em; line-height: 1.4em;}
+.qaCommentArea h2 {padding-left: 20px !important; background-position: 0px 10px !important;}
 .answers .tag-menu                                  { line-height: 1.4em; font-weight: normal;}
 .answers .qstats  span                    { font-size: 1em; }
 .answers .qaQuestion span.count                     { font-size: 1.6em !important; }
