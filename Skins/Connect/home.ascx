@@ -82,16 +82,16 @@
             <p>For all matters regarding this website, direct your electronic conversation to</p>
             <p><a href="mailto:webmaster@dnn-connect.org">webmaster@dnn-connect.org</a></p>
             <p>In case you need to get in touch with us by regular post, please direct it to</p>
-            <p>Philipp Beckery<br />Hof Haina 4<br />D-35444 Biebertal</p>
+            <p>Philipp Becker<br />Hof Haina 4<br />D-35444 Biebertal</p>
         </div>
 
         <div class="col-f">
             <h4>Meet the Team</h4>
             <p>DNN Connect is an initiative for the community by the community. It is run by volunteers.</p>
             <ul>
-                <li>Peter Donker<br /><a href="http://bring2mind.net">Bring2Mind</a></li>
-                <li>Vicenc Masanas<br /><a href="http://disgraphic.com">Disgraphic</a></li>
-                <li>Philipp Becker<br /><a href="http://peppertree-solutions.com">Peppertree Solutions</a></li>
+                <li>Peter Donker<br /><a href="http://bring2mind.net" target="_blank">Bring2Mind</a></li>
+                <li>Vicen&ccedil; Masanas<br /><a href="http://www.disgrafic.com" target="_blank">Disgrafic</a></li>
+                <li>Philipp Becker<br /><a href="http://peppertree-solutions.com" target="_blank">Peppertree Solutions</a></li>
             </ul>
         </div>
 

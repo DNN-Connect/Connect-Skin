@@ -500,7 +500,8 @@ span.label                                          { font-size: 1.6em;  line-he
 .GroupViewTop h3                                    { font-size: 1.6em; }
 
 /* journal */
-.journalitem i                                      { font-size: 1.4em;}
+.journalitem i                                     { font-size: 1.4em;}
+.journalitem i p                                      { font-size: 1em;}
 .journalitem ul.jcmt li p                           { font-size: 0.8em; line-height: 1.6em;}
 .journalitem i                                      { font-size: 1.4em;}
 .journalitem i                                      { font-size: 1.4em;}
