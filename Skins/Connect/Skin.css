@@ -511,11 +511,28 @@ ul.dnnAdminTabNav li a {
     font-size: 0.8em;
 }
 
-.reToolbar span, .reEditorModes span, .RadTreeView span {font-size: 12px; line-height: normal;}
+.reToolbar span, .reEditorModes span, .RadTreeView span, .RadTreeView li {font-size: 12px; line-height: normal;}
+.dnnFormMessage span    { font-size: 1.6em;}
+.dnnSendPasswordContent input[type="text"] { font-size: 1.6em; }
 
 /******************************************************************************************************/
 /* modules and other overrides */
 /******************************************************************************************************/
+
+
+/* reset password page */
+
+.dnnSendPasswordContent { padding: 40px 0 40px 0; width: 100%; }
+.dnnSendPasswordContent .dnnFormItem    {padding: 0 0 0 10px;}
+.dnnSendPasswordContent .dnnLabel {width: 20%; text-align:left; }
+.dnnSendPasswordContent ul.dnnActions { border: medium none;margin: 10px 0 0;padding: 20px 0 0 10px; }
+.dnnSendPasswordContent input[type="text"] { width: 70%; }
+
+.dnnPasswordReset {padding: 30px 0 50px 0;}
+.dnnPasswordResetContent { width: 100%; }
+.dnnPasswordResetContent .dnnFormItem    {padding: 0 0 0 10px;}
+.dnnPasswordResetContent .dnnLabel {width: 20%; text-align:left; }
+.dnnPasswordResetContent ul.dnnActions { border: medium none;margin: 10px 0 0;padding: 20px 0 0 10px; }
 
 
 .connect_usertoolbar span.userMessages {

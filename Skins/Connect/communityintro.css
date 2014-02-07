@@ -1,6 +1,6 @@
 ﻿.tile_606_300           { width: 604px; height: 300px; margin: 0 2px 2px 0;}
 
-.connect-content-head    {padding: 35px; margin-bottom: 6px; height: 232px;}
+.connect-content-head    {padding: 35px; margin: 0; height: 232px;}
 .connect-content-head p  {margin: 0; color: #fff;}
 .connect-content-head a  {font-size: 18px; color: #eee; text-decoration: underline;}
 .connect-content-head a:hover    {color: #333;}
