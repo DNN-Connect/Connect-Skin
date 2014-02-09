@@ -159,14 +159,14 @@ a.icnAnswers                                        { background: #00ABA9 url(im
 .answers .plActions a                          { color: #00ABA9; text-decoration: none; }   
 .answers h3 a:hover,
 .answers .plActions a:hover                                 { color: #333; text-decoration: none; }
-.qaQuestion .answers.multiple,
+.qaQuestion .answers.multiple                   { background: #ccc !important; }
 .qaAskQuestionLink a, .qaAskQuestionLink a:link, 
 .qaAskQuestionLink a:visited,
 .qaUserScore,.answers .tag-menu,
 .answers a.tag:hover                                { background: #00ABA9 !important; color: #333;}
 .answers a.tag                                      { background: #01dad7 !important; color: #fff !important; }
-
-
+.dnnqaQuestion a, .qaHome a {color: #00aba9;}
+.answers .qaQuestion .started a {font-size:11px;}
 
 /* Translations *******************************************************************/
 /* LIME */		    .color4, .lime                  { background-color: #8CBF26; }
@@ -195,12 +195,22 @@ a.icnGroups					                        { background: #A05000 url(images/metro/i
 .groups .Connect_GroupIntro                         { background: #fff;}
 .groups .dgdGroupQuickInfo h3 a                     { color: #A05000; text-decoration: none; }
 .groups .dgdGroupQuickInfo h3 a:hover               { color: #333; }
+.groups .dgdGroupQuickInfo ul li                    { font-weight:normal; font-size: 12px }
+.dgdGroupQuickInfo ul li a                          { font-size: 12px; }
 .groups .GroupViewTop,                               
 .GroupViewTop                                       { background-color: #A05000; }
 .GroupViewTop h1                                    { color: #fff;}
 .GroupViewTop a                                     { color: #fff;}
 .GroupViewTop .dnnPrimaryAction                     { background:#793d01;}
 
+.groups a.dnnTertiaryAction                        { border: none; background: #A05000; color: #fff;-webkit-border-radius: 0;border-radius: 0;}
+.groups .dnnTertiaryAction:hover,.groups  a.dnnTertiaryAction:hover     {background: #A05000;}
+.groups .dnnTertiaryAction:active,.groups  a.dnnTertiaryAction:active   {background: #A05000;}
+
+.group .journalitem a, 
+.group .journalitem a:link, 
+.group .journalitem a:visited, 
+.group .journalitem a:active                         { color: #A05000; }
 
 /* Kickstart **********************************************************************/
 /* PINK */			.color5, .pink                  { background-color: #E671B8; }
@@ -454,12 +464,13 @@ span.label                                          { font-size: 1.6em;  line-he
 .qaqBody{ font-size: 1.6em;} 
 .qaqBody p                                          { font-size: 1.1em;}    
 .qaqBody li { font-size: 1.1em;} 
-.qaComments li p    { font-size: 1.2em; line-height: 1.4em;}
+.qaComments li p    { font-size: 1em; line-height: 1em;}
 .qaCommentArea h2 {padding-left: 20px !important; background-position: 0px 10px !important;}
+.qaCommentArea textarea {width:100% !important; max-width:none !important;}
 .answers .tag-menu                                  { line-height: 1.4em; font-weight: normal;}
 .answers .qstats  span                    { font-size: 1em; }
 .answers .qaQuestion span.count                     { font-size: 1.6em !important; }
-.answers .dnnqaQuestion h1                          { font-size: 2.25em; } 
+.answers .dnnqaQuestion h1                          { font-size: 2.25em; padding: 0 0 10px 0} 
 .answers a.tag                                      { font-size: 0.9em !important; }
 .qaTag span.qaTagCounts                                        { font-size: 1em;}
 .qaTag span.qaTagStats                                        { font-size: 1em;}
@@ -740,8 +751,11 @@ td.af_pagernumber a                                 { color: #fff; text-decorati
 .groups .dgdGroupQuickInfo h3                       { margin: 0;padding: 20px 0 5px 0; }
 .groups .dgdGroupQuickInfo p                        { padding: 0 0 0 0;}
 
+.groups .dnnForm.dnnGroupDirectory a.createGroup    { float:none; margin-top:5px;}
+
 .GroupViewTop .dgdAvatar                            { margin: 30px 0 0 30px;}
-.GroupViewTop .GroupViewHeader                      { padding: 20px 0 0 150px; }
+.GroupViewTop .GroupViewHeader                      { padding: 20px 40px 0 150px; }
+.GroupViewTop .GroupViewHeader p.actions            { text-align:right; padding-bottom: 5px; }
 
 /*account form textarea override */
 .connect_accountform .dnnFormItem textarea          { height: 378px !important;}
@@ -787,7 +801,7 @@ span.label                                          { display: block; color: #ff
 
 /* Q&A */
 .answers .tag-menu                                  { border-bottom: 1px solid #00ABA9;border-radius: 0px;border-right: 1px solid #00ABA9;color: #F1F1F1;display: block;max-width: 400px;overflow: hidden;padding: 0.8em 1em;position: absolute;text-align: left;text-shadow: none;width: 400px;z-index: 25; margin-top:5px;}
-.answers .qaQuestion .answers.multiple              { border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;color: #FFFFFF;text-shadow: none; }
+.answers .qaQuestion .answers.multiple              { border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;color: #000;text-shadow: none; }
 .answers .qaHome:after,
 .answers .dnnqaTagList:after,
 .answers .qaBrowse:after,
@@ -804,7 +818,7 @@ span.label                                          { display: block; color: #ff
 .answers .dnnqaQuestion,
 .answers .dnnqaTagList, 
 .answers .qaSubscriptions, 
-.answers .qaAskQuestion                             { padding: 30px; width: auto !important;}
+.answers .qaAskQuestion                             { width: auto !important;}
 .answers .qaContent                                 { width: 100%;}
 .answers .qaSideList                                { width: 97%; background: #eee; padding: 20px;}
 .answers .qaQuestion .votes span, 
@@ -822,8 +836,8 @@ span.label                                          { display: block; color: #ff
 .answers .qaNav                                     { margin: 2px 2px 0 0; padding: 0 0 30px 0; }
 .answers .qaSearch                                  { display: none;}
 .answers .qaNavItems                                { border-radius: 0px; margin: 0;}
-.answers .qaAskQuestionLink                         { margin: 30px 25px 0 0;}
-.answers div.qaQuestion                             { margin: 0 0 40px 0; }
+.answers .qaAskQuestionLink                         { }
+.answers div.qaQuestion                             { margin: 0 0 10px 0; }
 
 .answers .qaTagResults ul.qaTags li {
     background: none repeat scroll 0 0 #EEEEEE;
@@ -853,8 +867,9 @@ span.label                                          { display: block; color: #ff
     width: 25%;
 }
 .qaQuestion .qnotes {
-    width: 60%;
+    width: 60%; 
 }
+.qaQuestion .qnotes h3 {line-height: normal;}
 .qstats {
     width: 40%;
 }
