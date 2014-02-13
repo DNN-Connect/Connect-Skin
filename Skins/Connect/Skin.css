@@ -169,7 +169,7 @@ a.icnAnswers                                        { background: #00ABA9 url(im
 .answers h3.dnnFormSectionHead,
 .answers .qaSideList h3                             { color: #333; }
 
-.answers .qaAskQuestion h2                            { color: #00ABA9; }
+.answers .qaAskQuestion h2                          { color: #00ABA9; }
 .answers h3 a,                                      
 .answers .dnnqaQuestion h1,
 .answers .plActions a                               { color: #00ABA9; text-decoration: none; }   
@@ -199,8 +199,14 @@ a.icnTranslations                                   { background: #8CBF26 url(im
 .translations .Connect-ModuleSearchBar, 
 .translations .mdSearch, 
 .translations .connect-content-head                 { background-color: #8CBF26; }
-.translations div.specificLocale                    { background: #ddd; border: 1px solid #999; }
-.translations div.specificLocale a                  { color: #7fbc05;}
+
+.translations a                                     { color: #8CBF26;}
+.translations h3                                    { color: #8CBF26;}
+
+.translations div.genericLocale                     { border: none; margin: 20px 0 0px 0;clear:left}
+
+.translations div.specificLocale                    { font-size: 16px;padding: 0; background: #fff; border: none; float:left; width:45%; overflow:hidden}
+.translations div.specificLocale a                  { color: #8CBF26;}
 .translations div.specificLocale a:hover            { color: #333; }
 
 
