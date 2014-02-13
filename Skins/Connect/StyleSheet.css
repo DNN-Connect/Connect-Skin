@@ -1,0 +1,208 @@
+﻿h1                          { font-size: 3em; /* 48 / 16 */ }
+h2                          { font-size: 2.5em; /* 36 / 16 */ }
+h3                          { font-size: 2.25em; /* 24 / 16 */ }
+h4                          { font-size: 2em; /* 21 / 16 */ letter-spacing: 0.1em; }
+h5                          { font-size: 1.8em; /* 18 / 16 */ }
+h6                          { font-size: 1em; /* 16 / 16 */ }
+p                           { font-size: 1.6em; }
+label                       { font-size: 1.6em; line-height: 1.2em; }
+li                          { font-size: 1.6em; }
+
+label.dnnBoxLabel           { font-size: 1em; }
+
+.dnnPrimaryAction, 
+li.dnnPrimaryAction,
+.dnnFormItem input[type="submit"],
+a.dnnPrimaryAction, 
+.Connect-SearchBarInput input[type="submit"],                      
+.dnnPrimaryAction[disabled],
+.dnnPrimaryAction[disabled]:hover, 
+.dnnPrimaryAction[disabled]:active,
+.dnnFormItem input[type="text"],
+.dnnFormItem select,
+.dnnFormItem textarea,
+.dnnFormItem input[type="email"],
+.dnnFormItem input[type="search"],
+.dnnFormItem input[type="password"],
+.dnnSecondaryAction, 
+a.dnnSecondaryAction,
+.dnnSecondaryAction:active, 
+a.dnnSecondaryAction:active,
+.dnnSecondaryAction[disabled], 
+.dnnSecondaryAction[disabled]:hover, 
+.dnnSecondaryAction[disabled]:active                  { font-size: 1em; }
+li .dnnPrimaryAction,
+li .dnnSecondaryAction                                { font-size: 1em; }
+.ModDotNetNukeModulesCoreMessagingC .dnnPrimaryAction   { font-size: 1.6em;}
+.Head {
+    font-size: 2.25em;
+}
+
+blockquote.opensource span      { font-size: 1.07em;}
+blockquote.ack span             { font-size: 4em;}
+a.lnkGroups                     {font-size: 2.25em;}
+a.white                         {font-size: 2.25em;}
+
+.connect_dnnplatform p                              { font-size: 1.6em;}
+
+.Connect-SearchBarHeading  h1, 
+.mdSearchBar h1,
+.connect-content-head h1                            { font-size: 3em; line-height: 1.3em; }
+.connectdir_areas li                                { font-size: 1em; line-height: 1.3em; }
+
+/* Directory */
+.dgdGroupQuickInfo h3 a,
+.connectdir_properties h3 a { font-size: 1em;}
+
+/*  Solutions & About Us page */
+.solutions .connect-content-head h1,
+.about_us .connect-content-head h1                  { line-height: 3.5em;}
+
+div.connect_communitylinks a                        { font-size: 1.6em;line-height: 0.3em; }
+
+/* Members */
+.mdMemberDetails .mdHoverActions li a               { font-size: 1em; }
+.mdMemberDetails .mdHoverActions li a span          { font-size: 0.75em; line-height: 1.4em }
+.members #mdMemberList .mdMemberTitle span          { font-size: 0.6em; }
+.mdMemberDetails .MdMemberInfo li span              { font-size: 0.40em; }
+.ConnectMemberActions li li a span                  { font-size: 1em;  line-height: 1.5em; }
+.mdMemberDetails p                                  { line-height: 0.5em; }
+.pBio span                                          { font-size: 1.6em;}
+
+
+.messages li li   { font-size: 1.15em;}
+.messages li li li   { font-size: 0.7em;}
+.messages li li li a  { font-size: 1em;}
+.DnnModule-Messaging-Notifications .smListings li ul .hoverControls div {
+    display: none;
+    padding-top: 5px;
+    width: 110px;
+}
+.DnnModule-Messaging-Notifications .smListings .ListCol-4 {
+    float: right;
+    max-width: 180px;
+    width: 30%;
+}
+/* Translations */
+div.genericLocale                                   { font-size: 2.5em; }
+.specificLocale a                                   { font-size: 1.6em;}
+
+/* Forums */
+.af-description                                     { font-size: 1.2em; }
+.tile-af ul li                                      { font-size: 1.2em; }
+.af-lastpost                                        { font-size: 1.0em; }
+td.afgrouprow                                       { font-size: 1.6em; }
+.ct-forumname a                                     { font-size: 1.6em; }
+.af-pager-top	                                    { font-size: 1.6em; }
+.af-title, .af-title a		                        { font-size: 1.6em; }
+.af-topic .af-title		                            { font-size: 2em; font-weight: bold; }
+.af-markread .afnormal                              { font-size: 1.6em; }
+.af-topiclink a                                     { font-size: 1.3em; }
+.af-topicarea                                       { font-size: 0.8em !important; }
+.af-topicdetails, .af-topicdetails-lastpost         { font-size: 1em !important; }
+.af-topicdetails a, .af-topicdetails-lastpost a     { font-size: 1em !important; }
+.afpagermini, .afpagermini a                        { font-size: 1.6em;}
+td.afgrouprow                                       { font-size: 1.6em; }
+.af-righttool table.afpager td                      { font-size: 1.6em; }
+td.af_currentpage                                   { font-size: 1.6em; }
+td.af_pagernumber a                                 { font-size: 1.6em; }
+.afpostbody                                         { font-size: 1.4em; }
+.afpostbody p                                       { font-size: 1em; }
+.af-profile-name                                    { font-size: 1.2em; }
+.af-topicdetails .af-profile-name,
+.af-topicdetails-lastpost .af-profile-name          { font-size: 1em; }
+.discussions td.afsubrow                            { font-size: 1.2em; }
+.af-actions li                                      { font-size: 1em; }
+.discussions .afnormal                                           { font-size: 1em; color: #333; }
+.discussions .dnnPrimaryAction                      { font-size: 1.34em; }
+.discussions .dnnPrimaryAction:hover                { text-decoration: none; }
+
+.activeForums label                                 { font-size: 1em;}
+/* Links in directory  */
+.connectdir_nav li a                                { font-size: 1.2em; line-height: 2em; }
+/* Account forms */
+span.label                                          { font-size: 1.6em;  line-height: 3.5em;}
+
+#showEditPassword                                   { font-size: 2em; }
+#connectEditContainerProfile p                      { font-weight: bold;}
+#connectEditContainerProfile select                 { font-size: 1.4em;}
+.ModConnectAccountRegistrationC input[type="text"],
+.ModConnectAccountRegistrationC input[type="password"],
+.ModConnectAccountUpdateC input[type="text"],
+.ModConnectAccountUpdateC input[type="password"]    { font-size: 1.6em;}
+
+/* Console Module */
+.sidebar .console .console-none h3                  { font-size: 2em;line-height: 2em;  }
+
+/* Q&A */
+.qaNavItems li  {font-size: 1em;}
+.qaNavItems li a                                    { font-size: 1.6em;}
+.qaqBody{ font-size: 1.6em;} 
+.qaqBody p                                          { font-size: 1.1em;}    
+.qaqBody li { font-size: 1.1em;} 
+.qaComments li p    { font-size: 1em; line-height: 1em;}
+.qaCommentArea h2 {padding-left: 20px !important; background-position: 0px 10px !important;}
+.qaCommentArea textarea {width:100% !important; max-width:none !important;}
+.answers .tag-menu                                  { line-height: 1.4em; font-weight: normal;}
+.answers .qstats  span                    { font-size: 1em; }
+.answers .qaQuestion span.count                     { font-size: 1.6em !important; }
+.answers .dnnqaQuestion h1                          { font-size: 2.25em; padding: 0 0 10px 0} 
+.answers a.tag                                      { font-size: 0.9em !important; }
+.qaTag span.qaTagCounts                                        { font-size: 1em;}
+.qaTag span.qaTagStats                                        { font-size: 1em;}
+.qaTag span                                        { font-size: 1.4em;}
+
+.qaTag .tm-sub-links                                 { font-size: 0.8em !important;}
+.qaTag .tm-links a                                  { font-size: 0.5em !important;}
+.qaTag .tm-links .tm-links a                                  { font-size: 0.3em !important;}
+.answers .tm-sub-info{ font-size: 1em;}
+.answers h2.dnnFormSectionHead,
+.answers h3                                         { font-size: 2.25em; }
+.qaSortActions  {}
+.qaSortActions li a                                { font-size: 1.2em;}
+ .answers .qaQuestion a,
+.qaAskQuestionLink a, 
+.qaAskQuestionLink a:link, 
+.qaAskQuestionLink a:visited                        { font-size: 1.6em; } 
+.answers input[type="text"]                       { font-size: 1.6em !important;}
+
+/* Blogs */
+.postcontentholder li a                             { font-size: 0.9em; }
+.postmorelink a.dnnPrimaryAction                    { font-size: 1.6em;}
+.blogs .dnnPrimaryAction,
+.blogs .dnnSecondaryAction                            { font-size: 1.6em; }
+/* Events */
+
+.connect-events-meta h2                             { letter-spacing: 0.06em; line-height: 0.9em;}
+.connect-events-meta h2 a                           { letter-spacing: 0.06em; }
+.connect-events-meta h3                             { font-size: 1.6em; letter-spacing: 0.05em;}
+.connect-events-meta h4                             { font-size: 1.6em;}
+.connect-events-meta h4 a                           { font-size: 1em; }
+.events .DetailEnrollLeft a                         { font-size: 1.6em; }
+.events .DetailEnrollRight span                     { font-size: 1.6em; }
+.events .DetailEnrollRight input                    { font-size: 1em !important; }
+.events td.DetailEnrollDisplay a                    { font-size: 1.2em !important; }
+.events .ThemeDefault .ListHeader, 
+.events .ThemeDefault .DetailEnrollGridHeader, 
+.events .ThemeDefault .EditEnrollGridHeader, 
+.events .ThemeDefault .EnrollGridHeader             { font-family: 'Muli';font-size: 0.8em;font-weight: 300;}
+
+/* members area */
+.GroupViewTop h3                                    { font-size: 1.6em; }
+
+/* journal */
+.journalitem i                                     { font-size: 1.4em;}
+.journalitem i p                                      { font-size: 1em;}
+.journalitem ul.jcmt li p                           { font-size: 0.8em; line-height: 1.6em;}
+.journalitem i                                      { font-size: 1.4em;}
+.journalitem i                                      { font-size: 1.4em;}
+
+.connect-content-head p                             { font-size: 1.6em;}
+
+ul.dnnAdminTabNav li a {
+    font-size: 0.8em;
+}
+
+.reToolbar span, .reEditorModes span, .RadTreeView span, .RadTreeView li {font-size: 12px; line-height: normal;}
+.dnnFormMessage span    { font-size: 1.6em;}
+.dnnSendPasswordContent input[type="text"] { font-size: 1.6em; }

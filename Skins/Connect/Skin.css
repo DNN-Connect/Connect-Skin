@@ -1,4 +1,4 @@
-﻿.clearfix:after             { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
+﻿ .clearfix:after             { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
 body, html, *, p, h1, h2, h3, h4, h5       { margin: 0; padding: 0;}
 
 html                { overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
@@ -22,6 +22,7 @@ html                { overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
 
 /* tiles setup */
 .tile                                           { min-height: 300px;}
+.tile.tile_bar                                       { min-height: 0;}
 .tile_900_900                                   { width: 902px; min-height: 904px; margin: 0 0 0 2px;}
 .tile_900_600                                   { width: 902px; min-height: 602px; margin: 0 0 0 2px;}
 .tile_600_600                                   { width: 604px; height: 602px; margin: 0 2px 2px 0;}
@@ -42,8 +43,8 @@ html                { overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
 .content				                        { width: 908px; }
 
 /* overrides panes */
-.admin .content                            { width:95%;padding:0; }
-.admin .tile_content                               {padding: 30px;}
+.admin .content                                 { width:95%;padding:0; }
+.admin .tile_content                            { padding: 30px;}
 /*home page tiles */
 .home .tile                                     { float:left; }
 
@@ -84,8 +85,14 @@ p, .Normal, div                                     { color: #333; }
 
 .Connect-SearchBarInput input[type="text"], 
 .searchWrapper input[type="text"]                   { background-color: #FFFFFF; border: 1px solid #CCCCCC; }
-.dnnAdminTabNav a span                              { color: #fff; }
 .connect_usertoolbar .userMessages                  { color: #fff; }
+
+a.white                                             { color: #FFFFFF; }
+a.white:hover                                       { color: #333; }
+
+a.lnkGroups                                         { background: #d68a3a url("images/groups.png") center center no-repeat;color: #FFFFFF; }   
+a.lnkGroups:hover                                   { color: #333;}
+
 /* Default ***************************************************************************/
 /* BLUE */ 
          
@@ -156,17 +163,16 @@ a.icnAnswers                                        { background: #00ABA9 url(im
 .answers .qaSideList h3                             { color: #333; }
 .answers h3 a,                                      
 .answers .dnnqaQuestion h1,
-.answers .plActions a                          { color: #00ABA9; text-decoration: none; }   
+.answers .plActions a                               { color: #00ABA9; text-decoration: none; }   
 .answers h3 a:hover,
-.answers .plActions a:hover                                 { color: #333; text-decoration: none; }
-.qaQuestion .answers.multiple                   { background: #ccc !important; }
+.answers .plActions a:hover                         { color: #333; text-decoration: none; }
+.qaQuestion .answers.multiple                       { background: #ccc !important; }
 .qaAskQuestionLink a, .qaAskQuestionLink a:link, 
 .qaAskQuestionLink a:visited,
 .qaUserScore,.answers .tag-menu,
 .answers a.tag:hover                                { background: #00ABA9 !important; color: #333;}
-.answers a.tag                                      { background: #01dad7 !important; color: #fff !important; }
-.dnnqaQuestion a, .qaHome a {color: #00aba9;}
-.answers .qaQuestion .started a {font-size:11px;}
+.answers a.tag                                      { background: #01dad7 !important; color: #333 !important; }
+.dnnqaQuestion a, .qaHome a                         {color: #00aba9;}
 
 /* Translations *******************************************************************/
 /* LIME */		    .color4, .lime                  { background-color: #8CBF26; }
@@ -195,22 +201,23 @@ a.icnGroups					                        { background: #A05000 url(images/metro/i
 .groups .Connect_GroupIntro                         { background: #fff;}
 .groups .dgdGroupQuickInfo h3 a                     { color: #A05000; text-decoration: none; }
 .groups .dgdGroupQuickInfo h3 a:hover               { color: #333; }
-.groups .dgdGroupQuickInfo ul li                    { font-weight:normal; font-size: 12px }
-.dgdGroupQuickInfo ul li a                          { font-size: 12px; }
 .groups .GroupViewTop,                               
 .GroupViewTop                                       { background-color: #A05000; }
 .GroupViewTop h1                                    { color: #fff;}
 .GroupViewTop a                                     { color: #fff;}
 .GroupViewTop .dnnPrimaryAction                     { background:#793d01;}
+.groups .dgdGroupQuickInfo ul li                    { color: #333; }
 
-.groups a.dnnTertiaryAction                        { border: none; background: #A05000; color: #fff;-webkit-border-radius: 0;border-radius: 0;}
-.groups .dnnTertiaryAction:hover,.groups  a.dnnTertiaryAction:hover     {background: #A05000;}
-.groups .dnnTertiaryAction:active,.groups  a.dnnTertiaryAction:active   {background: #A05000;}
+.groups a.dnnTertiaryAction                         { border: none; background: #A05000; color: #fff;-webkit-border-radius: 0;border-radius: 0;}
+.groups .dnnTertiaryAction:hover,
+.groups  a.dnnTertiaryAction:hover                  { background: #A05000;}
+.groups .dnnTertiaryAction:active,
+.groups  a.dnnTertiaryAction:active                 { background: #A05000;}
 
 .group .journalitem a, 
 .group .journalitem a:link, 
 .group .journalitem a:visited, 
-.group .journalitem a:active                         { color: #A05000; }
+.group .journalitem a:active                        { color: #A05000; }
 
 /* Kickstart **********************************************************************/
 /* PINK */			.color5, .pink                  { background-color: #E671B8; }
@@ -243,7 +250,7 @@ a.icnMembers				                        { background: #F09609 url(images/metro/i
 .members .mdHoverActions a:hover	                { color: #fff; }
 .my_profile .GroupViewTop                           { background: #F09609;}
 .ConnectMemberActions #mdMemberList > li            { background: none transparent; }
-
+.members a.dnnTertiaryAction                        { background: #F09609; color: #fff; }
 
 /* Forums *************************************************************************/
 /* RED */           .color8, .red                   { background-color: #ef2c1a; } 
@@ -276,7 +283,7 @@ td.af_currentpage                                   { background-color: #98C739;
 td.af_pagernumber                                   { background-color: #00A8EC; }
 .af-righttool table.afpager                         { background-color: #c74000;border: 1px solid #ffffff;}
 .discussions .dnnPrimaryAction:hover                { color: #333; }
-
+.af-title, .af-title a     { color: #ef2c1a !important;}
 /* BLOGS *******************************************************************/
 /* Blog */
 /* GREEN */         .color10, .green                { background-color: #339933; } 
@@ -303,238 +310,59 @@ a.icnBlogs					                        { background: #339933 url(images/metro/ic
 /* FONT SETUP                          */
 /***************************************/
 
-* a, a                      { cursor: pointer !important; cursor: hand !important; }
+* a, a                          { cursor: pointer !important; cursor: hand !important; }
 
 
 /* Font Families */
 html, body, *, .Normal,
 a, a:link, a:active, 
-a:visited, div, p, span, .discussions .afnormal     { font-family: 'Muli', Verdana, Helvetica, sans-serif; }
-h1, h2, h3, h4              { font-family: 'novecento_widedemibold', Verdana, Helvetica, sans-serif; }
+a:visited, div, p, span, 
+.afnormal,
+button, input, select, textarea                      { font-family: 'Muli', Verdana, Helvetica, sans-serif; }
+h1, h2, h3, h4                  { font-family: 'novecento_widedemibold', Verdana, Helvetica, sans-serif; }
 
 
 
-strong, .strong             { font-weight: bold;}
+strong, .strong                 { font-weight: bold;}
 
 
 /* Font sizes */
 
-body, .Normal{ font-size: 10px; line-height: 24px; }
+body, .Normal, input, select, textarea, .afcontainer, .afgrid                   { font-size: 16px !important; line-height: 24px !important; }
+li p                            { line-height: 24px !important; }
 
+h1                              { font-size: 36px; }
+h2                              { font-size: 32px; }
+h3                              { font-size: 28px; }
+h4                              { font-size: 24px; letter-spacing: 0.4px; }
+h5                              { font-size: 20px; }
+h6                              { font-size: 16px; }
 
-h1                          { font-size: 3em; /* 48 / 16 */ }
-h2                          { font-size: 2.5em; /* 36 / 16 */ }
-h3                          { font-size: 2.25em; /* 24 / 16 */ }
-h4                          { font-size: 2em; /* 21 / 16 */ letter-spacing: 0.1em; }
-h5                          { font-size: 1.8em; /* 18 / 16 */ }
-h6                          { font-size: 1em; /* 16 / 16 */ }
-p                           { font-size: 1.6em; }
-label                       { font-size: 1.6em; line-height: 1.2em; }
-li                          { font-size: 1.6em; }
+.connect_dnnplatform a.white,    
+a.lnkGroups { font-size: 1.875em; }
+.qaQuestion .started            { font-size: 1em; }
 
-label.dnnBoxLabel           { font-size: 1em; }
+.pBio h3, .pContact h3, .pAddress h3                { }
 
-.dnnPrimaryAction, 
-li.dnnPrimaryAction,
-.dnnFormItem input[type="submit"],
-a.dnnPrimaryAction, 
-.Connect-SearchBarInput input[type="submit"],                      
-.dnnPrimaryAction[disabled],
-.dnnPrimaryAction[disabled]:hover, 
-.dnnPrimaryAction[disabled]:active,
-.dnnFormItem input[type="text"],
-.dnnFormItem select,
-.dnnFormItem textarea,
-.dnnFormItem input[type="email"],
-.dnnFormItem input[type="search"],
-.dnnFormItem input[type="password"],
-.dnnSecondaryAction, 
-a.dnnSecondaryAction,
-.dnnSecondaryAction:active, 
-a.dnnSecondaryAction:active,
-.dnnSecondaryAction[disabled], 
-.dnnSecondaryAction[disabled]:hover, 
-.dnnSecondaryAction[disabled]:active                  { font-size: 1em; }
-li .dnnPrimaryAction,
-li .dnnSecondaryAction                                { font-size: 1em; }
-.ModDotNetNukeModulesCoreMessagingC .dnnPrimaryAction   { font-size: 1.6em;}
-.Head {
-    font-size: 2.25em;
-}
+.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction, .Connect-SearchBarInput input[type="submit"], .qaAskQuestionLink a, .qaAskQuestionLink a:link, .qaAskQuestionLink a:visited, .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only,
+.dnnSecondaryAction, a.dnnSecondaryAction, .dnnFormItem input
+{ font-size: 16px !important; }
 
-blockquote.opensource span      { font-size: 1.07em;}
-blockquote.ack span             { font-size: 4em;}
-a.lnkGroups                     {font-size: 2.25em;}
-a.white                         {font-size: 2.25em;}
+.dnnqaQuestion h1               { font-size: 28px; }
+.dnnqaQuestion h2               { font-size: 24px; }
+.dgdGroupQuickInfo ul li        { font-size: inherit; }
+.mdMemberDetails .mdHoverActions li a { font-size: 12px;}
 
-.connect_dnnplatform p                              { font-size: 1.6em;}
-
-.Connect-SearchBarHeading  h1, 
-.mdSearchBar h1,
-.connect-content-head h1                            { font-size: 3em; line-height: 1.3em; }
-.connectdir_areas li                                { font-size: 1em; line-height: 1.3em; }
-
-/* Directory */
-.dgdGroupQuickInfo h3 a,
-.connectdir_properties h3 a { font-size: 1em;}
-
-/*  Solutions & About Us page */
-.solutions .connect-content-head h1,
-.about_us .connect-content-head h1                  { line-height: 3.5em;}
-
-div.connect_communitylinks a                        { font-size: 1.6em;line-height: 0.3em; }
-
-/* Members */
-.mdMemberDetails .mdHoverActions li a               { font-size: 1em; }
-.mdMemberDetails .mdHoverActions li a span          { font-size: 0.75em; line-height: 1.4em }
-.members #mdMemberList .mdMemberTitle span          { font-size: 0.6em; }
-.mdMemberDetails .MdMemberInfo li span              { font-size: 0.40em; }
-.ConnectMemberActions li li a span                  { font-size: 1em;  line-height: 1.5em; }
-.mdMemberDetails p                                  { line-height: 0.5em; }
-.pBio span                                          { font-size: 1.6em;}
-
-
-.messages li li   { font-size: 1.15em;}
-.messages li li li   { font-size: 0.7em;}
-.messages li li li a  { font-size: 1em;}
-.DnnModule-Messaging-Notifications .smListings li ul .hoverControls div {
-    display: none;
-    padding-top: 5px;
-    width: 110px;
-}
-.DnnModule-Messaging-Notifications .smListings .ListCol-4 {
-    float: right;
-    max-width: 180px;
-    width: 30%;
-}
-/* Translations */
-div.genericLocale                                   { font-size: 2.5em; }
-.specificLocale a                                   { font-size: 1.6em;}
-
-/* Forums */
-.af-description                                     { font-size: 1.2em; }
-.tile-af ul li                                      { font-size: 1.2em; }
-.af-lastpost                                        { font-size: 1.0em; }
-td.afgrouprow                                       { font-size: 1.6em; }
-.ct-forumname a                                     { font-size: 1.6em; }
-.af-pager-top	                                    { font-size: 1.6em; }
-.af-title, .af-title a		                        { font-size: 1.6em; }
-.af-topic .af-title		                            { font-size: 2em; font-weight: bold; }
-.af-markread .afnormal                              { font-size: 1.6em; }
-.af-topiclink a                                     { font-size: 1.3em; }
-.af-topicarea                                       { font-size: 0.8em !important; }
-.af-topicdetails, .af-topicdetails-lastpost         { font-size: 1em !important; }
-.af-topicdetails a, .af-topicdetails-lastpost a     { font-size: 1em !important; }
-.afpagermini, .afpagermini a                        { font-size: 1.6em;}
-td.afgrouprow                                       { font-size: 1.6em; }
-.af-righttool table.afpager td                      { font-size: 1.6em; }
-td.af_currentpage                                   { font-size: 1.6em; }
-td.af_pagernumber a                                 { font-size: 1.6em; }
-.afpostbody                                         { font-size: 1.4em; }
-.afpostbody p                                       { font-size: 1em; }
-.af-profile-name                                    { font-size: 1.2em; }
-.af-topicdetails .af-profile-name,
-.af-topicdetails-lastpost .af-profile-name          { font-size: 1em; }
-.discussions td.afsubrow                            { font-size: 1.2em; }
-.af-actions li                                      { font-size: 1em; }
-.discussions .afnormal                                           { font-size: 1em; color: #333; }
-.discussions .dnnPrimaryAction                      { font-size: 1.34em; }
-.discussions .dnnPrimaryAction:hover                { text-decoration: none; }
-
-.activeForums label                                 { font-size: 1em;}
-/* Links in directory  */
-.connectdir_nav li a                                { font-size: 1.2em; line-height: 2em; }
-/* Account forms */
-span.label                                          { font-size: 1.6em;  line-height: 3.5em;}
-
-#showEditPassword                                   { font-size: 2em; }
-#connectEditContainerProfile p                      { font-weight: bold;}
-#connectEditContainerProfile select                 { font-size: 1.4em;}
-.ModConnectAccountRegistrationC input[type="text"],
-.ModConnectAccountRegistrationC input[type="password"],
-.ModConnectAccountUpdateC input[type="text"],
-.ModConnectAccountUpdateC input[type="password"]    { font-size: 1.6em;}
-
-/* Console Module */
-.sidebar .console .console-none h3                  { font-size: 2em;line-height: 2em;  }
-
-/* Q&A */
-.qaNavItems li  {font-size: 1em;}
-.qaNavItems li a                                    { font-size: 1.6em;}
-.qaqBody{ font-size: 1.6em;} 
-.qaqBody p                                          { font-size: 1.1em;}    
-.qaqBody li { font-size: 1.1em;} 
-.qaComments li p    { font-size: 1em; line-height: 1em;}
-.qaCommentArea h2 {padding-left: 20px !important; background-position: 0px 10px !important;}
-.qaCommentArea textarea {width:100% !important; max-width:none !important;}
-.answers .tag-menu                                  { line-height: 1.4em; font-weight: normal;}
-.answers .qstats  span                    { font-size: 1em; }
-.answers .qaQuestion span.count                     { font-size: 1.6em !important; }
-.answers .dnnqaQuestion h1                          { font-size: 2.25em; padding: 0 0 10px 0} 
-.answers a.tag                                      { font-size: 0.9em !important; }
-.qaTag span.qaTagCounts                                        { font-size: 1em;}
-.qaTag span.qaTagStats                                        { font-size: 1em;}
-.qaTag span                                        { font-size: 1.4em;}
-
-.qaTag .tm-sub-links                                 { font-size: 0.8em !important;}
-.qaTag .tm-links a                                  { font-size: 0.5em !important;}
-.qaTag .tm-links .tm-links a                                  { font-size: 0.3em !important;}
-.answers .tm-sub-info{ font-size: 1em;}
-.answers h2.dnnFormSectionHead,
-.answers h3                                         { font-size: 2.25em; }
-.qaSortActions  {}
-.qaSortActions li a                                { font-size: 1.2em;}
- .answers .qaQuestion a,
-.qaAskQuestionLink a, 
-.qaAskQuestionLink a:link, 
-.qaAskQuestionLink a:visited                        { font-size: 1.6em; } 
-.answers input[type="text"]                       { font-size: 1.6em !important;}
-
-/* Blogs */
-.postcontentholder li a                             { font-size: 0.9em; }
-.postmorelink a.dnnPrimaryAction                    { font-size: 1.6em;}
-.blogs .dnnPrimaryAction,
-.blogs .dnnSecondaryAction                            { font-size: 1.6em; }
-/* Events */
-
-.connect-events-meta h2                             { letter-spacing: 0.06em; line-height: 0.9em;}
-.connect-events-meta h2 a                           { letter-spacing: 0.06em; }
-.connect-events-meta h3                             { font-size: 1.6em; letter-spacing: 0.05em;}
-.connect-events-meta h4                             { font-size: 1.6em;}
-.connect-events-meta h4 a                           { font-size: 1em; }
-.events .DetailEnrollLeft a                         { font-size: 1.6em; }
-.events .DetailEnrollRight span                     { font-size: 1.6em; }
-.events .DetailEnrollRight input                    { font-size: 1em !important; }
-.events td.DetailEnrollDisplay a                    { font-size: 1.2em !important; }
-.events .ThemeDefault .ListHeader, 
-.events .ThemeDefault .DetailEnrollGridHeader, 
-.events .ThemeDefault .EditEnrollGridHeader, 
-.events .ThemeDefault .EnrollGridHeader             { font-family: 'Muli';font-size: 0.8em;font-weight: 300;}
-
-/* members area */
-.GroupViewTop h3                                    { font-size: 1.6em; }
-
-/* journal */
-.journalitem i                                     { font-size: 1.4em;}
-.journalitem i p                                      { font-size: 1em;}
-.journalitem ul.jcmt li p                           { font-size: 0.8em; line-height: 1.6em;}
-.journalitem i                                      { font-size: 1.4em;}
-.journalitem i                                      { font-size: 1.4em;}
-
-.connect-content-head p                             { font-size: 1.6em;}
-
-ul.dnnAdminTabNav li a {
-    font-size: 0.8em;
-}
-
-.reToolbar span, .reEditorModes span, .RadTreeView span, .RadTreeView li {font-size: 12px; line-height: normal;}
-.dnnFormMessage span    { font-size: 1.6em;}
-.dnnSendPasswordContent input[type="text"] { font-size: 1.6em; }
-
+.ct-forumname a { font-size: 1.875em;}
+.af-title, .af-title a     { font-size: 1.875em;}
+.af-topiclink a     { font-size: 1.275em;}
+.af-lastpost        { font-size: 0.9em;}
 /******************************************************************************************************/
 /* modules and other overrides */
 /******************************************************************************************************/
 
+/* Autocomplet Menu */
+ul.ui-autocomplete  { z-index: 100; border-radius: 0px;}
 
 /* reset password page */
 
@@ -569,9 +397,30 @@ ul.dnnAdminTabNav li a {
 .searchWrapper                                      { float:left; }
 .Connect-SearchBarInput, .searchWrapper             { margin: 0 0 0 40px; }
 .Connect-SearchBarInput input[type="text"], 
-.searchWrapper input[type="text"]                   { float: left;margin: 0;padding: 9px;width:80%;}
+.searchWrapper input[type="text"]                   { float: left;margin: 0;padding: 7px 9px 7px 9px;width:80% !important;}
 .Connect-SearchBarHeading h1, .mdSearchBar h1,
 .connect-content-head h1                            { padding: 20px 0 20px 40px; }
+/* overwrite headings on pages without search */
+.solutions .connect-content-head h1,
+.about_us .connect-content-head h1                  { padding: 40px 0 30px 40px;}
+
+/* Memberspage overwrite */
+.dnnMemberDirectory .mdSearchBar    { position: relative; }
+.dnnMemberDirectory .mdSearchBar,                   
+.dnnMemberDirectory .searchWrapper { width: 100%; }
+.dnnMemberDirectory .searchWrapper { overflow: hidden !important;}
+.dnnMemberDirectory .mdSearchBar .dnnPrimaryAction {
+    float: left;
+    left: 83.1%;
+    margin-left: 10px;
+    position: absolute;
+    top: 94px;
+}
+.dnnMemberDirectory .mdSearchBar input[type="text"] {
+    display: block;
+    float: left;
+    width: 76.47% !important;
+}
 .Connect-SearchBarHeading input[type="submit"]      { padding:10px 20px 11px 35px;} /*used on directory page*/
 .Connect-SearchBarHeading input[type="submit"],
 .Connect-SearchBarInput a.dnnPrimaryAction,
@@ -623,7 +472,7 @@ ul.dnnAdminTabNav li a {
 .mdMemberDetails .mdMemberImg                       { background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #DDDDDD;border-radius: 0px;display: block;float: left;height: auto;margin: 0 15px 15px 0;min-width: 50px;padding: 1px; }
 .mdMemberDetails .mdHoverActions                    { border-top: 1px solid #fefefe;bottom: 0;clear: both;height: 32px;left: 0;position: absolute;text-shadow: 0 1px 0 #FFFFFF;width: 100%;}
 .DnnModule .mdMemberDetails ul, .mdMemberDetails li { color: #fff;list-style: none outside none;margin: 0;padding: 0; }
-.mdMemberDetails .mdHoverActions li a               { display: block;min-height: 12px;min-width: 35px;padding: 8px 7px; }
+.mdMemberDetails .mdHoverActions li a               { display: block;min-height: 12px;min-width: 35px;padding: 5px 7px; }
 .mdMemberDetails .mdHoverActions li a.ComposeMessage{ padding: 10px 7px; }
 .mdMemberDetails .mdHoverActions li p               { margin: 0; padding: 8px; }
 .mdMemberDetails .mdHoverActions p span             { text-shadow: none; color: #ccc; }
@@ -642,7 +491,7 @@ ul.dnnAdminTabNav li a {
 .pContact li                                        { list-style-type: none;}
 .pContact li strong                                 { display: block; width: 100px; float:left;}
 .pBio                                               { margin: 40px 0 0 0;}
-.pBio h3, .pContact h3, .pAddress h3                { color: #444; font-size: 20px; letter-spacing: 0.01em;}
+
 
 
 /* Translation Module */
@@ -704,7 +553,7 @@ td.afgrouprow                                       { color: #FFFFFF;font-weight
 .afpostinfo1, .afpostinfo2                          { padding: 20px; background: #eee !important;}
 .afpostreply1                                       { background: #fff;}
 td.af_pagernumber a                                 { color: #fff; text-decoration: none; }
-.af-crumb                                           { clear:both; margin-top: 0px; }
+.af-crumb                                           { clear:both; margin-top: 0px; padding: 10px 0 0 0; }
 .af-quickreply, #afgrid                             { margin: 0 20px 0 0; }
 #groupQR                                            { padding-top: 20px; }
 #afgrid .afeditor	                                { width: 100%; margin-top: 20px; }
@@ -730,7 +579,7 @@ td.af_pagernumber a                                 { color: #fff; text-decorati
 
 .connectdir_nav                                     { margin: 0; padding:0;}
 .connectdir_nav li                                  { list-style-type: none;}
-.connectdir_nav li a                                { display: block; padding: 0 0 0 30px;color: #fff; height: inherit; border-top: none; text-decoration: none;}
+.connectdir_nav li a                                { display: block; padding: 8px 0 8px 30px;color: #fff; height: inherit; border-top: none; text-decoration: none;}
 
 
 .connectdir_search                                  { padding: 30px;}
@@ -752,11 +601,15 @@ td.af_pagernumber a                                 { color: #fff; text-decorati
 .groups .dgdGroupQuickInfo p                        { padding: 0 0 0 0;}
 
 .groups .dnnForm.dnnGroupDirectory a.createGroup    { float:none; margin-top:5px;}
-
+.groups .dgdGroupQuickInfo ul                       {margin: 10px 0 0 0;}
 .GroupViewTop .dgdAvatar                            { margin: 30px 0 0 30px;}
 .GroupViewTop .GroupViewHeader                      { padding: 20px 40px 0 150px; }
 .GroupViewTop .GroupViewHeader p.actions            { text-align:right; padding-bottom: 5px; }
 
+/* create group text module */
+.groups-create-group    {padding: 30px 0 0 0;}
+.groups-create-group p {text-align: center; margin: 0;}
+.dgdMainContent .createGroup    {display: none;}
 /*account form textarea override */
 .connect_accountform .dnnFormItem textarea          { height: 378px !important;}
 
@@ -775,9 +628,17 @@ td.af_pagernumber a                                 { color: #fff; text-decorati
     margin-left: 10px;
 }
 
-#connectEditContainerProfile .dnnFormItem input[type="text"], .dnnFormItem input[type="password"], .dnnFormItem input[type="email"], .dnnFormItem input[type="tel"], .dnnFormItem select, .dnnFormItem textarea {
+#connectEditContainerProfile .dnnFormItem input[type="text"], .dnnFormItem input[type="text"], .dnnFormItem input[type="password"], .dnnFormItem input[type="email"], .dnnFormItem input[type="tel"], .dnnFormItem select, .dnnFormItem textarea {
     max-width: 300px;
     width: 33%;
+}
+.composeMessageDialog .dnnFormItem input[type="text"],
+.composeMessageDialog .dnnFormItem textarea {
+    width: 44%;
+}
+.answers .dnnFormItem textarea {
+    width: 90%;
+    max-width: inherit;
 }
 #connectEditContainerProfile .dnnFormItem select {padding: 8px;}
 .visLessMargin {margin-left: -4px;}
@@ -794,7 +655,7 @@ span.label                                          { display: block; color: #ff
 /* dnn console module */
 .sidebar .console                                   { width: 100%;height: inherit;-moz-box-shadow: 0 0 0 #bbb;-webkit-box-shadow: 0 0 0 #bbb;box-shadow: 0 0 0 #bbb;padding: 10px 0 10px 0;}
 .sidebar .console .console-none                     { margin: 0;padding: 0; height: 40px;}
-.sidebar .console .console-none h3                  { border-left: none ;margin: 0;padding: 0 0 0 60px;color: #fff; height: inherit; border-top: none;}
+.sidebar .console .console-none h3                  { border-left: none ;margin: 0;padding: 8px 0 0 60px;color: #fff; height: inherit; border-top: none;}
 .sidebar .console .console-none h3:first-child      { border-top: none;}
 .sidebar .console div                               { width: auto;display: block;float: none;}
 .sidebar .console .active h3                        { border-left: none; color: #333; background: url(images/marker.png) 20px 8px no-repeat;}
@@ -828,9 +689,13 @@ span.label                                          { display: block; color: #ff
 .answers ul.myDashboardNumbers,
 .answers .qaSideList .plActions                     { margin: 0 0 30px 0;}
 .answers input.qaAskQuestion                        { width: 100% !important; max-width: 500px !important; margin-left: 0 !important;}
-.answers a.tag                                      { border-radius: 0px;bottom: auto;margin: 2px 2px 6px 0;padding: 4px 8px 6px 8px;text-shadow: none;text-transform: lowercase; color: #333; text-decoration: none; }
+.answers a.tag                                      { border-radius: 0px;bottom: auto;margin: 2px 2px 6px 0;padding: 4px 8px 6px 8px;text-shadow: none;text-transform: lowercase; text-decoration: none; }
 .answers h2.dnnFormSectionHead,
 .answers h3                                         { border-bottom: none;letter-spacing: 0em; margin: 0; padding: 0 0 20px 0; }
+.answers .qaCommentArea h2.dnnFormSectionHead {
+    padding: 0 0 0 20px;
+    background-position: 0 10px !important;
+}
 .answers .qaUserScore                               { border: 1px solid #CCCCCC;border-radius: 0px;color: #fff;margin: 0;padding: 5px 15px 5px 15px;width: 204px; }
 .answers p.qaUserPrivilegeScore                     { margin: 0; padding: 20px 0 20px 0;}
 .answers .qaNav                                     { margin: 2px 2px 0 0; padding: 0 0 30px 0; }
@@ -856,7 +721,7 @@ span.label                                          { display: block; color: #ff
 
 .answers .RadEditor,                                    
 .answers .dnnTextPanelView                          { width: 700px !important;}
-.answers .percentRight                              { clear:both; float:left; padding-left: 7px; padding-top: 5px; font-size: 0.8em;}
+.answers .percentRight                              { clear:both; float:left; padding-left: 7px; padding-top: 5px; }
 .qaQuestion .votes, .qaQuestion .answers, .qaQuestion .views {
     background: none repeat scroll 0 0 #EEEEEE;
     border-bottom: 1px solid #DADADA;
@@ -884,8 +749,8 @@ span.label                                          { display: block; color: #ff
 div.connect_communitylinks a                    { float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; text-decoration: none; text-align: center; }
 div.connect_communitylinks a.B                  { margin: 0 0 2px 0; width:150px; }       
 div.connect_communitylinks a:hover,
-div.connect_communitylinks a.B:hover            {opacity:0.8;
-filter:alpha(opacity=80); /* For IE8 and earlier */ color: #000;}
+div.connect_communitylinks a.B:hover            {opacity:0.8; filter:alpha(opacity=80); /* For IE8 and earlier */ color: #000;}
+div.connect_communitylinks a.bottom             {margin-bottom: 0; }
 
 /* platform tile content */
 .connect_dnnplatform                            { padding: 20px;}
@@ -899,10 +764,9 @@ blockquote.ack                                  { padding: 25px 0 0px 20px;margi
 blockquote.ack span                             { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: 220px 165px;line-height: 200px;font-style: normal;font-weight: normal;font-family: 'novecento_widedemibold', Arial, sans-serif; color: #fff;}
 
 /* linkt to groups */
-a.lnkGroups                                     { background: #d68a3a url("images/groups.png") center center no-repeat;color: #FFFFFF;display: block;height: 60px;padding: 240px 0 0;text-align: center;text-decoration: none;width: 300px;}   
-a.lnkGroups:hover                               { color: #333;}
+a.lnkGroups                                     { display: block;height: 60px;padding: 240px 0 0;text-align: center;text-decoration: none;width: 300px;}   
 
-a.white                                         {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);color: #FFFFFF;text-align: center;text-decoration: none;text-transform: lowercase; }
+a.white                                         { background: none repeat scroll 0 0 rgba(0, 0, 0, 0);text-align: center;text-decoration: none;text-transform: lowercase; }
 .center                                         { text-align: center;}
 
 .connect-content-head p                         { margin: 0; padding:0;}
@@ -932,7 +796,8 @@ a.white                                         {background: none repeat scroll 
 /* Primary Action */
 .dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction, .Connect-SearchBarInput input[type="submit"],
 .qaAskQuestionLink a, .qaAskQuestionLink a:link, .qaAskQuestionLink a:visited, 
-.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only { border:none !important; color: #fff;border-radius:0;-moz-border-radius:0; text-shadow: none; font-weight:normal; }
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only,
+.dnnTertiaryAction, a.dnnTertiaryAction { border:none !important; color: #fff;border-radius:0;-moz-border-radius:0; text-shadow: none; font-weight:normal; }
 .dnnPrimaryAction:hover, .dnnFormItem input[type="submit"]:hover, a.dnnPrimaryAction:hover, 
 .dnnPrimaryAction:active, .dnnFormItem input[type="submit"]:active, a.dnnPrimaryAction:active { border:none;color: #fff; }
 .dnnPrimaryAction[disabled], .dnnPrimaryAction[disabled]:hover, .dnnPrimaryAction[disabled]:active {background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important; color: #aaa !important; text-shadow: none; }
@@ -945,6 +810,7 @@ a.white                                         {background: none repeat scroll 
     cursor: hand !important;
 }
 
+ul.token-input-list-facebook    { border-radius: 0px !important; width: 46.5% !important; }
 /* Secondary Action */
 .dnnSecondaryAction, a.dnnSecondaryAction { background: #aaa; border:none !important;color: #fff;border-radius:0;-moz-border-radius:0;text-shadow: none; font-weight:normal; }
 .dnnSecondaryAction:hover, a.dnnSecondaryAction:hover,
@@ -995,7 +861,6 @@ ul.dnnAdminTabNav li a {
 @media only screen and (min-width: 200px) and (max-width: 680px) 
 {
 
-    body, .Normal{ font-size: 8px; line-height: 24px; }
     .skinWidth {width: 100%; margin: 0;}
 
     .sticky             { position: fixed; margin: 0 auto; top: 0; width: 100% !important; z-index: 50 !important;}
@@ -1021,7 +886,7 @@ ul.dnnAdminTabNav li a {
     .af-description { display: block; padding: 1% 0 0 15%; margin: 0;}
     .af-lastpost { display: block; padding: 0 0 0 15%; margin: 0;}
     .aftb-search {display:none !important;}
-    .af-topicdetails-lastpost a {line-height: 2px !important; font-size: 0.5em;}
+    .af-topicdetails-lastpost a {line-height: 2px !important;}
     ul.af-topiclist li {border: 0px solid #DEDEDE;margin: 0 1px 2px 0; padding: 15px; }    
     .af-posticon {width: 10%;}
     div.connect_communitylinks a {width: 49.5% !important;}
@@ -1047,10 +912,10 @@ ul.dnnAdminTabNav li a {
     
     .groups .dgdGroupQuickInfoWrap, .groups .Connect_GroupIntro {border: medium none;height: auto;margin: 2px 1px 0 0;padding: 0 0 10px 0;width: 99%;}
     .ModConsoleC            {min-height: 300px;}
-    .sidebar .console .console-none h3 {font-size: 2.3em;line-height: 2.3em;    }    
+    .sidebar .console .console-none h3 {}    
     .community .tile_606_300 {margin: 0 0 0 0!important; height: auto; width: 99%;}
     .community .connect-content-head {padding: 10px 0 10px 0; width: 100%; margin: 0 2px 2px 0; height: auto !important;}
-    .community .connect-content-head p.ack { font-size: 15em !important; line-height: 1em; text-indent:0px; background: none; height: auto;}    
+    .community .connect-content-head p.ack { line-height: 1em; text-indent:0px; background: none; height: auto;}    
     .community .connect-content-head p { float:none !important; clear:both !important; margin: 0 0 0 5px;}    
     .connectdir_map img {width: 95%;}
     
@@ -1083,17 +948,16 @@ ul.dnnAdminTabNav li a {
     .connect_intro h4 {font-size: 20px !important;}
     .connect_user {display:none;}
     .home .connect_events{padding: 0;width: auto;}
-    .splash h1 {color: #FFFFFF;margin: 0 !important;padding: 30px 10px 20px 10px !important;width: 80%; line-height: 1.5em; font-size: 2.5em;}   
+    .splash h1 {color: #FFFFFF;margin: 0 !important;padding: 30px 10px 20px 10px !important;width: 80%; line-height: 1.5em; }   
     
     .connect_registerform { padding: 10px !important;} 
     .connect_registernote {margin: 0 20px !important;padding: 0 0 10px !important;width: 100%;}    
     .connect_register, .connect_login {padding: 10px 0 30px !important;}
-    li .dnnPrimaryAction, li .dnnSecondaryAction {font-size: 0.8em;}
+    li .dnnPrimaryAction, li .dnnSecondaryAction {}
     #dnn_Tile2 img {width: 100%;}
 }
 @media only screen and (min-width: 680px) and (max-width: 768px) 
 {
-    body, .Normal{ font-size: 8px; line-height: 24px; }
     .skinWidth {width: 100%; margin: 0;}
 
     .content, .sidebar { float: none !important; margin: 0 2px 0 2px !important; width: 99% !important; display: block !important; clear:both !important; min-height:0 !important; border: none !important;}
@@ -1108,7 +972,7 @@ ul.dnnAdminTabNav li a {
     .connect-content-head h1 {line-height: 1.5em !important;}
     
     .connect_dnnplatform {padding: 3% !important;}
-    .connect_dnnplatform p { font-size: 3.25em !important; line-height: 1.5em !important;}
+    .connect_dnnplatform p { }
     .connect_dnnplatform img {margin: 10px 50px 20px 0 !important;}
      /*.white img {width: 100% !important; padding: 0!important; margin: 0!important;}*/
      img.afminiarrow { width: 2%!important;}
@@ -1118,7 +982,7 @@ ul.dnnAdminTabNav li a {
     .af-description { display: block; padding: 1% 0 0 15%; margin: 0;}
     .af-lastpost { display: block; padding: 0 0 0 15%; margin: 0;}
     .aftb-search {display:none !important;}
-    .af-topicdetails-lastpost a {line-height: 2px !important; font-size: 0.5em;}
+    .af-topicdetails-lastpost a {line-height: 2px !important;}
     ul.af-topiclist li {border: 0px solid #DEDEDE;margin: 0 1px 2px 0; padding: 15px; }    
     .af-posticon {width: 10%;}
     div.connect_communitylinks a {width: 49.5% !important;}
@@ -1144,10 +1008,10 @@ ul.dnnAdminTabNav li a {
     
     .groups .dgdGroupQuickInfoWrap, .groups .Connect_GroupIntro {border: medium none;height: auto;margin: 2px 1px 0 0;padding: 0 0 10px 0;width: 99%;}
     .ModConsoleC            {min-height: 300px;}
-    .sidebar .console .console-none h3 {font-size: 2.3em;line-height: 2.3em;    }    
+    .sidebar .console .console-none h3 { }    
     .community .tile_606_300 {margin: 0 0 0 0!important; height: auto; width: 99%;}
     .community .connect-content-head {padding: 10px 0 10px 0; width: 100%; margin: 0 2px 2px 0; height: auto !important;}
-    .community .connect-content-head p.ack { font-size: 15em !important; line-height: 1em; text-indent:0px; background: none; height: auto;}    
+    .community .connect-content-head p.ack { line-height: 1em; text-indent:0px; background: none; height: auto;}    
     .community .connect-content-head p { float:none !important; clear:both !important; margin: 0 0 0 5px;}    
     .connectdir_map img {width: 95%;}
     
@@ -1185,10 +1049,10 @@ ul.dnnAdminTabNav li a {
     .connect_registerform { padding: 10px !important;} 
     .connect_registernote {margin: 0 20px !important;padding: 0 0 10px !important;width: 100%;}    
     .connect_register, .connect_login {padding: 10px 0 30px !important;}
-    li .dnnPrimaryAction, li .dnnSecondaryAction {font-size: 0.8em;}
+    li .dnnPrimaryAction, li .dnnSecondaryAction {}
     .home #dnn_Tile2 {display:none !important;}
     
-    blockquote.opensource span { font-size: 2em; line-height: 1.2em;}
+    blockquote.opensource span { }
 }
 @media only screen and (min-width: 768px) and (max-width: 900px) 
 {
@@ -1203,7 +1067,7 @@ ul.dnnAdminTabNav li a {
 @media only screen and (min-width: 950px) and (max-width: 1220px) 
 {
       
-    body {zoom: 85% !important; font-size: 8px !important;}
+    body {zoom: 85% !important; }
     .connect_usertoolbar {width: 250px !important;}
 }
 
