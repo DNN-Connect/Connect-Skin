@@ -1,62 +1,62 @@
-﻿ .clearfix:after             { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
-body, html, *, p, h1, h2, h3, h4, h5       { margin: 0; padding: 0;}
+﻿ .clearfix:after                                    { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
+body, html, *, p, h1, h2, h3, h4, h5                { margin: 0; padding: 0;}
 
-html                { overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
+html                                                { overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
 
-.sticky             { position: fixed; margin: 0 auto; top: 0; width: 1208px !important; z-index: 110 !important;}
-.stickyadmin        { position: fixed; margin: 0 auto; top: 53px; width: 1208px !important; z-index: 110 !important;}
+.sticky                                             { position: fixed; margin: 0 auto; top: 0; width: 1208px !important; z-index: 110 !important;}
+.stickyadmin                                        { position: fixed; margin: 0 auto; top: 53px; width: 1208px !important; z-index: 110 !important;}
 /* basic setup */
 
 
-.skinWidth                                      { width: 1208px; margin: 20px auto;}
+.skinWidth                                          { width: 1208px; margin: 20px auto;}
 
 /* toolbar at the top */
-.connect-toolbar                                { width: 100%; margin: 0; height: 60px;}
-.connect-toolbar[data-useragent*='MSIE 10.0']   { width: 100%; margin: 0; height: 56px}
+.connect-toolbar                                    { width: 100%; margin: 0; height: 60px;}
+.connect-toolbar[data-useragent*='MSIE 10.0']       { width: 100%; margin: 0; height: 56px}
 
 /* navigation bar */
-.connect_nav                                    { width: 695px; float:right;}
+.connect_nav                                        { width: 695px; float:right;}
 
 /* logo */
-.connect_logo                                   { width: 200px; height: 36px; overflow: hidden; float:left;margin: 12px;}
+.connect_logo                                       { width: 200px; height: 36px; overflow: hidden; float:left;margin: 12px;}
 
 /* tiles setup */
-.tile                                           { min-height: 300px;}
-.tile.tile_bar                                       { min-height: 0;}
-.tile_900_900                                   { width: 902px; min-height: 904px; margin: 0 0 0 2px;}
-.tile_900_600                                   { width: 902px; min-height: 602px; margin: 0 0 0 2px;}
-.tile_600_600                                   { width: 604px; height: 602px; margin: 0 2px 2px 0;}
-.tile_300_300                                   { width: 300px; height: 300px; margin: 0 2px 2px 0;}
-.tile_301_300                                   { width: 301px; height: 300px; margin: 0 2px 2px 0;}
-.tile_600_300                                   { width: 602px; height: 300px; margin: 0 2px 2px 0;}
-.tile_606_300                                   { width: 606px; height: 300px; margin: 0 2px 2px 0;}
-.tile_300                                       { width: 300px; margin: 0 0 2px 0;}
-.tile_400_600			                        { width: 360px; margin: 2px 6px 0 13px; height: 600px; overflow: hidden; padding: 10px;}
-.tile_bar                                       { width: 100%; margin: 0; padding: 0; min-height: initial;}
-.tile_content                                   { width: 100%; margin: 0; padding: 0; min-height: 240px; }
+.tile                                               { min-height: 300px;}
+.tile.tile_bar                                      { min-height: 0;}
+.tile_900_900                                       { width: 902px; min-height: 904px; margin: 0 0 0 2px;}
+.tile_900_600                                       { width: 902px; min-height: 602px; margin: 0 0 0 2px;}
+.tile_600_600                                       { width: 604px; height: 602px; margin: 0 2px 2px 0;}
+.tile_300_300                                       { width: 300px; height: 300px; margin: 0 2px 2px 0;}
+.tile_301_300                                       { width: 301px; height: 300px; margin: 0 2px 2px 0;}
+.tile_600_300                                       { width: 602px; height: 300px; margin: 0 2px 2px 0;}
+.tile_606_300                                       { width: 606px; height: 300px; margin: 0 2px 2px 0;}
+.tile_300                                           { width: 300px; margin: 0 0 2px 0;}
+.tile_400_600			                            { width: 360px; margin: 2px 6px 0 13px; height: 600px; overflow: hidden; padding: 10px;}
+.tile_bar                                           { width: 100%; margin: 0; padding: 0; min-height: initial;}
+.tile_content                                       { width: 100%; margin: 0; padding: 0; min-height: 240px; }
 
-.tile_content                                   { float:left;}
-.tile_side                                      { float:right;}
-.tile.DNNEmptyPane                              { display: none;height:0px;width:0px;line-height:0;margin:0;padding:0;}
-.tile_end                                       { margin-right:0 !important;}
-.margin2                                        { margin: 2px 2px 0 0; border: 1px solid #fff; padding: 3%; }
-.content				                        { width: 908px; }
+.tile_content                                       { float:left;}
+.tile_side                                          { float:right;}
+.tile.DNNEmptyPane                                  { display: none;height:0px;width:0px;line-height:0;margin:0;padding:0;}
+.tile_end                                           { margin-right:0 !important;}
+.margin2                                            { margin: 2px 2px 0 0; border: 1px solid #fff; padding: 3%; }
+.content				                            { width: 908px; }
 
 /* overrides panes */
-.admin .content                                 { width:95%;padding:0; }
-.admin .tile_content                            { padding: 30px;}
+.admin .content                                     { width:95%;padding:0; }
+.admin .tile_content                                { padding: 30px;}
 /*home page tiles */
-.home .tile                                     { float:left; }
+.home .tile                                         { float:left; }
 
 /* panes setup */
-.contentPane                                    { padding: 40px 0 0 0; margin: 20px 0 0 0;}
+.contentPane                                        { padding: 40px 0 0 0; margin: 20px 0 0 0;}
 
 
-p                                               { margin: 0; padding: 0 0 25px 0;}
-.white h1                                       { padding: 20px 0 30px 0;}
-.white h2                                       { padding: 20px 0 30px 0;}
-.white h3                                       { padding: 20px 0 30px 0;}
-.white h4                                       { padding: 20px 0 30px 0;}
+p                                                   { margin: 0; padding: 0 0 25px 0;}
+.white h1                                           { padding: 20px 0 30px 0;}
+.white h2                                           { padding: 20px 0 30px 0;}
+.white h3                                           { padding: 20px 0 30px 0;}
+.white h4                                           { padding: 20px 0 30px 0;}
 
 
 
@@ -78,10 +78,17 @@ p, .Normal, div                                     { color: #333; }
 .mdSearchBar h1, 
 .connect-content-head h1                            { color: #FFFFFF; }
 
+a.dnnPrimaryAction,
+input[type="submit"].dnnPrimaryAction,
+.dnnPrimaryAction                                   { color: #fff; }
+
 .Connect-SearchBarInput input[type="submit"],
 .Connect-SearchBarInput a.dnnPrimaryAction,
-.mdSearchBar a.dnnPrimaryAction                     { background: #eee url(images/Metro/icnSearchSmall_Black.png) 10px 9px no-repeat !important;color: #444; text-shadow: none; }
-.Connect-SearchBarInput a.dnnPrimaryAction:hover    { color: #000; }
+.mdSearchBar a.dnnPrimaryAction                     { background: #eee url(images/Metro/icnSearchSmall_Black.png) 10px 11px no-repeat !important;color: #000; text-shadow: none; }
+
+.Connect-SearchBarInput input[type="submit"]:hover,
+.mdSearchBar a.dnnPrimaryAction:hover,
+.Connect-SearchBarInput a.dnnPrimaryAction:hover    { color: #555; }
 
 .Connect-SearchBarInput input[type="text"], 
 .searchWrapper input[type="text"]                   { background-color: #FFFFFF; border: 1px solid #CCCCCC; }
@@ -91,7 +98,7 @@ a.white                                             { color: #FFFFFF; }
 a.white:hover                                       { color: #333; }
 
 a.lnkGroups                                         { background: #d68a3a url("images/groups.png") center center no-repeat;color: #FFFFFF; }   
-a.lnkGroups:hover                                   { color: #333;}
+a.lnkGroups:hover                                   { opacity:0.8; filter:alpha(opacity=80); color: #000;}
 
 /* Default ***************************************************************************/
 /* BLUE */ 
@@ -142,7 +149,7 @@ a.icnEvents					                        { background: #a547e0 url(images/metro/i
 .connect-events-meta h2                             { color: #a547e0; }
 .connect-events-meta h2 a                           { color: #a547e0; }
 .events .ThemeDefault tr.EnrollGridHeader,
-.events .ThemeDefault tr.DetailEnrollGridHeader           { background-image: none;background-color: #a547e0; }
+.events .ThemeDefault tr.DetailEnrollGridHeader     { background-image: none;background-color: #a547e0; }
 .events .DetailEnrollLeft a                         { color: #a547e0; } 
 
 /* Answers ************************************************************************/
@@ -161,6 +168,8 @@ a.icnAnswers                                        { background: #00ABA9 url(im
 .answers h2.dnnFormSectionHead,
 .answers h3.dnnFormSectionHead,
 .answers .qaSideList h3                             { color: #333; }
+
+.answers .qaAskQuestion h2                            { color: #00ABA9; }
 .answers h3 a,                                      
 .answers .dnnqaQuestion h1,
 .answers .plActions a                               { color: #00ABA9; text-decoration: none; }   
@@ -168,12 +177,19 @@ a.icnAnswers                                        { background: #00ABA9 url(im
 .answers .plActions a:hover                         { color: #333; text-decoration: none; }
 .qaQuestion .answers.multiple                       { background: #ccc !important; }
 .qaAskQuestionLink a, .qaAskQuestionLink a:link, 
-.qaAskQuestionLink a:visited,
+.qaAskQuestionLink a:visited                        { background: #00ABA9 !important;}
 .qaUserScore,.answers .tag-menu,
 .answers a.tag:hover                                { background: #00ABA9 !important; color: #333;}
 .answers a.tag                                      { background: #01dad7 !important; color: #333 !important; }
-.dnnqaQuestion a, .qaHome a                         {color: #00aba9;}
+.dnnqaQuestion a, .qaHome a                         { color: #00aba9;}
 
+.qaNav a,                                           
+.answers .dnnActions a,
+.qaCommentArea a                                    { color: #fff; }
+.qaAskQuestion .dnnLabel span                       { color: #00ABA9;}
+.qaPostNote                                         { width: 96% !important; padding: 10px; background: #ddd; margin-bottom: 20px;}
+.qaPostNote p                                       { color: #333; }
+input[type="text"].qaAskQuestion                    { color: #333!important;}
 /* Translations *******************************************************************/
 /* LIME */		    .color4, .lime                  { background-color: #8CBF26; }
 a.icnTranslations                                   { background: #8CBF26 url(images/metro/icnTranslations.png) 15px 5px no-repeat;}
@@ -310,7 +326,7 @@ a.icnBlogs					                        { background: #339933 url(images/metro/ic
 /* FONT SETUP                          */
 /***************************************/
 
-* a, a                          { cursor: pointer !important; cursor: hand !important; }
+* a, a                                              { cursor: pointer !important; cursor: hand !important; }
 
 
 /* Font Families */
@@ -318,77 +334,79 @@ html, body, *, .Normal,
 a, a:link, a:active, 
 a:visited, div, p, span, 
 .afnormal,
-button, input, select, textarea                      { font-family: 'Muli', Verdana, Helvetica, sans-serif; }
-h1, h2, h3, h4                  { font-family: 'novecento_widedemibold', Verdana, Helvetica, sans-serif; }
+button, input, select, textarea                     { font-family: 'Muli', Verdana, Helvetica, sans-serif; }
+h1, h2, h3, h4                                      { font-family: 'novecento_widedemibold', Verdana, Helvetica, sans-serif; }
 
 
 
-strong, .strong                 { font-weight: bold;}
+strong, .strong                                     { font-weight: bold;}
 
 
 /* Font sizes */
 
-body, .Normal, input, select, textarea, .afcontainer, .afgrid                   { font-size: 16px !important; line-height: 24px !important; }
-li p                            { line-height: 24px !important; }
-
-h1                              { font-size: 36px; }
-h2                              { font-size: 32px; }
-h3                              { font-size: 28px; }
-h4                              { font-size: 24px; letter-spacing: 0.4px; }
-h5                              { font-size: 20px; }
-h6                              { font-size: 16px; }
+body, .Normal, input, 
+select, textarea, .afcontainer, .afgrid             { font-size: 16px !important; line-height: 24px !important; }
+li p                                                { line-height: 24px !important; }
+h1                                                  { font-size: 36px; }
+h2                                                  { font-size: 32px; }
+h3                                                  { font-size: 28px; }
+h4                                                  { font-size: 24px; letter-spacing: 0.4px; }
+h5                                                  { font-size: 20px; }
+h6                                                  { font-size: 16px; }
 
 .connect_dnnplatform a.white,    
-a.lnkGroups { font-size: 1.875em; }
-.qaQuestion .started            { font-size: 1em; }
+a.lnkGroups                                         { font-size: 1.875em; }
+.qaQuestion .started                                { font-size: 1em; }
 
 .pBio h3, .pContact h3, .pAddress h3                { }
 
-.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction, .Connect-SearchBarInput input[type="submit"], .qaAskQuestionLink a, .qaAskQuestionLink a:link, .qaAskQuestionLink a:visited, .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only,
-.dnnSecondaryAction, a.dnnSecondaryAction, .dnnFormItem input
-{ font-size: 16px !important; }
+.dnnPrimaryAction, 
+.dnnFormItem input[type="submit"],
+a.dnnPrimaryAction, 
+.Connect-SearchBarInput input[type="submit"], 
+.qaAskQuestionLink a, 
+.qaAskQuestionLink a:link, 
+.qaAskQuestionLink a:visited, 
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only,
+.dnnSecondaryAction, 
+a.dnnSecondaryAction, 
+.dnnFormItem input
+                                                    { font-size: 16px !important; }
 
-.dnnqaQuestion h1               { font-size: 28px; }
-.dnnqaQuestion h2               { font-size: 24px; }
-.dgdGroupQuickInfo ul li        { font-size: inherit; }
-.mdMemberDetails .mdHoverActions li a { font-size: 12px;}
+.dnnqaQuestion h1                                   { font-size: 28px; }
+.dnnqaQuestion h2                                   { font-size: 24px; }
+.dgdGroupQuickInfo ul li                            { font-size: inherit; }
+.mdMemberDetails .mdHoverActions li a               { font-size: 12px; }
 
-.ct-forumname a { font-size: 1.875em;}
-.af-title, .af-title a     { font-size: 1.875em;}
-.af-topiclink a     { font-size: 1.275em;}
-.af-lastpost        { font-size: 0.9em;}
+.ct-forumname a                                     { font-size: 1.875em; }
+.af-title, .af-title a                              { font-size: 1.875em; }
+.af-topiclink a                                     { font-size: 1.275em; }
+.af-lastpost                                        { font-size: 0.9em; }
+ul.dnnAdminTabNav li a                              { font-size: 0.875em; line-height: 1.4em; }
+
 /******************************************************************************************************/
 /* modules and other overrides */
 /******************************************************************************************************/
 
 /* Autocomplet Menu */
-ul.ui-autocomplete  { z-index: 100; border-radius: 0px;}
+ul.ui-autocomplete                                  { z-index: 100; border-radius: 0px;}
 
 /* reset password page */
 
-.dnnSendPasswordContent { padding: 40px 0 40px 0; width: 100%; }
-.dnnSendPasswordContent .dnnFormItem    {padding: 0 0 0 10px;}
-.dnnSendPasswordContent .dnnLabel {width: 20%; text-align:left; }
-.dnnSendPasswordContent ul.dnnActions { border: medium none;margin: 10px 0 0;padding: 20px 0 0 10px; }
-.dnnSendPasswordContent input[type="text"] { width: 70%; }
+.dnnSendPasswordContent                             { padding: 40px 0 40px 0; width: 100%; }
+.dnnSendPasswordContent .dnnFormItem                { padding: 0 0 0 10px; }
+.dnnSendPasswordContent .dnnLabel                   { width: 20%; text-align:left; }
+.dnnSendPasswordContent ul.dnnActions               { border: medium none;margin: 10px 0 0;padding: 20px 0 0 10px; }
+.dnnSendPasswordContent input[type="text"]          { width: 70%; }
 
-.dnnPasswordReset {padding: 30px 0 50px 0;}
-.dnnPasswordResetContent { width: 100%; }
-.dnnPasswordResetContent .dnnFormItem    {padding: 0 0 0 10px;}
-.dnnPasswordResetContent .dnnLabel {width: 20%; text-align:left; }
-.dnnPasswordResetContent ul.dnnActions { border: medium none;margin: 10px 0 0;padding: 20px 0 0 10px; }
+.dnnPasswordReset                                   { padding: 30px 0 50px 0; }
+.dnnPasswordResetContent                            { width: 100%; }
+.dnnPasswordResetContent .dnnFormItem               { padding: 0 0 0 10px; }
+.dnnPasswordResetContent .dnnLabel                  { width: 20%; text-align:left; }
+.dnnPasswordResetContent ul.dnnActions              { border: medium none;margin: 10px 0 0;padding: 20px 0 0 10px; }
 
-
-.connect_usertoolbar span.userMessages {
-    background: none repeat scroll 0 0 #1BA1E2;
-    color: #FFFFFF;
-    display: inline-block;
-    font-family: roboto;
-    height: 28px;
-    margin: 2px 1px 0 0;
-    padding: 5px 15px 0 8px;
-    width: 10px;
-}
+/* message indicator in user menu */
+.connect_usertoolbar span.userMessages              { background: none repeat scroll 0 0 #1BA1E2;color: #FFFFFF;display: inline-block;font-family: Muli;height: 28px;margin: 2px 1px 0 0;padding: 5px 15px 0 8px;width: 10px; }
 
 /* Colored Bar at the top of most pages (text and/ or search) */
 .Connect-ModuleSearchBar, .mdSearch,               
@@ -405,22 +423,12 @@ ul.ui-autocomplete  { z-index: 100; border-radius: 0px;}
 .about_us .connect-content-head h1                  { padding: 40px 0 30px 40px;}
 
 /* Memberspage overwrite */
-.dnnMemberDirectory .mdSearchBar    { position: relative; }
+.dnnMemberDirectory .mdSearchBar                    { position: relative; }
 .dnnMemberDirectory .mdSearchBar,                   
-.dnnMemberDirectory .searchWrapper { width: 100%; }
-.dnnMemberDirectory .searchWrapper { overflow: hidden !important;}
-.dnnMemberDirectory .mdSearchBar .dnnPrimaryAction {
-    float: left;
-    left: 83.1%;
-    margin-left: 10px;
-    position: absolute;
-    top: 94px;
-}
-.dnnMemberDirectory .mdSearchBar input[type="text"] {
-    display: block;
-    float: left;
-    width: 76.47% !important;
-}
+.dnnMemberDirectory .searchWrapper                  { width: 100%; }
+.dnnMemberDirectory .searchWrapper                  { overflow: hidden !important;}
+.dnnMemberDirectory .mdSearchBar .dnnPrimaryAction  { float: left;left: 83.1%;margin-left: 10px;position: absolute;top: 94px; }
+.dnnMemberDirectory .mdSearchBar input[type="text"] { display: block;float: left;width: 76.47% !important; }
 .Connect-SearchBarHeading input[type="submit"]      { padding:10px 20px 11px 35px;} /*used on directory page*/
 .Connect-SearchBarHeading input[type="submit"],
 .Connect-SearchBarInput a.dnnPrimaryAction,
@@ -601,15 +609,15 @@ td.af_pagernumber a                                 { color: #fff; text-decorati
 .groups .dgdGroupQuickInfo p                        { padding: 0 0 0 0;}
 
 .groups .dnnForm.dnnGroupDirectory a.createGroup    { float:none; margin-top:5px;}
-.groups .dgdGroupQuickInfo ul                       {margin: 10px 0 0 0;}
+.groups .dgdGroupQuickInfo ul                       { margin: 10px 0 0 0;}
 .GroupViewTop .dgdAvatar                            { margin: 30px 0 0 30px;}
 .GroupViewTop .GroupViewHeader                      { padding: 20px 40px 0 150px; }
 .GroupViewTop .GroupViewHeader p.actions            { text-align:right; padding-bottom: 5px; }
 
 /* create group text module */
-.groups-create-group    {padding: 30px 0 0 0;}
-.groups-create-group p {text-align: center; margin: 0;}
-.dgdMainContent .createGroup    {display: none;}
+.groups-create-group                                { padding: 30px 0 0 0;}
+.groups-create-group p                              { text-align: center; margin: 0;}
+.dgdMainContent .createGroup                        { display: none;}
 /*account form textarea override */
 .connect_accountform .dnnFormItem textarea          { height: 378px !important;}
 
@@ -623,35 +631,32 @@ td.af_pagernumber a                                 { color: #fff; text-decorati
 #connectEditContainerPhoto .dnnFileUploadScope      { width: inherit;}
 #connectEditContainerPhoto .dnnLeft                 { clear:both;}
 
-#connectEditContainerProfile .dnnFormItem select.ctlProfileVisibility {
-    width: 15% !important;
-    margin-left: 10px;
-}
+#connectEditContainerProfile .dnnFormItem select.ctlProfileVisibility { width: 15% !important;margin-left: 10px; }
 
-#connectEditContainerProfile .dnnFormItem input[type="text"], .dnnFormItem input[type="text"], .dnnFormItem input[type="password"], .dnnFormItem input[type="email"], .dnnFormItem input[type="tel"], .dnnFormItem select, .dnnFormItem textarea {
-    max-width: 300px;
-    width: 33%;
-}
+#connectEditContainerProfile .dnnFormItem input[type="text"], 
+.dnnFormItem input[type="text"], 
+.dnnFormItem input[type="password"], 
+.dnnFormItem input[type="email"], 
+.dnnFormItem input[type="tel"],
+.dnnFormItem select, 
+.dnnFormItem textarea                               { max-width: 300px;width: 33%; }
 .composeMessageDialog .dnnFormItem input[type="text"],
-.composeMessageDialog .dnnFormItem textarea {
-    width: 44%;
-}
-.answers .dnnFormItem textarea {
-    width: 90%;
-    max-width: inherit;
-}
-#connectEditContainerProfile .dnnFormItem select {padding: 8px;}
-.visLessMargin {margin-left: -4px;}
-/* password */
+.composeMessageDialog .dnnFormItem textarea         { width: 44%;}
+.answers .dnnFormItem textarea                      { width: 90%;max-width: inherit; }
+#connectEditContainerProfile .dnnFormItem select    { padding: 8px;}
+.visLessMargin                                      { margin-left: -4px;}
+
+/* password editing */
 span.label                                          { display: block; color: #fff;}
 #showEditPassword                                   { background: url(images/lock_large.png) -30px 0px no-repeat; color: #fff; text-decoration: none; vertical-align:bottom; padding: 240px 70px 50px 70px; display: block;}
 #connectEditContainerPassword .dnnFormItem input    { width: 70%;}
-#connectEditContainerPassword span.label            {line-height: 1.6em;}
+#connectEditContainerPassword span.label            { line-height: 1.6em;}
 
 /* common profile */
 #connectEditContainerProfile p                      { padding: 12px 40px 50px 20px;}
 #connectEditContainerProfile select                 { width: 45%;}
-#connectEditContainerProfile select.ctlProfileVisibility                                { width: 10%; padding: 8px;}
+#connectEditContainerProfile select.ctlProfileVisibility    { width: 10%; padding: 8px;}
+
 /* dnn console module */
 .sidebar .console                                   { width: 100%;height: inherit;-moz-box-shadow: 0 0 0 #bbb;-webkit-box-shadow: 0 0 0 #bbb;box-shadow: 0 0 0 #bbb;padding: 10px 0 10px 0;}
 .sidebar .console .console-none                     { margin: 0;padding: 0; height: 40px;}
@@ -670,7 +675,10 @@ span.label                                          { display: block; color: #ff
 .answers #dnn_ctr428_Dispatch_Question_divAddAnswer:after,
 .answers #dnn_ctr428_Dispatch_Question_divAddAnswer .dnnFormItem:after,
 .answers .qaSubscriptions:after,
-.answers .qaPrivilege:after                         { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
+.answers .qaPrivilege:after                        { content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
+
+.answers .qaAskQuestion .dnnLabel                  { width: 100%; float: left; text-align: left; }
+
 .answers .qaHome, 
 .answers .qaPrivilege, 
 .answers .qaBadges, 
@@ -692,10 +700,7 @@ span.label                                          { display: block; color: #ff
 .answers a.tag                                      { border-radius: 0px;bottom: auto;margin: 2px 2px 6px 0;padding: 4px 8px 6px 8px;text-shadow: none;text-transform: lowercase; text-decoration: none; }
 .answers h2.dnnFormSectionHead,
 .answers h3                                         { border-bottom: none;letter-spacing: 0em; margin: 0; padding: 0 0 20px 0; }
-.answers .qaCommentArea h2.dnnFormSectionHead {
-    padding: 0 0 0 20px;
-    background-position: 0 10px !important;
-}
+.answers .qaCommentArea h2.dnnFormSectionHead       { padding: 0 0 0 20px; background-position: 0 10px !important; }
 .answers .qaUserScore                               { border: 1px solid #CCCCCC;border-radius: 0px;color: #fff;margin: 0;padding: 5px 15px 5px 15px;width: 204px; }
 .answers p.qaUserPrivilegeScore                     { margin: 0; padding: 20px 0 20px 0;}
 .answers .qaNav                                     { margin: 2px 2px 0 0; padding: 0 0 30px 0; }
@@ -703,123 +708,109 @@ span.label                                          { display: block; color: #ff
 .answers .qaNavItems                                { border-radius: 0px; margin: 0;}
 .answers .qaAskQuestionLink                         { }
 .answers div.qaQuestion                             { margin: 0 0 10px 0; }
-
-.answers .qaTagResults ul.qaTags li {
-    background: none repeat scroll 0 0 #EEEEEE;
-    border: 1px solid #CCCCCC;
-    display: block;
-    float: left;
-    height: 125px;
-    margin: 0 10px 10px 0;
-    overflow: hidden;
-    padding: 25px 0 20px 25px;
-    width: 225px;
-}
+.answers .tagify-container                          { clear: both; width: 82%;}
+.answers .qaTagResults ul.qaTags li                 { background: none repeat scroll 0 0 #EEEEEE;border: 1px solid #CCCCCC;display: block;float: left;height: 125px;margin: 0 10px 10px 0;overflow: hidden;padding: 25px 0 20px 25px;width: 225px; }
 .answers .qaTagFilter,
 .dnnqaTagList .qaSortActions,
-.qaContent .qaSortActions{ display: none; }
+.qaContent .qaSortActions                           { display: none; }
 
 .answers .RadEditor,                                    
-.answers .dnnTextPanelView                          { width: 700px !important;}
+.answers .dnnTextPanelView                          { width: 700px !important; padding-bottom: 10px;}
+.answers .dnnTextPanelView .dnnLabel                { display: none; }
 .answers .percentRight                              { clear:both; float:left; padding-left: 7px; padding-top: 5px; }
-.qaQuestion .votes, .qaQuestion .answers, .qaQuestion .views {
-    background: none repeat scroll 0 0 #EEEEEE;
-    border-bottom: 1px solid #DADADA;
-    border-right: 1px solid #DADADA;
-    float: right;
-    margin-left: 1%;
-    padding: 6px;
-    width: 25%;
-}
-.qaQuestion .qnotes {
-    width: 60%; 
-}
-.qaQuestion .qnotes h3 {line-height: normal;}
-.qstats {
-    width: 40%;
-}
-.qatlRight {
-    float: right;
-    margin-top: -42px;
-    width: 300px;
-}
+.qaQuestion .votes, 
+.qaQuestion .answers, 
+.qaQuestion .views                                  { background: none repeat scroll 0 0 #EEEEEE;border-bottom: 1px solid #DADADA;border-right: 1px solid #DADADA;float: right;margin-left: 1%;padding: 6px;width: 25%;}
+.qaQuestion .qnotes                                 { width: 60%; }
+.qaQuestion .qnotes h3                              { line-height: normal;}
+.qstats                                             { width: 40%; }
+.qatlRight                                          { float: right;margin-top: -42px;width: 300px; }
 
 /* community section links */
 
-div.connect_communitylinks a                    { float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; text-decoration: none; text-align: center; }
-div.connect_communitylinks a.B                  { margin: 0 0 2px 0; width:150px; }       
+div.connect_communitylinks a                        { float:left;display:block; height: 30px; width:148px; padding: 120px 0 0 0; margin: 0 2px 2px 0; color: #fff; text-decoration: none; text-align: center; }
+div.connect_communitylinks a.B                      { margin: 0 0 2px 0; width:150px; }       
 div.connect_communitylinks a:hover,
-div.connect_communitylinks a.B:hover            {opacity:0.8; filter:alpha(opacity=80); /* For IE8 and earlier */ color: #000;}
-div.connect_communitylinks a.bottom             {margin-bottom: 0; }
+div.connect_communitylinks a.B:hover                { opacity:0.8; filter:alpha(opacity=80); /* For IE8 and earlier */ color: #000;}
+div.connect_communitylinks a.bottom                 { margin-bottom: 0; }
 
 /* platform tile content */
-.connect_dnnplatform                            { padding: 20px;}
-.connect_dnnplatform img                        { width: 260px; float:left; margin: 10px 20px 20px 0;}
-.connect_downloads                              { margin: 20px 0 0 0;}
+.connect_dnnplatform                                { padding: 20px;}
+.connect_dnnplatform img                            { width: 260px; float:left; margin: 10px 20px 20px 0;}
+.connect_downloads                                  { margin: 20px 0 0 0;}
 
 /* opensource statement */
-blockquote.opensource                           { padding: 10px 0 10px 8px;margin: 20px;background: url(images/block1.png) 1px 1px no-repeat;text-indent: 40px;border: none;}
-blockquote.opensource span                      { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: bottom right;line-height: 35px;font-style: italic;font-weight: normal;font-family: Georgia; color: #fff;}
-blockquote.ack                                  { padding: 25px 0 0px 20px;margin: 0px;background: url(images/block1.png) 20px 10px no-repeat;text-indent: 5px;border: none;}   
-blockquote.ack span                             { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: 220px 165px;line-height: 200px;font-style: normal;font-weight: normal;font-family: 'novecento_widedemibold', Arial, sans-serif; color: #fff;}
+blockquote.opensource                               { padding: 10px 0 10px 8px;margin: 20px;background: url(images/block1.png) 1px 1px no-repeat;text-indent: 40px;border: none;}
+blockquote.opensource span                          { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: bottom right;line-height: 35px;font-style: italic;font-weight: normal;font-family: Georgia; color: #fff;}
+blockquote.ack                                      { padding: 25px 0 0px 20px;margin: 0px;background: url(images/block1.png) 20px 10px no-repeat;text-indent: 5px;border: none;}   
+blockquote.ack span                                 { display: block;background-image: url(images/block2.png);background-repeat: no-repeat;background-position: 220px 165px;line-height: 200px;font-style: normal;font-weight: normal;font-family: 'novecento_widedemibold', Arial, sans-serif; color: #fff;}
 
 /* linkt to groups */
-a.lnkGroups                                     { display: block;height: 60px;padding: 240px 0 0;text-align: center;text-decoration: none;width: 300px;}   
+a.lnkGroups                                         { display: block;height: 60px;padding: 240px 0 0;text-align: center;text-decoration: none;width: 300px;}   
 
-a.white                                         { background: none repeat scroll 0 0 rgba(0, 0, 0, 0);text-align: center;text-decoration: none;text-transform: lowercase; }
-.center                                         { text-align: center;}
+a.white                                             { background: none repeat scroll 0 0 rgba(0, 0, 0, 0);text-align: center;text-decoration: none;text-transform: lowercase; }
+.center                                             { text-align: center;}
 
-.connect-content-head p                         { margin: 0; padding:0;}
+.connect-content-head p                             { margin: 0; padding:0;}
 
 
 /* footer*/
 
-.footer                                         { background: #47292B; padding: 30px 0 30px 0; }
-.footer .col-f                                  { width: 30%; margin: 0 30px 0 0;float:left; }
-.footer .col-f.first                            { margin: 0 30px 0 30px; }
-.footer p, .footer li                           { color: #fff; }
-.footer li                                      { list-style-type: none; margin: 10px 0 0 0; padding: 0;}
-.footer ul                                      { padding: 0; margin: 10px 0 10px 0;}
+.footer                                             { background: #47292B; padding: 30px 0 30px 0; }
+.footer .col-f                                      { width: 30%; margin: 0 30px 0 0;float:left; }
+.footer .col-f.first                                { margin: 0 30px 0 30px; }
+.footer p, .footer li                               { color: #fff; }
+.footer li                                          { list-style-type: none; margin: 10px 0 0 0; padding: 0;}
+.footer ul                                          { padding: 0; margin: 10px 0 10px 0;}
 
 /********************************/
 /* containers                   */
 /********************************/
-.head_title
-{
-    border-bottom:solid 1px #0D569E;
-}
+.head_title                                         { border-bottom:solid 1px #0D569E; margin-bottom: 20px; }
 
 /********************************/
 /* default.css overrides        */
 /********************************/
 
 /* Primary Action */
-.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction, .Connect-SearchBarInput input[type="submit"],
-.qaAskQuestionLink a, .qaAskQuestionLink a:link, .qaAskQuestionLink a:visited, 
+.dnnPrimaryAction, 
+.dnnFormItem input[type="submit"], 
+a.dnnPrimaryAction, 
+.Connect-SearchBarInput input[type="submit"],
+.qaAskQuestionLink a, 
+.qaAskQuestionLink a:link, 
+.qaAskQuestionLink a:visited, 
 .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only,
-.dnnTertiaryAction, a.dnnTertiaryAction { border:none !important; color: #fff;border-radius:0;-moz-border-radius:0; text-shadow: none; font-weight:normal; }
-.dnnPrimaryAction:hover, .dnnFormItem input[type="submit"]:hover, a.dnnPrimaryAction:hover, 
-.dnnPrimaryAction:active, .dnnFormItem input[type="submit"]:active, a.dnnPrimaryAction:active { border:none;color: #fff; }
-.dnnPrimaryAction[disabled], .dnnPrimaryAction[disabled]:hover, .dnnPrimaryAction[disabled]:active {background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important; color: #aaa !important; text-shadow: none; }
+.dnnTertiaryAction, 
+a.dnnTertiaryAction                                 { border:none !important; border-radius:0;-moz-border-radius:0; text-shadow: none; font-weight:normal; }
 
-.Connect-SearchBarInput input[type="submit"] {
-    border: 1px solid #DDDDDD;
-    color: #333333;
-    margin: 0 0 0 10px;
-    padding: 10px 10px 10px 35px;
-    cursor: hand !important;
-}
+.dnnPrimaryAction:hover, 
+.dnnFormItem input[type="submit"]:hover, 
+a.dnnPrimaryAction:hover, 
+.dnnPrimaryAction:active, 
+.dnnFormItem input[type="submit"]:active, 
+a.dnnPrimaryAction:active                           { border:none;color: #fff; }
 
-ul.token-input-list-facebook    { border-radius: 0px !important; width: 46.5% !important; }
+.dnnPrimaryAction[disabled], 
+.dnnPrimaryAction[disabled]:hover, 
+.dnnPrimaryAction[disabled]:active                  { background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important; color: #aaa !important; text-shadow: none; }
+
+.Connect-SearchBarInput input[type="submit"]        { border: 1px solid #DDDDDD; margin: 0 0 0 10px;padding: 9px 14px 5px 33px; cursor: pointer !important; cursor: hand !important; }
+ul.token-input-list-facebook                        { border-radius: 0px !important; width: 46.5% !important; }
+
 /* Secondary Action */
-.dnnSecondaryAction, a.dnnSecondaryAction { background: #aaa; border:none !important;color: #fff;border-radius:0;-moz-border-radius:0;text-shadow: none; font-weight:normal; }
-.dnnSecondaryAction:hover, a.dnnSecondaryAction:hover,
-.dnnSecondaryAction:active, a.dnnSecondaryAction:active { border:none;background: #888; color: #fff;}
-.dnnSecondaryAction[disabled], .dnnSecondaryAction[disabled]:hover, .dnnSecondaryAction[disabled]:active { background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;color: #aaa !important;text-shadow: none;}
+.dnnSecondaryAction, 
+a.dnnSecondaryAction                                { background: #aaa; border:none !important;color: #fff;border-radius:0;-moz-border-radius:0;text-shadow: none; font-weight:normal; }
+.dnnSecondaryAction:hover, 
+a.dnnSecondaryAction:hover,
+.dnnSecondaryAction:active, 
+a.dnnSecondaryAction:active                         { border:none;background: #888; color: #fff;}
+.dnnSecondaryAction[disabled], 
+.dnnSecondaryAction[disabled]:hover, 
+.dnnSecondaryAction[disabled]:active                { background: #ccc !important;border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;color: #aaa !important;text-shadow: none;}
 
-ul.dnnAdminTabNav li a {
-    line-height: 1.4em;
-}
+ul.dnnAdminTabNav                                   { display: block; }
+
 
 /*-------------------------------------*/
 /* FORM STYLES */
