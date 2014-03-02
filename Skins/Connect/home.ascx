@@ -101,6 +101,8 @@
                 <li><a href="http://facebook.com/dnnconnect">Facebook</a></li>
                 <li><a href="http://twitter.com/dnnconnect">Twitter</a></li>
             </ul>
+            <h4>Legal</h4>
+            <p>DNN and DotNetNuke are registered trademarks of <a href="http://www.dnnsoftware.com">DNN Corp</a></p>
         </div>
 
     </div>
