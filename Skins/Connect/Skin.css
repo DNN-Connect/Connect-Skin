@@ -426,7 +426,8 @@ ul.ui-autocomplete                                  { z-index: 100; border-radiu
 .connect-content-head h1                            { padding: 20px 0 20px 40px; }
 /* overwrite headings on pages without search */
 .solutions .connect-content-head h1,
-.about_us .connect-content-head h1                  { padding: 40px 0 30px 40px;}
+.about_us .connect-content-head h1,
+.kickstart .connect-content-head h1                  { padding: 40px 0 30px 40px;}
 
 /* Memberspage overwrite */
 .dnnMemberDirectory .mdSearchBar                    { position: relative; }

@@ -23,7 +23,7 @@
 <dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <dnn:Meta ID="Meta2" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">

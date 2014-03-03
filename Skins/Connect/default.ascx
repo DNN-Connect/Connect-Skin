@@ -23,16 +23,7 @@
 <dnn:Meta ID="Meta3" runat="server" Name="viewport" Content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <dnn:Meta ID="Meta4" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
-<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1&appId=1430154350554964";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
