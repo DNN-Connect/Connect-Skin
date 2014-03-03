@@ -23,6 +23,14 @@
 <dnn:Meta ID="Meta1" runat="server" Name="viewport" Content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <dnn:Meta ID="Meta2" runat="server" http-equiv="Cache-Control" Content="max-age" />
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1430154350554964";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 <link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
@@ -77,36 +85,7 @@
 
 	</div><!--/skinWidth-->
 
-    <div class="footer skinWidth clearfix">
-
-        <div class="col-f first">
-            <h4>DNN-Connect</h4>
-            
-            <p>For all matters regarding this website, direct your electronic conversation to</p>
-            <p><a href="mailto:webmaster@dnn-connect.org">webmaster@dnn-connect.org</a></p>
-            <p>In case you need to get in touch with us by regular post, please direct it to</p>
-            <p>Philipp Becker<br />Hof Haina 4<br />D-35444 Biebertal</p>
-        </div>
-
-        <div class="col-f">
-            <h4>Meet the Team</h4>
-            <p>DNN Connect is an initiative for the community by the community. It is run by volunteers.</p>
-            <ul>
-                <li>Peter Donker<br /><a href="http://bring2mind.net" target="_blank">Bring2Mind</a></li>
-                <li>Vicen&ccedil; Masanas<br /><a href="http://www.disgrafic.com" target="_blank">Disgrafic</a></li>
-                <li>Philipp Becker<br /><a href="http://peppertree-solutions.com" target="_blank">Peppertree Solutions</a></li>
-            </ul>
-        </div>
-
-        <div class="col-f">
-            <h4>Social Channels</h4>
-            <ul>
-                <li><a href="http://facebook.com/dnnconnect">Facebook</a></li>
-                <li><a href="http://twitter.com/dnnconnect">Twitter</a></li>
-            </ul>
-        </div>
-
-    </div>
+    <div class="footer skinWidth clearfix" id="FooterPane" runat="server"></div>
 
 </div><!--/contentWrap-->
 <dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="js/purl.js" PathNameAlias="SkinPath" />
