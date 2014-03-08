@@ -709,8 +709,9 @@ span.label                                          { display: block; color: #ff
 .answers a.tag                                      { border-radius: 0px;bottom: auto;margin: 2px 2px 6px 0;padding: 4px 8px 6px 8px;text-shadow: none;text-transform: lowercase; text-decoration: none; }
 .answers h2.dnnFormSectionHead,
 .answers h3                                         { border-bottom: none;letter-spacing: 0em; margin: 0; padding: 0 0 20px 0; }
-.answers .qaCommentArea h2.dnnFormSectionHead       { background: none;padding-left:650px;line-height: normal; }
+.answers .qaCommentArea h2.dnnFormSectionHead       { background: none;padding-left:610px;line-height: normal; }
 .answers .qaCommentArea h2.dnnFormSectionHead   a    {font-size:0.8em}
+.answers .qaCommentArea h2.dnnFormSectionHead a:hover {background-color:transparent}
 .qaCommentArea .dnnFormItem 		{padding-bottom: 0;text-align: right;}
 .answers .qaUserScore                               { border: 1px solid #CCCCCC;border-radius: 0px;color: #fff;margin: 0;padding: 5px 15px 5px 15px;width: 204px; }
 .answers p.qaUserPrivilegeScore                     { margin: 0; padding: 20px 0 20px 0;}
