@@ -1,66 +1,62 @@
-jQuery(document).ready(function() {
+// putting everything in a closure is always a smart thing
+;(function ($, scope) {
+  // entering in the strict mode is a really good thing too
+  'use strict';
 
-    $('.searchInputContainer > input').focusin(function () {
-        input = $(this);
-        input.toggleClass('active');
-    });
+  $(function() {
+    var params
+      , stickyNav
+      , stickyNavTop
+      , $window;
 
-    $('.searchInputContainer > input').focusout(function () {
-        input = $(this);
-        input.toggleClass('active');
-    });
+    $window = $(scope);
+    params = $.url().param('SearchValues');
+
+    $('.searchInputContainer > input').on({
+      focusin: function () {
+        $(this).toggleClass('active');
+      },
+      focusout: function () {
+        $(this).toggleClass('active');
+      }
+    })    
 
     $('.userName > a').text('My Account');
 
-    var params = $.url().param('SearchValues');
-
     if (params) {
-        var link = $('a[rel="' + params + '"]');
-        if (link) {
-            link.addClass('active');
-        }
+      link = $('a[rel="' + params + '"]').addClass('active');
     }
 
     $('.connectdir_searchbutton > input').addClass('dnnPrimaryAction');
     $('.connectdir_searchformbutton > input').addClass('dnnPrimaryAction');
 
-    jQuery(".connect_nav .m_nav").click(function() {
-        jQuery(".connect_nav ul.sf-menu").toggle();
-
+    $(".connect_nav .m_nav").click(function() {
+      $(".connect_nav ul.sf-menu").toggle();
     });
 
     $('.external-sociallink-twitter').attr('target', '_blank');
 
-    var stickyNavTop = $('.connect-toolbar').offset().top;
+    stickyNavTop = $('.connect-toolbar').offset().top;
 
     if ($('form').hasClass('showControlBar')) {
-        stickyNavTop -= 53;
+      stickyNavTop -= 53;
     }
 
-    var stickyNav = function () {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > stickyNavTop) {
-            if ($('form').hasClass('showControlBar')) {
-                $('.connect-toolbar').addClass('stickyadmin');
-            } else {
-                $('.connect-toolbar').addClass('sticky');
-            }
+    stickyNav = function () {
+      var scrollTop = $window.scrollTop();
 
-        }
-        else {
-            if ($('form').hasClass('showControlBar')) {
-                $('.connect-toolbar').removeClass('stickyadmin');
-            } else {
-                $('.connect-toolbar').removeClass('sticky');
-            }
-
-        }
-    };
+      if ($('form').hasClass('showControlBar')) {
+        $('.connect-toolbar').removeClass('stickyadmin');
+      } else {
+        $('.connect-toolbar').removeClass('sticky');
+      }
+    }
 
     stickyNav();
 
-    $(window).scroll(function () {
-        stickyNav();
+    $window.scroll(function () {
+      stickyNav();
     });
+  });
 
-});
+})(jQuery, this);
