@@ -19,7 +19,7 @@
       focusout: function () {
         $(this).toggleClass('active');
       }
-    })    
+    });
 
     $('.userName > a').text('My Account');
 
